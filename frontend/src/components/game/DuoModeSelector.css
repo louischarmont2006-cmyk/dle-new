@@ -1,0 +1,149 @@
+.duo-mode-selector {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.selector-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.selector-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.selector-anime {
+  text-align: center;
+  color: #a0a0c0;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.mode-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mode-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.mode-option-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.mode-option-btn.matchmaking:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.mode-option-btn.create-private:hover {
+  border-color: #f093fb;
+  box-shadow: 0 4px 20px rgba(240, 147, 251, 0.3);
+}
+
+.mode-option-btn.join-private:hover {
+  border-color: #4facfe;
+  box-shadow: 0 4px 20px rgba(79, 172, 254, 0.3);
+}
+
+.mode-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+}
+
+.mode-info {
+  flex: 1;
+}
+
+.mode-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.mode-info p {
+  font-size: 14px;
+  color: #a0a0c0;
+  margin: 0;
+}
+
+.cancel-selector-btn {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-selector-btn:hover {
+  background: rgba(255, 59, 48, 0.2);
+  border-color: rgba(255, 59, 48, 0.4);
+}
+
+@media (max-width: 600px) {
+  .selector-content {
+    padding: 24px;
+  }
+
+  .selector-title {
+    font-size: 24px;
+  }
+
+  .mode-option-btn {
+    padding: 16px;
+  }
+
+  .mode-icon {
+    font-size: 28px;
+  }
+
+  .mode-info h3 {
+    font-size: 18px;
+  }
+
+  .mode-info p {
+    font-size: 13px;
+  }
+}

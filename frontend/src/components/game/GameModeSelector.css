@@ -1,0 +1,145 @@
+.game-mode-selector {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.game-mode-content {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-mode-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.game-mode-anime {
+  text-align: center;
+  color: #a0a0c0;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.game-mode-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.game-mode-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.game-mode-option-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.game-mode-option-btn.turnbased:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.game-mode-option-btn.simultaneous:hover {
+  border-color: #f093fb;
+  box-shadow: 0 4px 20px rgba(240, 147, 251, 0.3);
+}
+
+.game-mode-icon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.game-mode-info {
+  flex: 1;
+}
+
+.game-mode-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.game-mode-info p {
+  font-size: 14px;
+  color: #a0a0c0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.cancel-game-mode-btn {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-game-mode-btn:hover {
+  background: rgba(255, 59, 48, 0.2);
+  border-color: rgba(255, 59, 48, 0.4);
+}
+
+@media (max-width: 600px) {
+  .game-mode-content {
+    padding: 24px;
+  }
+
+  .game-mode-title {
+    font-size: 24px;
+  }
+
+  .game-mode-option-btn {
+    padding: 20px;
+  }
+
+  .game-mode-icon {
+    font-size: 36px;
+  }
+
+  .game-mode-info h3 {
+    font-size: 18px;
+  }
+
+  .game-mode-info p {
+    font-size: 13px;
+  }
+}

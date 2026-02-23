@@ -1,0 +1,304 @@
+.friend-profile-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+}
+
+.friend-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+.friend-profile-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: #fff;
+}
+
+.friend-profile-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.75rem;
+}
+
+/* Friend User Info */
+.friend-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.friend-name {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.friend-email {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+/* Versus Stats */
+.versus-stats {
+  grid-column: 2;
+}
+
+.versus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.versus-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+}
+
+.versus-stat.highlight {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.versus-stat .stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.versus-stat .stat-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.25rem;
+}
+
+.avg-attempts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.avg-stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+}
+
+.avg-icon {
+  font-size: 2rem;
+}
+
+.avg-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.avg-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.avg-label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Game Stats */
+.game-stats {
+  grid-column: 1 / -1;
+}
+
+.games-stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.game-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  transition: background 0.2s;
+}
+
+.game-stat-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.game-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.game-total {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.game-score {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  min-width: 70px;
+}
+
+.score-box.me {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.score-box.opponent {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.score-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.15rem;
+}
+
+.score-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.score-separator {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.game-winrate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 0.5rem;
+}
+
+.winrate-value {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.winrate-label {
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.no-stats {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.loading {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .friend-profile-content {
+    grid-template-columns: 1fr;
+  }
+
+  .versus-stats {
+    grid-column: 1;
+  }
+
+  .avg-attempts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .friend-profile-container {
+    padding: 1rem;
+  }
+
+  .friend-profile-header {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+  }
+
+  .friend-profile-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .versus-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .game-stat-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .game-score {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

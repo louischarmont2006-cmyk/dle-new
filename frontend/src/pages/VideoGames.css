@@ -1,0 +1,235 @@
+/* src/pages/VideoGames.css */
+
+.videogames-container {
+  min-height: 100vh;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Background fixe qui ne bouge pas au scroll */
+.videogames-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('background-jeux.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Conteneur principal */
+.videogames-content {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* Header avec navigation */
+.videogames-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  width: 95.5%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.videogames-nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.videogames-nav-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.videogames-nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* COULEUR ORANGE pour Video Games actif */
+.videogames-nav-btn.active {
+  background-color: #f59e0b;
+  border-color: #fbbf24;
+}
+
+.videogames-user-section {
+  display: flex;
+  align-items: center;
+}
+
+.videogames-user-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Grille de jeux */
+.videogames-games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Messages */
+.loading-message,
+.no-games {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .videogames-games-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .videogames-container {
+    padding: 0.75rem;
+  }
+
+  .videogames-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .videogames-nav-buttons {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .videogames-nav-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .videogames-games-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .videogames-container {
+    padding: 0.5rem;
+  }
+
+  .videogames-header {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .site-title {
+    font-size: 1.35rem;
+  }
+
+  .videogames-nav-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .videogames-games-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .videogames-container {
+    padding: 0.4rem;
+  }
+
+  .videogames-header {
+    padding: 0.5rem;
+    gap: 0.4rem;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .videogames-nav-btn {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .videogames-games-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.4rem;
+  }
+}
