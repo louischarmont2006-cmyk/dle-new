@@ -90,7 +90,7 @@ function useStats(animeId) {
 
 function pickTarget(list) {
   const i = Math.floor(Math.random() * list.length);
-  console.log(list[i]);
+  // Don't log the target - it would reveal the answer in console!
   return list[i];
 }
 
@@ -250,8 +250,6 @@ function SoloGame() {
     const maxRetries = 3;
     
     function loadData() {
-      console.log(`Loading ${fullUrl} (attempt ${retryCount + 1}/${maxRetries + 1})`);
-      
       fetch(fullUrl)
         .then((r) => {
           if (!r.ok) {
@@ -260,7 +258,6 @@ function SoloGame() {
           return r.json();
         })
         .then((data) => {
-          console.log('Data loaded successfully:', data);
           setGameData(data);
           const characters = data.characters || [];
           setPool(characters);
@@ -272,7 +269,6 @@ function SoloGame() {
           // Retry si backend endormi
           if (retryCount < maxRetries) {
             retryCount++;
-            console.log(`Retrying in 2 seconds... (${retryCount}/${maxRetries})`);
             setTimeout(loadData, 2000);
           } else {
             console.error('Max retries reached. Backend may be asleep.');

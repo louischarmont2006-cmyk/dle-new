@@ -90,8 +90,6 @@ export default function DuoGame() {
     const maxRetries = 3;
     
     function loadData() {
-      console.log(`Loading ${fullUrl} (attempt ${retryCount + 1}/${maxRetries + 1})`);
-      
       fetch(fullUrl)
         .then((r) => {
           if (!r.ok) {
@@ -100,7 +98,6 @@ export default function DuoGame() {
           return r.json();
         })
         .then((data) => {
-          console.log('Data loaded successfully:', data);
           setLocalGameData(data);
           setPool(data.characters || []);
         })
@@ -110,7 +107,6 @@ export default function DuoGame() {
           // Retry si backend endormi (souvent timeout ou HTML au lieu de JSON)
           if (retryCount < maxRetries) {
             retryCount++;
-            console.log(`Retrying in 2 seconds... (${retryCount}/${maxRetries})`);
             setTimeout(loadData, 2000);
           } else {
             console.error('Max retries reached. Backend may be asleep.');
