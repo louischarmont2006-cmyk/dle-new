@@ -45,7 +45,11 @@
     {
       "key": "occupation",
       "label": "Occupation",
-      "type": "text",
+      "type": "text-group",
+      "groups": [
+        ["Bandit Leader", "Bandit"],
+        ["Partial Ruler of Kotaku", "Ruler of Kotaku"]
+      ],
       "hints": [
         "Shinobi",
         "Samurai",
