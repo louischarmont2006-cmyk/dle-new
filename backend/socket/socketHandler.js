@@ -60,7 +60,7 @@ function setupSocketHandlers(io) {
 
     // ⭐ VERSION MISE À JOUR - Support animes ET jeux vidéo
     // Rejoindre la queue de matchmaking avec catégorie
-    socket.on('join-queue', ({ animeId, gameId, gameData, category, gameMode }) => {
+    socket.on('join-queue', async ({ animeId, gameId, gameData, category, gameMode }) => {
       // Pour compatibilité : si animeId est fourni, c'est un anime
       const finalGameId = gameId || animeId;
       const finalCategory = category || 'anime';
@@ -74,7 +74,7 @@ function setupSocketHandlers(io) {
         return;
       }
 
-      const dbUser = findUserById(socket.user.userId);
+      const dbUser = await findUserById(socket.user.userId);
       if (!dbUser || !dbUser.email_verified) {
         socket.emit('queue-error', { error: 'Tu dois vérifier ton email pour jouer en duo' });
         return;
@@ -128,7 +128,7 @@ function setupSocketHandlers(io) {
     });
 
     // Quitter la queue
-    socket.on('leave-queue', ({ animeId, gameId, category }) => {
+    socket.on('leave-queue', async ({ animeId, gameId, category }) => {
       const finalGameId = gameId || animeId;
       const finalCategory = category || 'anime';
       
@@ -138,7 +138,7 @@ function setupSocketHandlers(io) {
     });
 
     // ★ SALONS PRIVÉS - Créer un salon privé
-    socket.on('create-private-room', ({ gameId, gameData, category, gameMode }) => {
+    socket.on('create-private-room', async ({ gameId, gameData, category, gameMode }) => {
       const finalCategory = category || 'anime';
       const finalGameMode = gameMode || 'turnbased'; // ★ NOUVEAU
       
@@ -150,7 +150,7 @@ function setupSocketHandlers(io) {
         return;
       }
 
-      const dbUser = findUserById(socket.user.userId);
+      const dbUser = await findUserById(socket.user.userId);
       if (!dbUser || !dbUser.email_verified) {
         socket.emit('private-room-error', { error: 'Tu dois vérifier ton email pour créer un salon privé' });
         return;
@@ -174,7 +174,7 @@ function setupSocketHandlers(io) {
     });
 
     // ★ SALONS PRIVÉS - Rejoindre un salon privé
-    socket.on('join-private-room', ({ roomCode }) => {
+    socket.on('join-private-room', async ({ roomCode }) => {
       console.log(`${socket.id} trying to join private room: ${roomCode}`);
 
       // Vérifier que l'utilisateur est connecté et a vérifié son email
@@ -183,7 +183,7 @@ function setupSocketHandlers(io) {
         return;
       }
 
-      const dbUser = findUserById(socket.user.userId);
+      const dbUser = await findUserById(socket.user.userId);
       if (!dbUser || !dbUser.email_verified) {
         socket.emit('private-room-error', { error: 'Tu dois vérifier ton email pour rejoindre un salon privé' });
         return;
@@ -241,7 +241,7 @@ function setupSocketHandlers(io) {
     });
 
     // ★ SALONS PRIVÉS - Annuler un salon privé
-    socket.on('cancel-private-room', () => {
+    socket.on('cancel-private-room', async () => {
       const result = gameManager.cancelPrivateRoom(socket);
       if (result.status === 'private-room-cancelled') {
         socket.emit('private-room-cancelled');
@@ -250,7 +250,7 @@ function setupSocketHandlers(io) {
     });
 
     // Faire un guess
-    socket.on('make-guess', ({ roomId, character }) => {
+    socket.on('make-guess', async ({ roomId, character }) => {
       const result = gameManager.makeGuess(socket, roomId, character);
 
       if (result.error) {
@@ -277,7 +277,7 @@ function setupSocketHandlers(io) {
 
         if (player1.user?.userId && player2.user?.userId) {
           const { recordDuoMatch } = require('../db/database');
-          recordDuoMatch(
+          await recordDuoMatch(
             player1.user.userId,
             player2.user.userId,
             room.gameId,
@@ -334,7 +334,7 @@ function setupSocketHandlers(io) {
     });
 
     // Demander une revanche
-    socket.on('request-rematch', () => {
+    socket.on('request-rematch', async () => {
       const room = gameManager.getPlayerRoom(socket.id);
       if (!room) {
         socket.emit('rematch-error', { error: 'Room introuvable' });
@@ -384,7 +384,7 @@ function setupSocketHandlers(io) {
     });
 
     // Quitter la room
-    socket.on('leave-room', () => {
+    socket.on('leave-room', async () => {
       const result = gameManager.leaveRoom(socket);
       if (result && result.opponentId) {
         const opponentSocket = io.sockets.sockets.get(result.opponentId);
@@ -396,7 +396,7 @@ function setupSocketHandlers(io) {
     });
 
     // Chat
-    socket.on('send-chat', ({ text }) => {
+    socket.on('send-chat', async ({ text }) => {
       if (!text || typeof text !== 'string') return;
 
       const result = gameManager.addMessage(socket.id, text);
@@ -407,7 +407,7 @@ function setupSocketHandlers(io) {
     });
 
     // Déconnexion
-    socket.on('disconnect', () => {
+    socket.on('disconnect', async () => {
       console.log(`Player disconnected: ${socket.id}`);
       const result = gameManager.handleDisconnect(socket);
 

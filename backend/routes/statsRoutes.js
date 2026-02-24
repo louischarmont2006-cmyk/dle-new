@@ -5,10 +5,10 @@ const { authMiddleware } = require('../auth/authMiddleware');
 const router = express.Router();
 
 // GET /api/stats/all - Récupérer toutes les stats de l'utilisateur
-router.get('/all', authMiddleware, (req, res) => {
+router.get('/all', authMiddleware, async (req, res) => {
   try {
     const userId = req.user.userId;
-    const allStats = getAllStatsForUser(userId);
+    const allStats = await getAllStatsForUser(userId);
 
     // Calculer les stats globales
     let totalPlayed = 0, totalWins = 0, totalDuoPlayed = 0, totalDuoWins = 0, totalAttempts = 0;
@@ -61,12 +61,12 @@ router.get('/all', authMiddleware, (req, res) => {
 });
 
 // GET /api/stats/:animeId
-router.get('/:animeId', authMiddleware, (req, res) => {
+router.get('/:animeId', authMiddleware, async (req, res) => {
   try {
     const { animeId } = req.params;
     const userId = req.user.userId;
 
-    const stats = getStats(userId, animeId);
+    const stats = await getStats(userId, animeId);
 
     res.json({
       played: stats.games_played,
@@ -84,7 +84,7 @@ router.get('/:animeId', authMiddleware, (req, res) => {
 });
 
 // PUT /api/stats/:animeId
-router.put('/:animeId', authMiddleware, (req, res) => {
+router.put('/:animeId', authMiddleware, async (req, res) => {
   try {
     const { animeId } = req.params;
     const { won, isDuo, attempts } = req.body;
@@ -94,7 +94,7 @@ router.put('/:animeId', authMiddleware, (req, res) => {
       return res.status(400).json({ error: 'Le champ "won" est requis (boolean)' });
     }
 
-    const stats = updateStats(userId, animeId, won, isDuo || false, attempts || 0);
+    const stats = await updateStats(userId, animeId, won, isDuo || false, attempts || 0);
 
     res.json({
       played: stats.games_played,

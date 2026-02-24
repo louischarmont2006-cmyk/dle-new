@@ -96,23 +96,23 @@ router.post('/register', authLimiter, async (req, res) => {
     }
 
     // Vérifier si l'email existe déjà
-    const existingEmail = findUserByEmail(email);
+    const existingEmail = await findUserByEmail(email);
     if (existingEmail) {
       return res.status(400).json({ error: 'Cet email est déjà utilisé' });
     }
 
     // Vérifier si le username existe déjà
-    const existingUsername = findUserByUsername(username);
+    const existingUsername = await findUserByUsername(username);
     if (existingUsername) {
       return res.status(400).json({ error: 'Ce pseudo est déjà pris' });
     }
 
     const passwordHash = await hashPassword(password);
-    const { id: userId, avatarColor, verificationToken } = createUser(email, passwordHash, username);
+    const { id: userId, avatarColor, verificationToken } = await createUser(email, passwordHash, username);
 
     // ⭐ AUTO-VÉRIFIER le compte pour le développement
     // L'email est quand même envoyé (si Resend fonctionne) mais le compte est utilisable immédiatement
-    verifyUserEmail(userId);
+    await verifyUserEmail(userId);
     console.log('✅ Account auto-verified for development (email still sent)');
 
     // Envoyer l'email de vérification (optionnel maintenant que le compte est vérifié)
@@ -146,7 +146,7 @@ router.post('/login', [authLimiter, strictLimiter], async (req, res) => {
       return res.status(400).json({ error: 'Email et mot de passe requis' });
     }
 
-    const user = findUserByEmail(email);
+    const user = await findUserByEmail(email);
     if (!user) {
       return res.status(401).json({ error: 'Email ou mot de passe incorrect' });
     }
@@ -184,7 +184,7 @@ router.post('/verify-email', async (req, res) => {
       return res.status(400).json({ error: 'Token requis' });
     }
 
-    const user = findUserByVerificationToken(token);
+    const user = await findUserByVerificationToken(token);
     if (!user) {
       return res.status(400).json({ error: 'Token invalide ou expiré' });
     }
@@ -194,7 +194,7 @@ router.post('/verify-email', async (req, res) => {
       return res.status(400).json({ error: 'Token expiré, demandez un nouveau lien' });
     }
 
-    verifyUserEmail(user.id);
+    await verifyUserEmail(user.id);
 
     res.json({ message: 'Email vérifié avec succès' });
   } catch (error) {
@@ -206,7 +206,7 @@ router.post('/verify-email', async (req, res) => {
 // POST /api/auth/resend-verification
 router.post('/resend-verification', authLimiter, authMiddleware, async (req, res) => {
   try {
-    const user = findUserById(req.user.userId);
+    const user = await findUserById(req.user.userId);
 
     if (!user) {
       return res.status(404).json({ error: 'Utilisateur non trouvé' });
@@ -216,7 +216,7 @@ router.post('/resend-verification', authLimiter, authMiddleware, async (req, res
       return res.status(400).json({ error: 'Email déjà vérifié' });
     }
 
-    const verificationToken = resendVerificationToken(user.id);
+    const verificationToken = await resendVerificationToken(user.id);
     await sendVerificationEmail(user.email, user.username, verificationToken);
 
     res.json({ message: 'Email de vérification envoyé' });
@@ -235,14 +235,14 @@ router.post('/forgot-password', authLimiter, async (req, res) => {
       return res.status(400).json({ error: 'Email requis' });
     }
 
-    const user = findUserByEmail(email);
+    const user = await findUserByEmail(email);
 
     // Toujours répondre OK pour ne pas révéler si l'email existe
     if (!user) {
       return res.json({ message: 'Si cet email existe, un lien de réinitialisation a été envoyé' });
     }
 
-    const resetToken = createPasswordResetToken(user.id);
+    const resetToken = await createPasswordResetToken(user.id);
     await sendPasswordResetEmail(email, user.username, resetToken);
 
     res.json({ message: 'Si cet email existe, un lien de réinitialisation a été envoyé' });
@@ -269,7 +269,7 @@ router.post('/reset-password', async (req, res) => {
       });
     }
 
-    const user = findUserByResetToken(token);
+    const user = await findUserByResetToken(token);
     if (!user) {
       return res.status(400).json({ error: 'Token invalide ou expiré' });
     }
@@ -280,7 +280,7 @@ router.post('/reset-password', async (req, res) => {
     }
 
     const passwordHash = await hashPassword(password);
-    updateUserPassword(user.id, passwordHash);
+    await updateUserPassword(user.id, passwordHash);
 
     res.json({ message: 'Mot de passe mis à jour avec succès' });
   } catch (error) {
@@ -290,9 +290,9 @@ router.post('/reset-password', async (req, res) => {
 });
 
 // GET /api/auth/me
-router.get('/me', authMiddleware, (req, res) => {
+router.get('/me', authMiddleware, async (req, res) => {
   try {
-    const user = findUserById(req.user.userId);
+    const user = await findUserById(req.user.userId);
     if (!user) {
       return res.status(404).json({ error: 'Utilisateur non trouvé' });
     }
@@ -305,15 +305,15 @@ router.get('/me', authMiddleware, (req, res) => {
 });
 
 // PUT /api/auth/avatar
-router.put('/avatar', authMiddleware, (req, res) => {
+router.put('/avatar', authMiddleware, async (req, res) => {
   try {
     const { avatarImage } = req.body;
     const userId = req.user.userId;
 
     // avatarImage peut être null (retour à l'avatar par défaut) ou un chemin d'image
-    updateUserAvatar(userId, avatarImage || null);
+    await updateUserAvatar(userId, avatarImage || null);
 
-    const user = findUserById(userId);
+    const user = await findUserById(userId);
     res.json({ user });
   } catch (error) {
     console.error('Update avatar error:', error);
