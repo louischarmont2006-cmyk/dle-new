@@ -13,8 +13,14 @@
     {
       "key": "species",
       "label": "Espèce",
-      "type": "text",
-      "partialMatch": true,
+      "type": "text-group",
+      "groups": [
+        ["Humain", "Humain, Augmenté", "Humain, Augmenté, Metroid", "Humain, Démon", "Humain, Pokémon", "Humain, Luma", "Humain, Dragon", "Humain, Hybride", "Humain, Dieu", "Humain, Zombie, Enderman", "Humain, Jenova", "Humain, Lame"],
+        ["Pokémon", "Humain, Pokémon"],
+        ["Oiseau", "Oiseau, Chien", "Oiseau, Ours"],
+        ["Chien", "Oiseau, Chien"],
+        ["Dieu", "Humain, Dieu"]
+      ],
       "hints": ["Humain",
       "Kong",
       "Humain, Augmenté",
@@ -48,7 +54,7 @@
       "Humain, Dieu",
       "Humain, Zombie, Enderman",
       "Humain, Jenova",
-     "Humain, Lame"]
+      "Humain, Lame"]
     },
     {
       "key": "univers",
@@ -109,7 +115,15 @@
     {
       "key": "originPlatform",
       "label": "Plateforme d'origine",
-      "type": "text",
+      "type": "text-group",
+      "groups": [
+        ["NES", "SNES", "Game Boy, NES"],
+        ["Game Boy", "Game Boy, NES", "Game Boy Color"],
+        ["PlayStation", "PlayStation 3, Xbox 360", "PlayStation 3, PlayStation 4", "PlayStation 2"],
+        ["Nintendo DS", "3DS"],
+        ["Wii", "Wii U"],
+        ["Android/iOS, Nintendo Switch", "Nintendo Switch"]
+      ],
       "hints": ["Arcade",
       "NES",
       "GameCube",

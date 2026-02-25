@@ -8,8 +8,12 @@
     {
       "key": "species",
       "label": "Espèce",
-      "type": "text",
-      "partialMatch": true,
+      "type": "text-group",
+      "groups": [
+        ["Hérisson", "Génie Hérisson", "Dieu Hérisson"],
+        ["Génie", "Génie Hérisson"],
+        ["Dieu", "Dieu Hérisson"]
+      ],
       "hints": ["🦡Blaireau🦡",
       "Hérisson",
       "Renard",
