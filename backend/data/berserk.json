@@ -51,6 +51,7 @@
       "label": "Species",
       "type": "text-group",
       "groups": [
+        ["Human", "Human/Merrow"],
         ["Apostle", "Half-Apostle"]
       ],
       "hints": ["Human", "Apostle", "God Hand", "Elf", "Undead", "Half-Apostle", "Jotunn", "Troll", "Ogre", "Cockatrice", "Kelpie", "Merrow", "Human/Merrow", "Crocodile", "Elephant", "Tiger"]
