@@ -35,11 +35,11 @@
       "label": "Elemental Attri.",
       "type": "text-group",
       "groups": [
-        ["Fire", "Fite/Water/Earth/Wood/Metal"],
-        ["Water", "Fite/Water/Earth/Wood/Metal"],
-        ["Earth", "Fite/Water/Earth/Wood/Metal"],
-        ["Wood", "Fite/Water/Earth/Wood/Metal"],
-        ["Metal", "Fite/Water/Earth/Wood/Metal"]
+        ["Fire", "Water/Wood/Fire/Earth/Metal"],
+        ["Water", "Water/Wood/Fire/Earth/Metal"],
+        ["Earth", "Water/Wood/Fire/Earth/Metal"],
+        ["Wood", "Water/Wood/Fire/Earth/Metal"],
+        ["Metal", "Water/Wood/Fire/Earth/Metal"]
       ],
       "hints": [
         "Fire",
