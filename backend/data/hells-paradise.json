@@ -33,7 +33,14 @@
     {
       "key": "elementalAttribute",
       "label": "Elemental Attri.",
-      "type": "text",
+      "type": "text-group",
+      "groups": [
+        ["Fire", "Fite/Water/Earth/Wood/Metal"],
+        ["Water", "Fite/Water/Earth/Wood/Metal"],
+        ["Earth", "Fite/Water/Earth/Wood/Metal"],
+        ["Wood", "Fite/Water/Earth/Wood/Metal"],
+        ["Metal", "Fite/Water/Earth/Wood/Metal"]
+      ],
       "hints": [
         "Fire",
         "Water",
