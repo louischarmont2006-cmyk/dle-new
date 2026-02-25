@@ -6,9 +6,9 @@ function setupSocketHandlers(io) {
   const gameManager = new GameManager();
 
   // ★ NOUVEAU - Helper pour démarrer le timer et enregistrer le match à l'expiration
-  function startTimerForRoom(roomId, room) {
+  async function startTimerForRoom(roomId, room) {
     if (room.gameMode === 'simultaneous' && room.timer) {
-      room.timer.timeoutId = setTimeout(() => {
+      room.timer.timeoutId = setTimeout(async () => {
         const timerResult = gameManager.handleTimerExpired(roomId);
         if (timerResult) {
           // Enregistrer le match nul
@@ -19,7 +19,7 @@ function setupSocketHandlers(io) {
           const player2 = room.players[player2Id];
 
           if (player1.user?.userId && player2.user?.userId) {
-            recordDuoMatch(
+            await recordDuoMatch(
               player1.user.userId,
               player2.user.userId,
               room.gameId,
