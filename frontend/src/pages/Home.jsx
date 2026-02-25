@@ -17,7 +17,6 @@ export default function Home() {
     fetch(`${API_URL}/api/animes`)
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         setMangas(data);
         setLoading(false);
       })

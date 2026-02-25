@@ -17,7 +17,6 @@ export default function VideoGames() {
     fetch(`${API_URL}/api/games`)
       .then(res => res.json())
       .then(data => {
-        console.log("Games loaded:", data);
         setGames(data);
         setLoading(false);
       })
