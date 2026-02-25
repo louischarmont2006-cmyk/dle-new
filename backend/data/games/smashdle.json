@@ -59,7 +59,10 @@
     {
       "key": "univers",
       "label": "Univers",
-      "type": "text",
+      "type": "text-group",
+      "groups": [
+        ["Mario", "Mario, Yoshi", "Mario, Wario"]
+      ],
       "hints": ["Mario",
       "Donkey Kong",
       "The Legend of Zelda",
