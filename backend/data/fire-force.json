@@ -290,6 +290,19 @@
   },
   {
     "id": 11,
+    "name": "Conehead",
+    "image": "conehead.webp",
+    "age": "Unknown",
+    "height": "Unknown",
+    "gender": "Male",
+    "species": "Human",
+    "hairColor": "Bald",
+    "occupation": "Fire Force Soldier",
+    "affiliation": "Special Fire Force Company 5",
+    "firstArc": "VS. Special Fire Force Company 5 arc"
+  },
+  {
+    "id": 12,
     "name": "Daikoku Oguru",
     "image": "daikoku oguru.jpg",
     "age": "Unknown",
@@ -302,7 +315,7 @@
     "firstArc": "Stone Pillars arc"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Dr. Giovanni",
     "image": "dr. giovanni.jpg",
     "age": "Unknown",
@@ -315,7 +328,7 @@
     "firstArc": "Preacher Pursuit arc"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Dragon",
     "image": "dragon.webp",
     "age": "Unknown",
@@ -328,7 +341,7 @@
     "firstArc": "Ôbi's Rescue arc"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Evangelist",
     "image": "evangelist.webp",
     "age": "Unknown",
@@ -341,7 +354,7 @@
     "firstArc": "Netherworld arc"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Faerie",
     "image": "faerie.jpg",
     "age": "Unknown",
@@ -354,7 +367,7 @@
     "firstArc": "Stone Pillars arc"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "God",
     "image": "god.webp",
     "age": "Unknown",
@@ -367,7 +380,7 @@
     "firstArc": "Epilogue arc"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Gold",
     "image": "gold.webp",
     "age": "Unknown",
@@ -380,7 +393,7 @@
     "firstArc": "Stigma arc"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Gureo Haijima",
     "image": "gureo haijima.webp",
     "age": "Unknown",
@@ -393,7 +406,7 @@
     "firstArc": "Haijima Industries arc"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Gustav Honda",
     "image": "gustav honda.webp",
     "age": "46",
@@ -406,7 +419,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Haran",
     "image": "haran.webp",
     "age": "Unknown",
@@ -419,7 +432,7 @@
     "firstArc": "Asakusa arc"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Haumea",
     "image": "haumea.webp",
     "age": "17",
@@ -432,7 +445,7 @@
     "firstArc": "Netherworld arc"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Hibachi Shinmon",
     "image": "hibachi shinmon.webp",
     "age": "58",
@@ -445,7 +458,7 @@
     "firstArc": "Great Cataclysm arc"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Hibachi Shinmon's Doppelganger",
     "image": "hibachi shinmon's doppelganger.webp",
     "age": "Unknown",
@@ -458,7 +471,7 @@
     "firstArc": "Great Cataclysm arc"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Holy Sol's Shadow Captain",
     "image": "holy sol's shadow captain.webp",
     "age": "Unknown",
@@ -471,7 +484,7 @@
     "firstArc": "VS. Holy Sol Temple arc"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Huo Yan Li",
     "image": "huo yan li.jpg",
     "age": "30",
@@ -484,7 +497,7 @@
     "firstArc": "VS. Special Fire Force Company 1 arc"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Inca Kasugatani",
     "image": "inca kasugatani.webp",
     "age": "16",
@@ -497,7 +510,7 @@
     "firstArc": "Fifth Pillar arc"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Iris",
     "image": "iris.webp",
     "age": "16",
@@ -510,7 +523,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Joker",
     "image": "joker.jpg",
     "age": "28",
@@ -523,7 +536,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Joker's Doppelganger",
     "image": "joker's doppelganger.webp",
     "age": "Unknown",
@@ -536,7 +549,7 @@
     "firstArc": "Great Cataclysm arc"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Jonas",
     "image": "jonas.webp",
     "age": "Unknown",
@@ -549,7 +562,7 @@
     "firstArc": "Netherworld arc"
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "Karim Fulham",
     "image": "karim fulham.webp",
     "age": "22",
@@ -562,7 +575,7 @@
     "firstArc": "VS. Special Fire Force Company 1 arc"
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Kayoko Huang",
     "image": "kayoko huang.webp",
     "age": "47",
@@ -575,7 +588,7 @@
     "firstArc": "Preacher Pursuit arc"
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Konro Sagamiya",
     "image": "konro sagamiya.webp",
     "age": "38",
@@ -588,7 +601,7 @@
     "firstArc": "Asakusa arc"
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Konro Sagamiya's Doppelganger",
     "image": "konro sagamiya's doppelganger.webp",
     "age": "Unknown",
@@ -601,7 +614,7 @@
     "firstArc": "Asakusa arc"
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Leonardo Barns",
     "image": "leonardo barns.webp",
     "age": "50",
@@ -614,7 +627,7 @@
     "firstArc": "VS. Special Fire Force Company 1 arc"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Leonardo Barns's Doppelganger",
     "image": "leonardo barns's doppelganger.webp",
     "age": "Unknown",
@@ -627,7 +640,7 @@
     "firstArc": "Ôbi's Rescue arc"
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "Lisa Isaribi",
     "image": "lisa isaribi.jpg",
     "age": "19",
@@ -640,7 +653,7 @@
     "firstArc": "Vulcan's Workshop arc"
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "Maki Oze",
     "image": "maki oze.webp",
     "age": "19",
@@ -653,7 +666,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "Mari Kusakabe",
     "image": "mari kusakabe.webp",
     "age": "Unknown",
@@ -666,7 +679,7 @@
     "firstArc": "Kusakabe History arc"
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "Mirage",
     "image": "mirage.webp",
     "age": "Unknown",
@@ -679,7 +692,7 @@
     "firstArc": "Vulcan's Workshop arc"
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "Nataku Son",
     "image": "nataku son.webp",
     "age": "11",
@@ -692,7 +705,7 @@
     "firstArc": "VS. Special Fire Force Company 1 arc"
   },
   {
-    "id": 42,
+    "id": 43,
     "name": "Natasha",
     "image": "natasha.webp",
     "age": "Unknown",
@@ -705,7 +718,7 @@
     "firstArc": "Netherworld arc"
   },
   {
-    "id": 43,
+    "id": 44,
     "name": "Ogun Montgomery",
     "image": "ogun montgomery.webp",
     "age": "17",
@@ -718,7 +731,7 @@
     "firstArc": "VS. Special Fire Force Company 4 arc"
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Onyango",
     "image": "onyango.webp",
     "age": "Unknown",
@@ -731,7 +744,7 @@
     "firstArc": "Netherworld arc"
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "Orochi",
     "image": "orochi.webp",
     "age": "Unknown",
@@ -744,7 +757,7 @@
     "firstArc": "Joint Investigation arc"
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "Pan Ko Paat",
     "image": "pan ko paat.webp",
     "age": "30",
@@ -757,7 +770,7 @@
     "firstArc": "VS. Special Fire Force Company 4 arc"
   },
   {
-    "id": 47,
+    "id": 48,
     "name": "Princess Hibana",
     "image": "princess hibana.webp",
     "age": "20",
@@ -770,7 +783,7 @@
     "firstArc": "VS. Special Fire Force Company 5 arc"
   },
   {
-    "id": 48,
+    "id": 49,
     "name": "Puppeteer",
     "image": "puppeteer.webp",
     "age": "Unknown",
@@ -783,7 +796,7 @@
     "firstArc": "Haijima Industries arc"
   },
   {
-    "id": 49,
+    "id": 50,
     "name": "Raffles 3",
     "image": "raffles 3.webp",
     "age": "Unknown",
@@ -796,7 +809,7 @@
     "firstArc": "Preacher Pursuit arc"
   },
   {
-    "id": 50,
+    "id": 51,
     "name": "Raffles Smith (Raffles 1)",
     "image": "raffles smith (raffles 1).webp",
     "age": "Unknown",
@@ -809,7 +822,7 @@
     "firstArc": "Return to St. Raffles arc"
   },
   {
-    "id": 51,
+    "id": 52,
     "name": "Raffles Smith's Doppelganger",
     "image": "raffles smith's doppelganger.webp",
     "age": "Unknown",
@@ -822,7 +835,7 @@
     "firstArc": "Return to St. Raffles arc"
   },
   {
-    "id": 52,
+    "id": 53,
     "name": "Rekka Hoshimiya",
     "image": "rekka hoshimiya.webp",
     "age": "23",
@@ -835,7 +848,7 @@
     "firstArc": "VS. Special Fire Force Company 1 arc"
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "Rekka Hoshimiya's Doppelganger",
     "image": "rekka hoshimiya's doppelganger.webp",
     "age": "Unknown",
@@ -848,7 +861,7 @@
     "firstArc": "Great Cataclysm arc"
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Ritsu",
     "image": "ritsu.webp",
     "age": "22",
@@ -861,7 +874,7 @@
     "firstArc": "Haijima Industries arc"
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Scop",
     "image": "scop.webp",
     "age": "Unknown",
@@ -874,7 +887,7 @@
     "firstArc": "Chinese Peninsula arc"
   },
   {
-    "id": 56,
+    "id": 5576,
     "name": "Setsuo Miyamoto",
     "image": "setsuo miyamoto.webp",
     "age": "Unknown",
@@ -887,7 +900,7 @@
     "firstArc": "VS. Special Fire Force Company 5 arc"
   },
   {
-    "id": 57,
+    "id": 58,
     "name": "Shinra Kusakabe's Doppelganger",
     "image": "shinra kusakabe's doppelganger.webp",
     "age": "Unknown",
@@ -900,7 +913,7 @@
     "firstArc": "Great Cataclysm arc"
   },
   {
-    "id": 58,
+    "id": 59,
     "name": "Sho Kusakabe",
     "image": "sho kusakabe.webp",
     "age": "14",
@@ -913,7 +926,7 @@
     "firstArc": "Asakusa arc"
   },
   {
-    "id": 59,
+    "id": 60,
     "name": "Soichiro Hague",
     "image": "soichiro hague.webp",
     "age": "Unknown",
@@ -926,7 +939,7 @@
     "firstArc": "Preacher Pursuit arc"
   },
   {
-    "id": 60,
+    "id": 61,
     "name": "Soichiro Hague's Doppelganger",
     "image": "soichiro hague's doppelganger.webp",
     "age": "Unknown",
@@ -939,7 +952,7 @@
     "firstArc": "Great Cataclysm arc"
   },
   {
-    "id": 61,
+    "id": 62,
     "name": "Stream",
     "image": "stream.webp",
     "age": "Unknown",
@@ -952,7 +965,7 @@
     "firstArc": "Ôbi's Rescue arc"
   },
   {
-    "id": 62,
+    "id": 63,
     "name": "Sumire Sugita",
     "image": "sumire sugita.webp",
     "age": "250+",
@@ -965,7 +978,7 @@
     "firstArc": "Return to St. Raffles arc"
   },
   {
-    "id": 63,
+    "id": 64,
     "name": "Takehisa Hinawa",
     "image": "takehisa hinawa.webp",
     "age": "28",
@@ -978,7 +991,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 64,
+    "id": 65,
     "name": "Takeru Noto (Juggernaut)",
     "image": "takeru noto (juggernaut).webp",
     "age": "18",
@@ -991,7 +1004,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 65,
+    "id": 66,
     "name": "Tamaki Kotatsu",
     "image": "tamaki kotatsu.jpg",
     "age": "17",
@@ -1004,7 +1017,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 66,
+    "id": 67,
     "name": "Tempe",
     "image": "tempe.webp",
     "age": "Unknown",
@@ -1017,7 +1030,20 @@
     "firstArc": "Chinese Peninsula arc"
   },
   {
-    "id": 67,
+    "id": 68,
+    "name": "Tokuyama",
+    "image": "tokuyama.webp",
+    "age": "Unknown",
+    "height": "Unknown",
+    "gender": "Male",
+    "species": "Human",
+    "hairColor": "Black",
+    "occupation": "Fire Force Vice-Captain",
+    "affiliation": "Special Fire Force Company 5",
+    "firstArc": "VS. Special Fire Force Company 5 arc"
+  },
+  {
+    "id": 69,
     "name": "Toru Kishiri",
     "image": "toru kishiri.webp",
     "age": "Unknown",
@@ -1030,7 +1056,7 @@
     "firstArc": "VS. Special Fire Force Company 5 arc"
   },
   {
-    "id": 68,
+    "id": 70,
     "name": "Viktor Licht",
     "image": "viktor licht.webp",
     "age": "24",
@@ -1043,7 +1069,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 69,
+    "id": 71,
     "name": "Vulcan Joseph",
     "image": "vulcan joseph.webp",
     "age": "18",
@@ -1056,7 +1082,7 @@
     "firstArc": "Vulcan's Workshop arc"
   },
   {
-    "id": 70,
+    "id": 72,
     "name": "Yona",
     "image": "yona.webp",
     "age": "Unknown",
@@ -1069,7 +1095,7 @@
     "firstArc": "Asakusa arc"
   },
     {
-    "id": 71,
+    "id": 73,
     "name": "Yu",
     "image": "yu.webp",
     "age": "Unknown",
@@ -1082,7 +1108,7 @@
     "firstArc": "Vulcan's Workshop arc"
   },
     {
-    "id": 72,
+    "id": 74,
     "name": "Yuichiro Kurono",
     "image": "yuichiro kurono.webp",
     "age": "29",
@@ -1095,7 +1121,7 @@
     "firstArc": "Haijima Industries arc"
   },
     {
-    "id": 73,
+    "id": 75,
     "name": "Yuichiro Kurono's Doppelganger",
     "image": "yuichiro kurono's doppelganger.webp",
     "age": "Unknown",

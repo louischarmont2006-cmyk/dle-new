@@ -110,6 +110,7 @@
         "Universe 7",
         "Universe 10",
         "Universe 11",
+        "Universe 3",
         "Zeno's Palace"
       ]
     },
@@ -227,6 +228,18 @@
   },
   {
     "id": 5,
+    "name": "Anilaza",
+    "image": "anilaza.jpg",
+    "gender": "Male",
+    "species": "Alien",
+    "height": "175",
+    "origin": "Other",
+    "residence": "Universe 3",
+    "allegiance": "Other",
+    "firstArc": "Tournament of Power saga"
+  },
+  {
+    "id": 6,
     "name": "Appule",
     "image": "appule.webp",
     "gender": "Male",
@@ -238,7 +251,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Arale Norimaki",
     "image": "arale norimaki.webp",
     "gender": "Female",
@@ -250,7 +263,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Babidi",
     "image": "babidi.webp",
     "gender": "Male",
@@ -262,7 +275,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Baby",
     "image": "baby.webp",
     "gender": "Male",
@@ -274,7 +287,7 @@
     "firstArc": "Dragon Ball GT saga"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Bacterian",
     "image": "bacterian.webp",
     "gender": "Male",
@@ -286,7 +299,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Bardock",
     "image": "bardock.png",
     "gender": "Male",
@@ -298,7 +311,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Barry Kahn",
     "image": "barry kahn.webp",
     "gender": "Male",
@@ -310,7 +323,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Bee",
     "image": "bee.webp",
     "gender": "Male",
@@ -322,7 +335,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Beerus",
     "image": "beerus.jpg",
     "gender": "Male",
@@ -334,7 +347,7 @@
     "firstArc": "Battle of Gods saga"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Bibidi",
     "image": "bibidi.webp",
     "gender": "Male",
@@ -346,7 +359,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Bikini",
     "image": "bikini.webp",
     "gender": "Female",
@@ -358,7 +371,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Bojack",
     "image": "bojack.png",
     "gender": "Male",
@@ -370,7 +383,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Bora",
     "image": "bora.webp",
     "gender": "Male",
@@ -382,7 +395,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Broly (DBS)",
     "image": "broly (dbs).webp",
     "gender": "Male",
@@ -394,7 +407,7 @@
     "firstArc": "Broly saga"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Broly (DBZ)",
     "image": "broly (dbz).jpg",
     "gender": "Male",
@@ -406,7 +419,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Bubbles",
     "image": "bubbles.webp",
     "gender": "Male",
@@ -418,7 +431,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Bulla",
     "image": "bulla.webp",
     "gender": "Female",
@@ -430,7 +443,7 @@
     "firstArc": "Battle of Gods saga"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Bulma",
     "image": "bulma.webp",
     "gender": "Female",
@@ -442,7 +455,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Burter",
     "image": "burter.webp",
     "gender": "Male",
@@ -454,7 +467,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Buu",
     "image": "buu.jpg",
     "gender": "Male",
@@ -466,7 +479,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "C-8",
     "image": "c-8.webp",
     "gender": "Male",
@@ -478,7 +491,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "C-13",
     "image": "c-13.jpg",
     "gender": "Male",
@@ -490,7 +503,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "C-14",
     "image": "c-14.webp",
     "gender": "Male",
@@ -502,7 +515,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "C-15",
     "image": "c-15.webp",
     "gender": "Male",
@@ -514,7 +527,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "C-16",
     "image": "c-16.jpg",
     "gender": "Male",
@@ -526,7 +539,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "C-17",
     "image": "c-17.jpg",
     "gender": "Male",
@@ -538,7 +551,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "C-18",
     "image": "c-18.webp",
     "gender": "Female",
@@ -550,7 +563,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "C-19",
     "image": "c-19.webp",
     "gender": "Male",
@@ -562,7 +575,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "C-20/Dr. Gero",
     "image": "c-20 - dr gero.png",
     "gender": "Male",
@@ -574,7 +587,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Cabba",
     "image": "cabba.webp",
     "gender": "Male",
@@ -586,7 +599,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Captain Dark",
     "image": "captain dark.webp",
     "gender": "Male",
@@ -598,7 +611,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Captain Ginyu",
     "image": "captain ginyu.webp",
     "gender": "Male",
@@ -610,7 +623,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "Captain Yellow",
     "image": "captain yellow.webp",
     "gender": "Male",
@@ -622,7 +635,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "Caulifla",
     "image": "caulifla.webp",
     "gender": "Female",
@@ -634,7 +647,7 @@
     "firstArc": "Tournament of Power saga"
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "Cell",
     "image": "cell.jpg",
     "gender": "Male",
@@ -646,7 +659,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "Cell Jr.",
     "image": "cell jr..webp",
     "gender": "Male",
@@ -658,7 +671,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "Champa",
     "image": "champa.webp",
     "gender": "Male",
@@ -670,7 +683,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 42,
+    "id": 43,
     "name": "Chi-Chi",
     "image": "chi-chi.webp",
     "gender": "Female",
@@ -682,7 +695,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 43,
+    "id": 44,
     "name": "Chiaotzu",
     "image": "chiaotzu.webp",
     "gender": "Male",
@@ -694,7 +707,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Colonel Silver",
     "image": "colonel silver.webp",
     "gender": "Male",
@@ -706,7 +719,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "Colonel Violet",
     "image": "colonel violet.webp",
     "gender": "Female",
@@ -718,7 +731,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "Commander Red",
     "image": "commander red.webp",
     "gender": "Male",
@@ -730,7 +743,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 47,
+    "id": 48,
     "name": "Cooler",
     "image": "cooler.webp",
     "gender": "Male",
@@ -742,7 +755,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 48,
+    "id": 49,
     "name": "Cranberry",
     "image": "cranberry.webp",
     "gender": "Male",
@@ -754,7 +767,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 49,
+    "id": 50,
     "name": "Cui",
     "image": "cui.webp",
     "gender": "Male",
@@ -766,7 +779,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 50,
+    "id": 51,
     "name": "Dabra",
     "image": "dabra.png",
     "gender": "Male",
@@ -778,7 +791,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 51,
+    "id": 52,
     "name": "Dende",
     "image": "dende.webp",
     "gender": "Male",
@@ -790,7 +803,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 52,
+    "id": 53,
     "name": "Dodoria",
     "image": "dodoria.webp",
     "gender": "Male",
@@ -802,7 +815,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "Dr. Brief",
     "image": "dr. brief.webp",
     "gender": "Male",
@@ -814,7 +827,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Dr. Hedo",
     "image": "dr. hedo.webp",
     "gender": "Male",
@@ -826,7 +839,7 @@
     "firstArc": "Super saga"
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Dr. Mashirito Ghost",
     "image": "dr. mashirito ghost.webp",
     "gender": "Male",
@@ -838,7 +851,7 @@
     "firstArc": "Black Goku saga"
   },
   {
-    "id": 56,
+    "id": 57,
     "name": "Dr. Wheelo",
     "image": "dr. wheelo.jpg",
     "gender": "Male",
@@ -850,7 +863,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 57,
+    "id": 58,
     "name": "Dyspo",
     "image": "dyspo.webp",
     "gender": "Male",
@@ -862,7 +875,7 @@
     "firstArc": "Tournament of Power saga"
   },
   {
-    "id": 58,
+    "id": 59,
     "name": "Emperor Pilaf",
     "image": "emperor pilaf.webp",
     "gender": "Male",
@@ -874,7 +887,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 59,
+    "id": 60,
     "name": "Erasa",
     "image": "erasa.webp",
     "gender": "Female",
@@ -886,7 +899,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 60,
+    "id": 61,
     "name": "Esca",
     "image": "esca.webp",
     "gender": "Male",
@@ -898,7 +911,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 61,
+    "id": 62,
     "name": "Evil Buu",
     "image": "evil buu.webp",
     "gender": "Male",
@@ -910,7 +923,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 62,
+    "id": 63,
     "name": "Fangs the Vampire",
     "image": "fangs the vampire.webp",
     "gender": "Male",
@@ -922,7 +935,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 63,
+    "id": 64,
     "name": "Farmer",
     "image": "farmer.webp",
     "gender": "Male",
@@ -934,7 +947,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 64,
+    "id": 65,
     "name": "Fisshi",
     "image": "fisshi.webp",
     "gender": "Male",
@@ -946,7 +959,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 65,
+    "id": 66,
     "name": "Fortuneteller Baba",
     "image": "fortuneteller baba.webp",
     "gender": "Female",
@@ -958,7 +971,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 66,
+    "id": 67,
     "name": "Freezer",
     "image": "freezer.jpg",
     "gender": "Male",
@@ -970,7 +983,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 67,
+    "id": 68,
     "name": "Frost",
     "image": "frost.webp",
     "gender": "Male",
@@ -982,7 +995,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 68,
+    "id": 69,
     "name": "Future Trunks",
     "image": "future trunks.jpg",
     "gender": "Male",
@@ -994,7 +1007,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 69,
+    "id": 70,
     "name": "Gamma 1",
     "image": "gamma 1.jpg",
     "gender": "Male",
@@ -1006,7 +1019,7 @@
     "firstArc": "Super saga"
   },
   {
-    "id": 70,
+    "id": 71,
     "name": "Gamma 2",
     "image": "gamma 2.jpg",
     "gender": "Male",
@@ -1018,7 +1031,7 @@
     "firstArc": "Super saga"
   },
   {
-    "id": 71,
+    "id": 72,
     "name": "Gas Heater",
     "image": "gas heater.jpg",
     "gender": "Male",
@@ -1030,7 +1043,7 @@
     "firstArc": "Granolah saga"
   },
   {
-    "id": 72,
+    "id": 73,
     "name": "General Blue",
     "image": "general blue.webp",
     "gender": "Male",
@@ -1042,7 +1055,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 73,
+    "id": 74,
     "name": "General White",
     "image": "general white.webp",
     "gender": "Male",
@@ -1054,7 +1067,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 74,
+    "id": 75,
     "name": "Gevo",
     "image": "gevo.webp",
     "gender": "Male",
@@ -1066,7 +1079,7 @@
     "firstArc": "Super saga"
   },
   {
-    "id": 75,
+    "id": 76,
     "name": "Ghost Usher",
     "image": "ghost usher.webp",
     "gender": "Male",
@@ -1078,7 +1091,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 76,
+    "id": 77,
     "name": "Gine",
     "image": "gine.jpg",
     "gender": "Female",
@@ -1090,7 +1103,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 77,
+    "id": 78,
     "name": "Giran",
     "image": "giran.webp",
     "gender": "Male",
@@ -1102,7 +1115,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 78,
+    "id": 79,
     "name": "Gogeta",
     "image": "gogeta.jpg",
     "gender": "Male",
@@ -1114,7 +1127,7 @@
     "firstArc": "End of Z saga"
   },
   {
-    "id": 79,
+    "id": 80,
     "name": "Goku Black",
     "image": "goku black.png",
     "gender": "Male",
@@ -1126,7 +1139,7 @@
     "firstArc": "Black Goku saga"
   },
   {
-    "id": 80,
+    "id": 81,
     "name": "Gotenks",
     "image": "gotenks.webp",
     "gender": "Male",
@@ -1138,7 +1151,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 81,
+    "id": 82,
     "name": "Grand Elder Guru",
     "image": "grand elder guru.webp",
     "gender": "Male",
@@ -1150,7 +1163,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 82,
+    "id": 83,
     "name": "Grand Priest",
     "image": "grand priest.webp",
     "gender": "Male",
@@ -1162,7 +1175,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 83,
+    "id": 84,
     "name": "Grand Supreme Kai",
     "image": "grand supreme kai.webp",
     "gender": "Male",
@@ -1174,7 +1187,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 84,
+    "id": 85,
     "name": "Grandpa Son Gohan",
     "image": "grandpa son gohan.webp",
     "gender": "Male",
@@ -1186,7 +1199,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 85,
+    "id": 86,
     "name": "Granolah",
     "image": "granolah.jpg",
     "gender": "Male",
@@ -1198,7 +1211,19 @@
     "firstArc": "Granolah saga"
   },
   {
-    "id": 86,
+    "id": 87,
+    "name": "Gregory",
+    "image": "gregory.webp",
+    "gender": "Male",
+    "species": "Animal",
+    "height": "10",
+    "origin": "Other",
+    "residence": "King Kai's Planet",
+    "allegiance": "Dragon Team",
+    "firstArc": "Saiyan saga"
+  },
+  {
+    "id": 88,
     "name": "Guldo",
     "image": "guldo.webp",
     "gender": "Male",
@@ -1210,7 +1235,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 87,
+    "id": 89,
     "name": "Gyumao (Ox-King)",
     "image": "gyumao (ox-king).webp",
     "gender": "Male",
@@ -1222,7 +1247,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 88,
+    "id": 90,
     "name": "Hatchiyack",
     "image": "hatchiyack.webp",
     "gender": "Male",
@@ -1234,7 +1259,7 @@
     "firstArc": "End of Z saga"
   },
   {
-    "id": 89,
+    "id": 91,
     "name": "Hercule Satan",
     "image": "hercule satan.webp",
     "gender": "Male",
@@ -1246,7 +1271,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 90,
+    "id": 92,
     "name": "Hirudegarn",
     "image": "hirudegarn.webp",
     "gender": "Male",
@@ -1258,7 +1283,7 @@
     "firstArc": "End of Z saga"
   },
   {
-    "id": 91,
+    "id": 93,
     "name": "Hit",
     "image": "hit.webp",
     "gender": "Male",
@@ -1270,7 +1295,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 92,
+    "id": 94,
     "name": "Idasa",
     "image": "idasa.webp",
     "gender": "Male",
@@ -1282,7 +1307,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 93,
+    "id": 95,
     "name": "Ikose",
     "image": "ikose.webp",
     "gender": "Male",
@@ -1294,7 +1319,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 94,
+    "id": 96,
     "name": "Jaco",
     "image": "jaco.jpg",
     "gender": "Male",
@@ -1306,7 +1331,7 @@
     "firstArc": "Return of F. saga"
   },
   {
-    "id": 95,
+    "id": 97,
     "name": "Janemba",
     "image": "janemba.webp",
     "gender": "Male",
@@ -1318,7 +1343,7 @@
     "firstArc": "End of Z saga"
   },
   {
-    "id": 96,
+    "id": 98,
     "name": "Jeice",
     "image": "jeice.webp",
     "gender": "Male",
@@ -1330,7 +1355,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 97,
+    "id": 99,
     "name": "Jimmy Firecracker",
     "image": "jimmy firecracker.webp",
     "gender": "Male",
@@ -1342,7 +1367,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 98,
+    "id": 100,
     "name": "Jiren",
     "image": "jiren.webp",
     "gender": "Male",
@@ -1354,7 +1379,7 @@
     "firstArc": "Tournament of Power saga"
   },
   {
-    "id": 99,
+    "id": 101,
     "name": "Kale",
     "image": "kale.jpg",
     "gender": "Female",
@@ -1366,7 +1391,7 @@
     "firstArc": "Tournament of Power saga"
   },
   {
-    "id": 100,
+    "id": 102,
     "name": "Kami",
     "image": "kami.webp",
     "gender": "Male",
@@ -1378,7 +1403,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 101,
+    "id": 103,
     "name": "Kefla",
     "image": "kefla.webp",
     "gender": "Female",
@@ -1390,7 +1415,7 @@
     "firstArc": "Tournament of Power saga"
   },
   {
-    "id": 102,
+    "id": 104,
     "name": "Kibito",
     "image": "kibito.webp",
     "gender": "Male",
@@ -1402,7 +1427,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 103,
+    "id": 105,
     "name": "Kid Buu",
     "image": "kid buu.png",
     "gender": "Male",
@@ -1414,7 +1439,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 104,
+    "id": 106,
     "name": "King Chappa",
     "image": "king chappa.webp",
     "gender": "Male",
@@ -1426,7 +1451,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 105,
+    "id": 107,
     "name": "King Cold",
     "image": "king cold.webp",
     "gender": "Male",
@@ -1438,7 +1463,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 106,
+    "id": 108,
     "name": "King Furry",
     "image": "king furry.webp",
     "gender": "Male",
@@ -1450,7 +1475,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 107,
+    "id": 109,
     "name": "King Kai",
     "image": "king kai.webp",
     "gender": "Male",
@@ -1462,7 +1487,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 108,
+    "id": 110,
     "name": "King Piccolo",
     "image": "king piccolo.webp",
     "gender": "Male",
@@ -1474,7 +1499,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 109,
+    "id": 111,
     "name": "King Vegeta",
     "image": "king vegeta.png",
     "gender": "Male",
@@ -1486,7 +1511,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 110,
+    "id": 112,
     "name": "King Yemma",
     "image": "king yemma.webp",
     "gender": "Male",
@@ -1498,7 +1523,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 111,
+    "id": 113,
     "name": "Korin",
     "image": "korin.webp",
     "gender": "Male",
@@ -1510,7 +1535,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 112,
+    "id": 114,
     "name": "Krilin",
     "image": "krilin.jpg",
     "gender": "Male",
@@ -1522,7 +1547,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 113,
+    "id": 115,
     "name": "Lunch",
     "image": "lunch.webp",
     "gender": "Female",
@@ -1534,7 +1559,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 114,
+    "id": 116,
     "name": "Magenta",
     "image": "magenta.jpg",
     "gender": "Male",
@@ -1546,7 +1571,7 @@
     "firstArc": "Super saga"
   },
   {
-    "id": 115,
+    "id": 117,
     "name": "Mai",
     "image": "mai.jpg",
     "gender": "Female",
@@ -1558,7 +1583,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 116,
+    "id": 118,
     "name": "Majin Buu",
     "image": "majin buu.webp",
     "gender": "Male",
@@ -1570,7 +1595,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 117,
+    "id": 119,
     "name": "Major Metallitron",
     "image": "major metallitron.webp",
     "gender": "Male",
@@ -1582,7 +1607,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 118,
+    "id": 120,
     "name": "Man-Wolf",
     "image": "man-wolf.webp",
     "gender": "Male",
@@ -1594,7 +1619,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 119,
+    "id": 121,
     "name": "Marron",
     "image": "marron.webp",
     "gender": "Female",
@@ -1606,7 +1631,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 120,
+    "id": 122,
     "name": "Master Mutaito",
     "image": "master mutaito.webp",
     "gender": "Male",
@@ -1618,7 +1643,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 121,
+    "id": 123,
     "name": "Master Roshi",
     "image": "master roshi.png",
     "gender": "Male",
@@ -1630,7 +1655,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 122,
+    "id": 124,
     "name": "Master Shen",
     "image": "master shen.webp",
     "gender": "Male",
@@ -1642,7 +1667,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 123,
+    "id": 125,
     "name": "Mercenary Tao",
     "image": "mercenary tao.webp",
     "gender": "Male",
@@ -1654,7 +1679,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 124,
+    "id": 126,
     "name": "Merus",
     "image": "merus.webp",
     "gender": "Male",
@@ -1666,7 +1691,31 @@
     "firstArc": "Moro saga"
   },
   {
-    "id": 125,
+    "id": 127,
+    "name": "Minotia",
+    "image": "minotia.webp",
+    "gender": "Male",
+    "species": "Alien",
+    "height": "130",
+    "origin": "Planet Konats",
+    "residence": "Anywhere",
+    "allegiance": "Dragon Team",
+    "firstArc": "End of Z saga"
+  },
+  {
+    "id": 128,
+    "name": "Monite",
+    "image": "monite.jpg",
+    "gender": "Male",
+    "species": "Namekian",
+    "height": "160",
+    "origin": "Planet Namek",
+    "residence": "Anywhere",
+    "allegiance": "None",
+    "firstArc": "Granolah saga"
+  },
+  {
+    "id": 129,
     "name": "Monster Carrot",
     "image": "monster carrot.webp",
     "gender": "Male",
@@ -1678,7 +1727,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 126,
+    "id": 130,
     "name": "Moro",
     "image": "moro.jpg",
     "gender": "Male",
@@ -1690,7 +1739,7 @@
     "firstArc": "Moro saga"
   },
   {
-    "id": 127,
+    "id": 131,
     "name": "Mr. Popo",
     "image": "mr. popo.webp",
     "gender": "Male",
@@ -1702,7 +1751,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 128,
+    "id": 132,
     "name": "Muri",
     "image": "muri.webp",
     "gender": "Male",
@@ -1714,7 +1763,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 129,
+    "id": 133,
     "name": "Nail",
     "image": "nail.webp",
     "gender": "Male",
@@ -1726,7 +1775,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 130,
+    "id": 134,
     "name": "Nam",
     "image": "nam.webp",
     "gender": "Male",
@@ -1738,7 +1787,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 131,
+    "id": 135,
     "name": "Nappa",
     "image": "nappa.jpg",
     "gender": "Male",
@@ -1750,7 +1799,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 132,
+    "id": 136,
     "name": "Ninja Murasaki",
     "image": "ninja murasaki.jpg",
     "gender": "Male",
@@ -1762,7 +1811,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 133,
+    "id": 137,
     "name": "OG73-I",
     "image": "OG73-I.webp",
     "gender": "Male",
@@ -1774,7 +1823,7 @@
     "firstArc": "Moro saga"
   },
   {
-    "id": 134,
+    "id": 138,
     "name": "Old Kai",
     "image": "old kai.webp",
     "gender": "Male",
@@ -1786,7 +1835,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 135,
+    "id": 139,
     "name": "Omega Shenron",
     "image": "omega shenron.webp",
     "gender": "Male",
@@ -1798,7 +1847,7 @@
     "firstArc": "Dragon Ball GT saga"
   },
   {
-    "id": 136,
+    "id": 140,
     "name": "Oolong",
     "image": "oolong.webp",
     "gender": "Male",
@@ -1810,7 +1859,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 137,
+    "id": 141,
     "name": "Otokosuki",
     "image": "otokosuki.webp",
     "gender": "Male",
@@ -1822,7 +1871,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 138,
+    "id": 142,
     "name": "Pamput",
     "image": "pamput.webp",
     "gender": "Male",
@@ -1834,7 +1883,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 139,
+    "id": 143,
     "name": "Pan",
     "image": "pan.webp",
     "gender": "Female",
@@ -1846,7 +1895,7 @@
     "firstArc": "Return of F. saga"
   },
   {
-    "id": 140,
+    "id": 144,
     "name": "Paragus (DBS)",
     "image": "paragus (dbs).webp",
     "gender": "Male",
@@ -1858,7 +1907,7 @@
     "firstArc": "Broly saga"
   },
   {
-    "id": 141,
+    "id": 145,
     "name": "Paragus (DBZ)",
     "image": "paragus (dbz).webp",
     "gender": "Male",
@@ -1870,7 +1919,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 142,
+    "id": 146,
     "name": "Piccolo",
     "image": "piccolo.webp",
     "gender": "Male",
@@ -1882,7 +1931,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 143,
+    "id": 147,
     "name": "Pikkon",
     "image": "pikkon.jpg",
     "gender": "Male",
@@ -1894,7 +1943,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 144,
+    "id": 148,
     "name": "Polunga",
     "image": "polunga.webp",
     "gender": "Male",
@@ -1906,7 +1955,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 145,
+    "id": 149,
     "name": "Princess Snake",
     "image": "princess snake.webp",
     "gender": "Female",
@@ -1918,7 +1967,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 146,
+    "id": 150,
     "name": "Puar",
     "image": "puar.webp",
     "gender": "Male",
@@ -1930,7 +1979,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 147,
+    "id": 151,
     "name": "Pui Pui",
     "image": "pui pui.webp",
     "gender": "Male",
@@ -1942,7 +1991,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 148,
+    "id": 152,
     "name": "Raditz",
     "image": "raditz.png",
     "gender": "Male",
@@ -1954,7 +2003,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 149,
+    "id": 153,
     "name": "Ranfan",
     "image": "ranfan.webp",
     "gender": "Female",
@@ -1966,7 +2015,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 150,
+    "id": 154,
     "name": "Recoome",
     "image": "recoome.webp",
     "gender": "Male",
@@ -1978,7 +2027,19 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 151,
+    "id": 155,
+    "name": "Saganbo",
+    "image": "saganbo.jpg",
+    "gender": "Male",
+    "species": "Alien",
+    "height": "230",
+    "origin": "Other",
+    "residence": "Anywhere",
+    "allegiance": "None",
+    "firstArc": "Moro saga"
+  },
+  {
+    "id": 156,
     "name": "Saibamen",
     "image": "saibamen.webp",
     "gender": "Male",
@@ -1990,7 +2051,7 @@
     "firstArc": "Saiyan saga"
   },
   {
-    "id": 152,
+    "id": 157,
     "name": "Scratch",
     "image": "scratch.webp",
     "gender": "Male",
@@ -2002,7 +2063,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 153,
+    "id": 158,
     "name": "Shenron",
     "image": "shenron.webp",
     "gender": "Male",
@@ -2014,7 +2075,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 154,
+    "id": 159,
     "name": "Shin",
     "image": "shin.webp",
     "gender": "Male",
@@ -2026,7 +2087,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 155,
+    "id": 160,
     "name": "Shu",
     "image": "shu.webp",
     "gender": "Male",
@@ -2038,7 +2099,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 156,
+    "id": 161,
     "name": "Son Goten",
     "image": "son goten.webp",
     "gender": "Male",
@@ -2050,7 +2111,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 157,
+    "id": 162,
     "name": "South Kai",
     "image": "south kai.webp",
     "gender": "Male",
@@ -2062,7 +2123,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 158,
+    "id": 163,
     "name": "South Supreme Kai",
     "image": "south supreme kai.webp",
     "gender": "Male",
@@ -2074,7 +2135,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 159,
+    "id": 164,
     "name": "Spike the Devil Man",
     "image": "spike the devil man.webp",
     "gender": "Male",
@@ -2086,7 +2147,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 160,
+    "id": 165,
     "name": "Spopovitch",
     "image": "spopovitch.webp",
     "gender": "Male",
@@ -2098,7 +2159,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 161,
+    "id": 166,
     "name": "Staff Oficer Black",
     "image": "staff officer black.webp",
     "gender": "Male",
@@ -2110,7 +2171,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 162,
+    "id": 167,
     "name": "Suno",
     "image": "suno.webp",
     "gender": "Female",
@@ -2122,7 +2183,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 163,
+    "id": 168,
     "name": "Super C-13",
     "image": "super c-13.jpg",
     "gender": "Male",
@@ -2134,7 +2195,7 @@
     "firstArc": "Cell saga"
   },
   {
-    "id": 164,
+    "id": 169,
     "name": "Super C-17",
     "image": "super c-17.jpg",
     "gender": "Male",
@@ -2146,7 +2207,7 @@
     "firstArc": "Dragon Ball GT saga"
   },
   {
-    "id": 165,
+    "id": 170,
     "name": "Super Shenron",
     "image": "super shenron.webp",
     "gender": "Male",
@@ -2158,7 +2219,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 166,
+    "id": 171,
     "name": "Tambourine",
     "image": "tambourine.webp",
     "gender": "Male",
@@ -2170,7 +2231,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 167,
+    "id": 172,
     "name": "Tapion",
     "image": "tapion.webp",
     "gender": "Male",
@@ -2182,7 +2243,7 @@
     "firstArc": "End of Z saga"
   },
   {
-    "id": 168,
+    "id": 173,
     "name": "Tenshinhan",
     "image": "tenshinhan.webp",
     "gender": "Male",
@@ -2194,7 +2255,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 169,
+    "id": 174,
     "name": "Toppo",
     "image": "toppo.webp",
     "gender": "Male",
@@ -2206,7 +2267,7 @@
     "firstArc": "Tournament of Power saga"
   },
   {
-    "id": 170,
+    "id": 175,
     "name": "Trunks",
     "image": "trunks.webp",
     "gender": "Male",
@@ -2218,7 +2279,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 171,
+    "id": 176,
     "name": "Tsuful",
     "image": "tsuful.webp",
     "gender": "Male",
@@ -2230,7 +2291,7 @@
     "firstArc": "End of Z saga"
   },
   {
-    "id": 172,
+    "id": 177,
     "name": "Turtle",
     "image": "turtle.webp",
     "gender": "Male",
@@ -2242,7 +2303,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 173,
+    "id": 178,
     "name": "Upa",
     "image": "upa.webp",
     "gender": "Male",
@@ -2254,7 +2315,7 @@
     "firstArc": "Red Ribbon Army saga"
   },
   {
-    "id": 174,
+    "id": 179,
     "name": "Uub",
     "image": "uub.webp",
     "gender": "Male",
@@ -2266,7 +2327,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 175,
+    "id": 180,
     "name": "Vados",
     "image": "vados.webp",
     "gender": "Female",
@@ -2278,7 +2339,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 176,
+    "id": 181,
     "name": "Vegito",
     "image": "vegito.jpeg",
     "gender": "Male",
@@ -2290,7 +2351,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 177,
+    "id": 182,
     "name": "Videl",
     "image": "videl.webp",
     "gender": "Female",
@@ -2302,7 +2363,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 178,
+    "id": 183,
     "name": "Whis",
     "image": "whis.webp",
     "gender": "Male",
@@ -2314,7 +2375,7 @@
     "firstArc": "Battle of Gods saga"
   },
   {
-    "id": 179,
+    "id": 184,
     "name": "World Tournament Announcer",
     "image": "world tournament announcer.webp",
     "gender": "Male",
@@ -2326,7 +2387,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 180,
+    "id": 185,
     "name": "Yajirobe",
     "image": "yajirobe.webp",
     "gender": "Male",
@@ -2338,7 +2399,7 @@
     "firstArc": "Piccolo saga"
   },
   {
-    "id": 181,
+    "id": 186,
     "name": "Yakon",
     "image": "yakon.png",
     "gender": "Male",
@@ -2350,7 +2411,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 182,
+    "id": 187,
     "name": "Yamcha",
     "image": "yamcha.webp",
     "gender": "Male",
@@ -2362,7 +2423,7 @@
     "firstArc": "Son Goku saga"
   },
   {
-    "id": 183,
+    "id": 188,
     "name": "Yamu",
     "image": "yamu.webp",
     "gender": "Male",
@@ -2374,7 +2435,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 184,
+    "id": 189,
     "name": "Young Elder Kai",
     "image": "young elder kai.webp",
     "gender": "Male",
@@ -2386,7 +2447,7 @@
     "firstArc": "Majin Buu saga"
   },
   {
-    "id": 185,
+    "id": 190,
     "name": "Zamasu",
     "image": "zamasu.webp",
     "gender": "Male",
@@ -2398,7 +2459,7 @@
     "firstArc": "Black Goku saga"
   },
   {
-    "id": 186,
+    "id": 191,
     "name": "Zamasu (Fused)",
     "image": "zamasu (fused).jpg",
     "gender": "Male",
@@ -2410,7 +2471,7 @@
     "firstArc": "Black Goku saga"
   },
   {
-    "id": 187,
+    "id": 192,
     "name": "Zarama",
     "image": "zarama.webp",
     "gender": "Male",
@@ -2422,7 +2483,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 188,
+    "id": 193,
     "name": "Zarbon",
     "image": "zarbon.jpeg",
     "gender": "Male",
@@ -2434,7 +2495,7 @@
     "firstArc": "Freezer saga"
   },
   {
-    "id": 189,
+    "id": 194,
     "name": "Zeno",
     "image": "zeno.webp",
     "gender": "Male",
@@ -2446,7 +2507,7 @@
     "firstArc": "Univers 6 saga"
   },
   {
-    "id": 190,
+    "id": 195,
     "name": "Zeno's Attendants",
     "image": "zeno's attendants.webp",
     "gender": "Male",
