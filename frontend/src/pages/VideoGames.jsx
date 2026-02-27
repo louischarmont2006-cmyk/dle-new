@@ -40,7 +40,6 @@ export default function VideoGames() {
     <div 
       className="videogames-container"
       style={{ 
-        backgroundImage: `url(${API_URL}/api/background-jeux.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
