@@ -13,6 +13,10 @@ export default function FriendProfile() {
   const [loadingData, setLoadingData] = useState(true);
   const [animes, setAnimes] = useState([]);
   const [games, setGames] = useState([]);
+  const [error, setError] = useState(null);
+
+  console.log('🔍 FriendProfile - friendId:', friendId);
+  console.log('🔍 FriendProfile - API_URL:', API_URL);
 
   useEffect(() => {
     if (!loading && !user) {
@@ -36,23 +40,51 @@ export default function FriendProfile() {
   useEffect(() => {
     if (!token || !friendId) return;
 
+    console.log('🔍 Fetching friend data for ID:', friendId);
+    console.log('🔍 API URL:', `${API_URL}/api/friends/${friendId}`);
+
     setLoadingData(true);
+    setError(null);
+    
     fetch(`${API_URL}/api/friends/${friendId}`, {
       headers: { Authorization: `Bearer ${token}` }
     })
-      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(r => {
+        console.log('🔍 Response status:', r.status);
+        if (!r.ok) {
+          return r.text().then(text => {
+            throw new Error(`HTTP ${r.status}: ${text}`);
+          });
+        }
+        return r.json();
+      })
       .then(data => {
+        console.log('✅ Friend data loaded:', data);
         setFriendData(data);
         setLoadingData(false);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error('❌ Error loading friend data:', err);
+        setError(err.message);
         setLoadingData(false);
-        navigate("/friends");
       });
-  }, [token, friendId, navigate]);
+  }, [token, friendId]);
 
   if (loading || loadingData) {
     return <div className="friend-profile-container"><div className="loading">Chargement...</div></div>;
+  }
+
+  if (error) {
+    return (
+      <div className="friend-profile-container">
+        <div className="loading" style={{color: 'red'}}>
+          <p>Erreur: {error}</p>
+          <Link to="/friends" style={{color: '#3b82f6', marginTop: '1rem', display: 'block'}}>
+            ← Retour à la liste
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   if (!user || !friendData) {
@@ -141,7 +173,7 @@ export default function FriendProfile() {
                   <div key={stat.anime_id} className="game-stat-row">
                     <div className="game-info">
                       <span className="game-name">
-                        {game.type === 'game' ? '' : ''}
+                        {game.type === 'game' ? '🎮 ' : '📚 '}
                         {game.name}
                       </span>
                       <span className="game-total">{stat.games_played} parties ensemble</span>

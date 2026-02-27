@@ -15,6 +15,7 @@ export default function Profile() {
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
   const [avatarOptions, setAvatarOptions] = useState([]);
   const [savingAvatar, setSavingAvatar] = useState(false);
+  const [avatarSearch, setAvatarSearch] = useState('');
 
   useEffect(() => {
     if (!loading && !user) {
@@ -314,6 +315,17 @@ export default function Profile() {
               <button className="close-btn" onClick={() => setShowAvatarPicker(false)}>&times;</button>
             </div>
 
+            {/* ★ NOUVEAU - Barre de recherche */}
+            <div className="avatar-search-container">
+              <input
+                type="text"
+                className="avatar-search-input"
+                placeholder="🔍 Rechercher un personnage..."
+                value={avatarSearch}
+                onChange={(e) => setAvatarSearch(e.target.value)}
+              />
+            </div>
+
             <div className="avatar-picker-content">
               {/* Option pour revenir a l'avatar par defaut */}
               <div className="avatar-section">
@@ -335,27 +347,39 @@ export default function Profile() {
               </div>
 
               {/* Personnages par anime ET par jeu vidéo */}
-              {avatarOptions.map(item => (
-                <div key={item.animeId} className="avatar-section">
-                  <h3>
-                    {item.type === 'game' ? '🎮 ' : '📚 '}
-                    {item.animeName}
-                  </h3>
-                  <div className="avatar-grid">
-                    {item.characters.map(char => (
-                      <button
-                        key={char.id}
-                        className={`avatar-option ${user.avatar_image === char.image ? 'selected' : ''}`}
-                        onClick={() => handleSelectAvatar(char.image)}
-                        disabled={savingAvatar}
-                        title={char.name}
-                      >
-                        <img src={char.image} alt={char.name} className="avatar-preview" />
-                      </button>
-                    ))}
+              {avatarOptions.map(item => {
+                // ★ NOUVEAU - Filtrer selon la recherche
+                const filteredCharacters = avatarSearch
+                  ? item.characters.filter(char =>
+                      char.name.toLowerCase().includes(avatarSearch.toLowerCase())
+                    )
+                  : item.characters;
+
+                // Ne pas afficher si aucun résultat
+                if (filteredCharacters.length === 0) return null;
+
+                return (
+                  <div key={item.animeId} className="avatar-section">
+                    <h3>
+                      {item.type === 'game' ? '🎮 ' : '📚 '}
+                      {item.animeName}
+                    </h3>
+                    <div className="avatar-grid">
+                      {filteredCharacters.map(char => (
+                        <button
+                          key={char.id}
+                          className={`avatar-option ${user.avatar_image === char.image ? 'selected' : ''}`}
+                          onClick={() => handleSelectAvatar(char.image)}
+                          disabled={savingAvatar}
+                          title={char.name}
+                        >
+                          <img src={char.image} alt={char.name} className="avatar-preview" />
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
 
               {avatarOptions.length === 0 && (
                 <div className="loading-avatars">Chargement des avatars...</div>
