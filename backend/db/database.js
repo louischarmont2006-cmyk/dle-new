@@ -296,16 +296,16 @@ async function getFriendStats(userId, friendId) {
       COUNT(*) as total_games,
       SUM(CASE WHEN winner_id = $1 THEN 1 ELSE 0 END) as user_wins,
       SUM(CASE WHEN winner_id = $2 THEN 1 ELSE 0 END) as friend_wins,
-      AVG(CASE 
+      COALESCE(AVG(CASE 
         WHEN player1_id = $3 THEN player1_attempts 
         WHEN player2_id = $4 THEN player2_attempts 
         ELSE 0 
-      END) as user_avg_attempts,
-      AVG(CASE 
+      END), 0) as user_avg_attempts,
+      COALESCE(AVG(CASE 
         WHEN player1_id = $5 THEN player1_attempts 
         WHEN player2_id = $6 THEN player2_attempts 
         ELSE 0 
-      END) as friend_avg_attempts
+      END), 0) as friend_avg_attempts
     FROM duo_matches
     WHERE (player1_id = $7 AND player2_id = $8) OR (player1_id = $9 AND player2_id = $10)
   `, [userId, friendId, userId, userId, friendId, friendId, userId, friendId, friendId, userId]);
