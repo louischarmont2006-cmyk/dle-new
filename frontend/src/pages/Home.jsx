@@ -40,7 +40,7 @@ export default function Home() {
     <div 
       className="home-container"
       style={{ 
-        backgroundImage: `url(/images/background-manga.webp)`,
+        backgroundImage: `url(/background-manga.webp)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

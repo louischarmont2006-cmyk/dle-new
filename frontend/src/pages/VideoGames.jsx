@@ -40,7 +40,7 @@ export default function VideoGames() {
     <div 
       className="videogames-container"
       style={{ 
-        backgroundImage: `url(/images/background-jeux.jpg)`,
+        backgroundImage: `url(/background-jeux.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
