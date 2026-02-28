@@ -2,6 +2,8 @@
 .game-container {
   min-height: 100vh;
   width: 100%;
+  margin: 0;
+  padding: 0;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -12,8 +14,9 @@
 .game-overlay {
   min-height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
   padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
   overflow-x: hidden;
 }
 
@@ -1065,6 +1068,12 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .game-overlay {
+    padding: 1rem 0.5rem; /* Réduit le padding sur mobile */
+    width: 100%;
+    margin: 0;
+  }
+
   .game-title {
     font-size: 1.8rem;
   }
