@@ -36,7 +36,7 @@ export default function RematchModal({
             ? 'Match nul !' 
             : (isWinner 
                 ? (myAttempts === 1 ? 'ONE Shot !!! Victoire !' : 'Victoire !') 
-                : 'Defaite...'
+                : 'Défaite...'
               )
           }
         </div>
