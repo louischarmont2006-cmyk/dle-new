@@ -10,29 +10,6 @@ const ESSENTIAL_ASSETS = [
   '/background-jeux.jpg',
   '/images/logo.jpg',
   '/images/logo.png',
-  
-  // Images page d'accueil MANGA
-  '/images/manga/berserker armor.jpg',
-  '/images/manga/makima.jpg',
-  '/images/manga/dandadan.jpg',
-  '/images/manga/kira.jpg',
-  '/images/manga/akaza.jpg',
-  '/images/manga/son goku.jpg',
-  '/images/manga/shinra kusakabe.png',
-  '/images/manga/frieren.webp',
-  '/images/manga/rudo surebrec.jpg',
-  '/images/manga/gabimaru.jpeg',
-  '/images/manga/satoru gojo.webp',
-  '/images/manga/mash burnedead.jpg',
-  '/images/manga/shigeo kageyama.jpg',
-  '/images/manga/izuku midoriya.webp',
-  '/images/manga/saitama.jpg',
-  '/images/manga/anya forger.webp',
-  '/images/manga/ken kaneki.jpg',
-  
-  // Images VIDEO GAMES
-  '/images/games/smash bros.webp',
-  '/images/games/sonic.jpg',
 ];
 
 // Installation
