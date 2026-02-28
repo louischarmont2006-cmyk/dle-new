@@ -1,0 +1,33 @@
+{
+  "name": "Mangadle - Jeux de Devinettes Manga & Video Games",
+  "short_name": "Mangadle",
+  "description": "Devinez les personnages de manga et de jeux vidéo ! Créé par Louis Charmont.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#242424",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "author": "Louis Charmont",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "screenshots": [
+    {
+      "src": "/background-manga.webp",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    }
+  ]
+}
