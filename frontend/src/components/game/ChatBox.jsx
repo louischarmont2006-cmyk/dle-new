@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function ChatBox({ messages, onSend, mySocketId, isOpen, onToggle }) {
   const [input, setInput] = useState('');
+  const [lastReadCount, setLastReadCount] = useState(0); // ★ NOUVEAU - Dernier nombre lu
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
@@ -12,6 +13,13 @@ export default function ChatBox({ messages, onSend, mySocketId, isOpen, onToggle
     }
   }, [messages, isOpen]);
 
+  // ★ NOUVEAU - Marquer comme lu quand on ouvre le chat
+  useEffect(() => {
+    if (isOpen) {
+      setLastReadCount(messages.length);
+    }
+  }, [isOpen, messages.length]);
+
   function handleSubmit(e) {
     e.preventDefault();
     if (input.trim()) {
@@ -20,7 +28,8 @@ export default function ChatBox({ messages, onSend, mySocketId, isOpen, onToggle
     }
   }
 
-  const unreadCount = messages.length;
+  // ★ NOUVEAU - Compter uniquement les messages NON LUS
+  const unreadCount = isOpen ? 0 : Math.max(0, messages.length - lastReadCount);
 
   return (
     <div className={`chat-box ${isOpen ? 'open' : 'collapsed'}`}>

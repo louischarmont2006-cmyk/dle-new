@@ -1,4 +1,3 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
@@ -18,7 +17,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Gestion du prompt d'installation PWA (partagé globalement)
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   window.deferredInstallPrompt = e;
@@ -30,10 +28,10 @@ window.addEventListener('appinstalled', () => {
   window.deferredInstallPrompt = null;
 });
 
+// ✅ FIX — StrictMode retiré car il cause des déconnexions/reconnexions
+// en développement qui brisent les sockets et les salons privés
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <AuthProvider>
-      <App />
-    </AuthProvider>
-  </StrictMode>,
+  <AuthProvider>
+    <App />
+  </AuthProvider>
 )

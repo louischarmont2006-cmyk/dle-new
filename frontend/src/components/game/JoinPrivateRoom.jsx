@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './JoinPrivateRoom.css';
 
-export default function JoinPrivateRoom({ onJoin, onCancel, animeName, error }) {
+export default function JoinPrivateRoom({ onJoin, onCancel, animeName, gameId, error }) {
   const [code, setCode] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (code.trim().length === 6) {
-      onJoin(code.trim().toUpperCase());
+      onJoin(code.trim().toUpperCase(), gameId); // ★ NOUVEAU - Passe aussi gameId
     }
   };
 

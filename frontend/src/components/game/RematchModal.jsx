@@ -80,7 +80,7 @@ export default function RematchModal({
 
         {opponentGone ? (
           <div className="opponent-gone">
-            <p>{opponentDisconnected ? "L'adversaire s'est deconnecte" : "L'adversaire a quitte"}</p>
+            <p>{opponentDisconnected ? "L'adversaire s'est déconnecté" : "L'adversaire a quitté"}</p>
             <button onClick={onLeave} className="leave-btn">
               Retour
             </button>

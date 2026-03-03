@@ -1,24 +1,25 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { io } from 'socket.io-client';
 
-// URL EN DUR pour éviter les problèmes de variable d'environnement
-const SOCKET_URL = 'https://dle-backend.up.railway.app';
+// ✅ FIX — Utiliser le bon backend selon l'environnement
+const SOCKET_URL = typeof window !== 'undefined' && (
+  window.location.hostname === 'localhost' || 
+  window.location.hostname === '127.0.0.1'
+)
+  ? 'http://localhost:3000'
+  : 'https://dle-backend.up.railway.app';
 
 export default function useSocket(token = null) {
   const socketRef = useRef(null);
   const tokenRef = useRef(token);
   const [isConnected, setIsConnected] = useState(false);
   const [connectionError, setConnectionError] = useState(null);
-
-  // Reconnexion nécessaire quand le token change
   const [needsReconnect, setNeedsReconnect] = useState(false);
 
-  // État du matchmaking
   const [inQueue, setInQueue] = useState(false);
   const [queuePosition, setQueuePosition] = useState(0);
   const [queueError, setQueueError] = useState(null);
 
-  // État de la partie
   const [roomId, setRoomId] = useState(null);
   const [isYourTurn, setIsYourTurn] = useState(false);
   const [opponentId, setOpponentId] = useState(null);
@@ -26,42 +27,33 @@ export default function useSocket(token = null) {
   const [playerName, setPlayerName] = useState(null);
   const [opponentName, setOpponentName] = useState(null);
 
-  // État des tentatives
   const [myAttempts, setMyAttempts] = useState([]);
   const [opponentAttempts, setOpponentAttempts] = useState([]);
 
-  // État de fin de partie
   const [gameOver, setGameOver] = useState(false);
   const [winner, setWinner] = useState(null);
   const [target, setTarget] = useState(null);
   const [rematchRequested, setRematchRequested] = useState(false);
   const [opponentWantsRematch, setOpponentWantsRematch] = useState(false);
 
-  // Scores de session
   const [myScore, setMyScore] = useState(0);
   const [opponentScore, setOpponentScore] = useState(0);
 
-  // Chat
   const [messages, setMessages] = useState([]);
 
-  // État adversaire
   const [opponentDisconnected, setOpponentDisconnected] = useState(false);
   const [opponentLeft, setOpponentLeft] = useState(false);
 
-  // Socket ID comme état
   const [socketId, setSocketId] = useState(null);
 
-  // ★ États pour les salons privés
   const [privateRoomCode, setPrivateRoomCode] = useState(null);
   const [privateRoomError, setPrivateRoomError] = useState(null);
 
-  // ★ NOUVEAU - États pour le mode de jeu et timer
-  const [gameMode, setGameMode] = useState(null); // 'turnbased' | 'simultaneous'
-  const [timer, setTimer] = useState(null); // { startTime, duration }
+  const [gameMode, setGameMode] = useState(null);
+  const [timer, setTimer] = useState(null);
 
-  // Connexion au serveur
   const connect = useCallback(() => {
-    if (socketRef.current?.connected) return;
+    if (socketRef.current) return; // Ne créer qu'une seule instance
 
     const options = {
       transports: ['websocket', 'polling'],
@@ -72,7 +64,6 @@ export default function useSocket(token = null) {
       auth: {}
     };
 
-    // Ajouter le token si disponible
     if (tokenRef.current) {
       options.auth.token = tokenRef.current;
     }
@@ -97,7 +88,6 @@ export default function useSocket(token = null) {
       console.error('Connection error:', error);
     });
 
-    // Matchmaking events
     socketRef.current.on('queue-joined', ({ position }) => {
       setInQueue(true);
       setQueuePosition(position);
@@ -114,28 +104,24 @@ export default function useSocket(token = null) {
       setInQueue(false);
     });
 
-    // ★ Événements pour les salons privés
     socketRef.current.on('private-room-created', ({ code }) => {
       setPrivateRoomCode(code);
       setPrivateRoomError(null);
-      console.log('Private room created:', code);
     });
 
     socketRef.current.on('private-room-error', ({ error }) => {
       setPrivateRoomError(error);
-      console.error('Private room error:', error);
     });
 
     socketRef.current.on('private-room-cancelled', () => {
       setPrivateRoomCode(null);
       setPrivateRoomError(null);
-      console.log('Private room cancelled');
     });
 
     socketRef.current.on('match-found', ({ roomId, isYourTurn, opponentId, gameData, playerName, opponentName, myScore, opponentScore, gameMode, timer }) => {
       setInQueue(false);
-      setPrivateRoomCode(null); // ★ Reset salon privé
-      setPrivateRoomError(null); // ★ Reset erreur salon privé
+      setPrivateRoomCode(null);
+      setPrivateRoomError(null);
       setRoomId(roomId);
       setIsYourTurn(isYourTurn);
       setOpponentId(opponentId);
@@ -144,8 +130,8 @@ export default function useSocket(token = null) {
       setOpponentName(opponentName);
       setMyScore(myScore || 0);
       setOpponentScore(opponentScore || 0);
-      setGameMode(gameMode || 'turnbased'); // ★ NOUVEAU
-      setTimer(timer); // ★ NOUVEAU
+      setGameMode(gameMode || 'turnbased');
+      setTimer(timer);
       setMyAttempts([]);
       setOpponentAttempts([]);
       setMessages([]);
@@ -158,7 +144,6 @@ export default function useSocket(token = null) {
       setOpponentLeft(false);
     });
 
-    // Game events
     socketRef.current.on('guess-result', ({ attempt, isCorrect, isYourTurn }) => {
       setMyAttempts(prev => [attempt, ...prev]);
       if (!isCorrect) {
@@ -175,15 +160,46 @@ export default function useSocket(token = null) {
       setIsYourTurn(isYourTurn);
     });
 
-    socketRef.current.on('game-over', ({ target, winnerId, myScore, opponentScore }) => {
+    // ✅ BUG 3 FIX — Compteur adversaire fiable en mode simultané
+    socketRef.current.on('opponent-attempt-update', ({ attempts }) => {
+      setOpponentAttempts(prev => {
+        // Si on a déjà de vraies données (mode turnbased via opponent-guess), ne pas écraser
+        const hasRealData = prev.length > 0 && prev[0].guess?.id && !String(prev[0].guess.id).startsWith('placeholder-');
+        if (hasRealData) return prev;
+
+        // Mode simultané : reconstruire les placeholders avec le bon count
+        return Array.from({ length: attempts }, (_, i) => ({
+          guess: { id: `placeholder-${i}`, name: '???' },
+          feedback: {}
+        }));
+      });
+    });
+
+    socketRef.current.on('game-over', ({ target, winnerId, myScore, opponentScore, winnerAttempts, loserAttempts }) => {
       setGameOver(true);
       setWinner(winnerId);
       setTarget(target);
       if (myScore !== undefined) setMyScore(myScore);
       if (opponentScore !== undefined) setOpponentScore(opponentScore);
+      // ✅ BUG 3 FIX — En mode simultané, mettre à jour opponentAttempts depuis game-over
+      const currentSocketId = socketRef.current?.id;
+      if (winnerAttempts !== undefined && loserAttempts !== undefined) {
+        const iAmWinner = winnerId === currentSocketId;
+        const opponentCount = iAmWinner ? loserAttempts : winnerAttempts;
+        setOpponentAttempts(prev => {
+          // Seulement si placeholders (mode simultané)
+          const hasPlaceholders = prev.length === 0 || String(prev[0]?.guess?.id).startsWith('placeholder-');
+          if (hasPlaceholders) {
+            return Array.from({ length: opponentCount }, (_, i) => ({
+              guess: { id: `placeholder-${i}`, name: '???' },
+              feedback: {}
+            }));
+          }
+          return prev;
+        });
+      }
     });
 
-    // Rematch events
     socketRef.current.on('rematch-requested', () => {
       setOpponentWantsRematch(true);
     });
@@ -201,30 +217,29 @@ export default function useSocket(token = null) {
       setIsYourTurn(isYourTurn);
       setRematchRequested(false);
       setOpponentWantsRematch(false);
-      setTimer(timer); // ★ NOUVEAU - Réinitialiser le timer pour rematch
+      setTimer(timer);
       if (myScore !== undefined) setMyScore(myScore);
       if (opponentScore !== undefined) setOpponentScore(opponentScore);
     });
 
-    // ★ NOUVEAU - Événement timer expiré
     socketRef.current.on('timer-expired', ({ target, sessionScores }) => {
       setGameOver(true);
-      setWinner(null); // Match nul
+      setWinner(null);
       setTarget(target);
-      // Mettre à jour les scores si fournis
-      if (sessionScores && socketId) {
-        setMyScore(sessionScores[socketId] || myScore);
-        const opId = Object.keys(sessionScores).find(id => id !== socketId);
-        if (opId) setOpponentScore(sessionScores[opId] || opponentScore);
+      if (sessionScores) {
+        const currentSocketId = socketRef.current?.id;
+        if (currentSocketId) {
+          setMyScore(sessionScores[currentSocketId] ?? 0);
+          const opId = Object.keys(sessionScores).find(id => id !== currentSocketId);
+          if (opId) setOpponentScore(sessionScores[opId] ?? 0);
+        }
       }
     });
 
-    // Chat events
     socketRef.current.on('chat-message', (message) => {
       setMessages(prev => [...prev, message]);
     });
 
-    // Opponent events
     socketRef.current.on('opponent-disconnected', () => {
       setOpponentDisconnected(true);
     });
@@ -247,14 +262,11 @@ export default function useSocket(token = null) {
     });
   }, []);
 
-  // Mettre à jour la ref du token et marquer pour reconnexion si nécessaire
   useEffect(() => {
     const oldToken = tokenRef.current;
     tokenRef.current = token;
 
-    // Si le token a changé et qu'on est connecté, déconnecter et marquer pour reconnexion
     if (oldToken !== token && socketRef.current) {
-      console.log('Token changed, will reconnect socket...');
       socketRef.current.disconnect();
       socketRef.current = null;
       setIsConnected(false);
@@ -262,7 +274,6 @@ export default function useSocket(token = null) {
     }
   }, [token]);
 
-  // Reconnexion automatique après changement de token
   useEffect(() => {
     if (needsReconnect && !socketRef.current) {
       setNeedsReconnect(false);
@@ -270,7 +281,6 @@ export default function useSocket(token = null) {
     }
   }, [needsReconnect, connect]);
 
-  // Déconnexion du serveur
   const disconnect = useCallback(() => {
     if (socketRef.current) {
       socketRef.current.disconnect();
@@ -281,28 +291,15 @@ export default function useSocket(token = null) {
     }
   }, []);
 
-  // ⭐ MODIFIÉ - Actions avec support de la catégorie et gameMode
   const joinQueue = useCallback((gameId, gameData, category = 'anime', gameMode = 'turnbased') => {
     if (socketRef.current?.connected) {
-      console.log(`[useSocket] Joining queue: ${category}/${gameId} (${gameMode})`);
-      socketRef.current.emit('join-queue', { 
-        gameId,
-        gameData, 
-        category,
-        gameMode, // ★ NOUVEAU
-        animeId: gameId  // Rétrocompatibilité
-      });
+      socketRef.current.emit('join-queue', { gameId, gameData, category, gameMode, animeId: gameId });
     }
   }, []);
 
   const leaveQueue = useCallback((gameId, category = 'anime') => {
     if (socketRef.current?.connected) {
-      console.log(`[useSocket] Leaving queue: ${category}/${gameId}`);
-      socketRef.current.emit('leave-queue', { 
-        gameId,
-        category,      // ⭐ NOUVEAU
-        animeId: gameId  // Rétrocompatibilité
-      });
+      socketRef.current.emit('leave-queue', { gameId, category, animeId: gameId });
     }
   }, []);
 
@@ -330,105 +327,43 @@ export default function useSocket(token = null) {
     }
   }, []);
 
-  // ★ Fonctions pour les salons privés
   const createPrivateRoom = useCallback((gameId, gameData, category = 'anime', gameMode = 'turnbased') => {
     if (socketRef.current?.connected) {
-      console.log(`[useSocket] Creating private room: ${category}/${gameId} (${gameMode})`);
-      socketRef.current.emit('create-private-room', {
-        gameId,
-        gameData,
-        category,
-        gameMode // ★ NOUVEAU
-      });
+      socketRef.current.emit('create-private-room', { gameId, gameData, category, gameMode });
     }
   }, []);
 
-  const joinPrivateRoom = useCallback((roomCode) => {
+  const joinPrivateRoom = useCallback((roomCode, gameId) => {
     if (socketRef.current?.connected) {
-      console.log(`[useSocket] Joining private room: ${roomCode}`);
-      setPrivateRoomError(null); // Reset error avant de tenter
-      socketRef.current.emit('join-private-room', {
-        roomCode: roomCode.toUpperCase()
-      });
+      setPrivateRoomError(null);
+      socketRef.current.emit('join-private-room', { roomCode: roomCode.toUpperCase(), gameId });
     }
   }, []);
 
   const cancelPrivateRoom = useCallback(() => {
     if (socketRef.current?.connected) {
-      console.log('[useSocket] Cancelling private room');
       socketRef.current.emit('cancel-private-room');
       setPrivateRoomCode(null);
       setPrivateRoomError(null);
     }
   }, []);
 
-  // Cleanup on unmount
   useEffect(() => {
-    return () => {
-      disconnect();
-    };
-  }, [disconnect]);
+    return () => { disconnect(); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // ✅ Volontairement vide — uniquement pour le cleanup au démontage
 
   return {
-    // Connection
-    connect,
-    disconnect,
-    isConnected,
-    connectionError,
-    socketId,
-
-    // Queue
-    joinQueue,
-    leaveQueue,
-    inQueue,
-    queuePosition,
-    queueError,
-
-    // Room/Game
-    roomId,
-    isYourTurn,
-    opponentId,
-    gameData,
-    playerName,
-    opponentName,
-    makeGuess,
-
-    // Attempts
-    myAttempts,
-    opponentAttempts,
-
-    // Game over
-    gameOver,
-    winner,
-    target,
-
-    // Session scores
-    myScore,
-    opponentScore,
-
-    // Rematch
-    requestRematch,
-    rematchRequested,
-    opponentWantsRematch,
-
-    // Opponent status
-    opponentDisconnected,
-    opponentLeft,
-    leaveRoom,
-
-    // Chat
-    messages,
-    sendChatMessage,
-
-    // ★ Private rooms
-    createPrivateRoom,
-    joinPrivateRoom,
-    cancelPrivateRoom,
-    privateRoomCode,
-    privateRoomError,
-
-    // ★ NOUVEAU - Game mode et timer
-    gameMode,
-    timer
+    connect, disconnect, isConnected, connectionError, socketId,
+    joinQueue, leaveQueue, inQueue, queuePosition, queueError,
+    roomId, isYourTurn, opponentId, gameData, playerName, opponentName, makeGuess,
+    myAttempts, opponentAttempts,
+    gameOver, winner, target,
+    myScore, opponentScore,
+    requestRematch, rematchRequested, opponentWantsRematch,
+    opponentDisconnected, opponentLeft, leaveRoom,
+    messages, sendChatMessage,
+    createPrivateRoom, joinPrivateRoom, cancelPrivateRoom, privateRoomCode, privateRoomError,
+    gameMode, timer
   };
 }

@@ -43,6 +43,18 @@
   color: #ff3b30;
 }
 
+/* ★ NOUVEAU - Style quand la partie est terminée */
+.timer-display.game-over {
+  border-color: rgba(52, 199, 89, 0.5);
+  background: rgba(52, 199, 89, 0.1);
+  animation: none; /* Arrêter l'animation */
+  opacity: 0.8;
+}
+
+.timer-display.game-over .timer-value {
+  color: #34c759;
+}
+
 @media (max-width: 600px) {
   .timer-display {
     padding: 8px 16px;
