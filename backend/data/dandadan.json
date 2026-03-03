@@ -100,6 +100,7 @@
         "Spirit Medium",
         "Paranormal Collector",
         "Teacher",
+        "Nurse",
         "Guardian",
         "Hunter",
         "Shop Owner",
@@ -809,7 +810,7 @@
     "planet": "Earth",
     "combatStyle": "None",
     "residence": "Kamigoe City",
-    "occupation": "Student",
+    "occupation": "Nurse",
     "affiliation": "Kami High",
     "firstArc": "Turbo Granny arc"
   },
