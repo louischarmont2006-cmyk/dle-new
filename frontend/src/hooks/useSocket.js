@@ -9,6 +9,9 @@ const SOCKET_URL = typeof window !== 'undefined' && (
   ? 'http://localhost:3000'
   : 'https://dle-backend.up.railway.app';
 
+// Singleton — le socket persiste entre les navigations
+let globalSocket = null;
+
 export default function useSocket(token = null) {
   const socketRef = useRef(null);
   const tokenRef = useRef(token);
@@ -53,7 +56,15 @@ export default function useSocket(token = null) {
   const [timer, setTimer] = useState(null);
 
   const connect = useCallback(() => {
-    if (socketRef.current) return; // Ne créer qu'une seule instance
+    // Réutiliser le socket global s'il existe déjà
+    if (globalSocket) {
+      socketRef.current = globalSocket;
+      if (globalSocket.connected) {
+        setIsConnected(true);
+        setSocketId(globalSocket.id);
+      }
+      return;
+    }
 
     const options = {
       transports: ['websocket', 'polling'],
@@ -69,6 +80,7 @@ export default function useSocket(token = null) {
     }
 
     socketRef.current = io(SOCKET_URL, options);
+    globalSocket = socketRef.current; // Sauvegarder dans le singleton
 
     socketRef.current.on('connect', () => {
       setIsConnected(true);
@@ -285,7 +297,9 @@ export default function useSocket(token = null) {
     if (socketRef.current) {
       socketRef.current.disconnect();
       socketRef.current = null;
+      globalSocket = null; // Nettoyer le singleton
       setIsConnected(false);
+      setSocketId(null);
       setInQueue(false);
       setRoomId(null);
     }
@@ -349,9 +363,13 @@ export default function useSocket(token = null) {
   }, []);
 
   useEffect(() => {
-    return () => { disconnect(); };
+    // Cleanup uniquement quand l'utilisateur quitte vraiment la page
+    return () => {
+      // Ne pas déconnecter au simple démontage du composant
+      // Le socket reste actif pour survivre aux navigations
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // ✅ Volontairement vide — uniquement pour le cleanup au démontage
+  }, []);
 
   return {
     connect, disconnect, isConnected, connectionError, socketId,

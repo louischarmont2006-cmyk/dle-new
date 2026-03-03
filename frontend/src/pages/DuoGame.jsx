@@ -37,7 +37,6 @@ export default function DuoGame() {
 
   const {
     connect,
-    disconnect,
     isConnected,
     connectionError,
     socketId,
@@ -110,9 +109,11 @@ export default function DuoGame() {
 
   useEffect(() => {
     connect();
-    return () => disconnect();
+    // ✅ Pas de disconnect au démontage — le socket est un singleton
+    // qui survit aux navigations. disconnect() est appelé manuellement
+    // uniquement via le bouton "Quitter".
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // ✅ Volontairement vide — connect/disconnect sont stables via useCallback
+  }, []);
 
   useEffect(() => {
     if (isConnected && localGameData && !roomId && !duoMode) {
