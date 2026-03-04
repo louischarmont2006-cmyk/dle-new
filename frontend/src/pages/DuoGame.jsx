@@ -29,6 +29,8 @@ export default function DuoGame() {
   
   const [selectedGameMode, setSelectedGameMode] = useState(null);
   const [duoMode, setDuoMode] = useState(null);
+  // ✅ BUG 1 FIX — Compteur pour forcer le ré-affichage du sélecteur après une partie
+  const [gameKey, setGameKey] = useState(0);
 
   const searchRef = useRef(null);
 
@@ -116,10 +118,13 @@ export default function DuoGame() {
   }, []);
 
   useEffect(() => {
-    if (isConnected && localGameData && !roomId && !duoMode) {
+    // ✅ BUG 1 FIX — gameKey change force ce useEffect à se redéclencher
+    // même si isConnected/localGameData/roomId n'ont pas changé
+    if (isConnected && localGameData && !roomId && duoMode === null) {
       setDuoMode('game-mode-selector');
     }
-  }, [isConnected, localGameData, roomId, duoMode]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isConnected, localGameData, roomId, duoMode, gameKey]);
 
   useEffect(() => {
     if (roomId) {
@@ -163,18 +168,24 @@ export default function DuoGame() {
     }
   }, [gameOver, statsUpdated]);
 
+  // ✅ BUG 2 FIX — Filtrer les placeholders : ce sont des marqueurs internes
+  // pour compter les essais adversaire en mode simultané, pas à afficher
+  const realOpponentAttempts = opponentAttempts.filter(
+    a => !String(a.guess?.id).startsWith('placeholder-')
+  );
+
   const allAttempts = gameMode === 'simultaneous' 
     ? myAttempts.map(a => ({ ...a, isMe: true }))
     : [
         ...myAttempts.map(a => ({ ...a, isMe: true })),
-        ...opponentAttempts.map(a => ({ ...a, isMe: false }))
+        ...realOpponentAttempts.map(a => ({ ...a, isMe: false }))
       ].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
 
   const playedIds = gameMode === 'simultaneous'
     ? new Set(myAttempts.map(a => a.guess.id))
     : new Set([
         ...myAttempts.map(a => a.guess.id),
-        ...opponentAttempts.map(a => a.guess.id)
+        ...realOpponentAttempts.map(a => a.guess.id)
       ]);
 
   function validateSelection(char) {
@@ -197,6 +208,10 @@ export default function DuoGame() {
   function handleLeave() {
     leaveRoom();
     setDuoMode(null);
+    setSelectedGameMode(null);
+    // ✅ BUG 1 FIX — Incrémenter gameKey pour forcer le useEffect à se redéclencher
+    // et réafficher le sélecteur de mode lors de la prochaine partie
+    setGameKey(k => k + 1);
     if (category === 'game') {
       navigate(`/game/${id}`);
     } else {
