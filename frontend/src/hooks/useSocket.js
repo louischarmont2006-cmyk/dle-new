@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { io } from 'socket.io-client';
 
-// ✅ FIX — Utiliser le bon backend selon l'environnement
 const SOCKET_URL = typeof window !== 'undefined' && (
   window.location.hostname === 'localhost' || 
   window.location.hostname === '127.0.0.1'
@@ -55,15 +54,49 @@ export default function useSocket(token = null) {
   const [gameMode, setGameMode] = useState(null);
   const [timer, setTimer] = useState(null);
 
+  // ✅ BUG 1 FIX — Fonction pour réinitialiser tout l'état de jeu
+  const resetGameState = useCallback(() => {
+    setInQueue(false);
+    setQueuePosition(0);
+    setQueueError(null);
+    setRoomId(null);
+    setIsYourTurn(false);
+    setOpponentId(null);
+    setGameData(null);
+    setPlayerName(null);
+    setOpponentName(null);
+    setMyAttempts([]);
+    setOpponentAttempts([]);
+    setGameOver(false);
+    setWinner(null);
+    setTarget(null);
+    setRematchRequested(false);
+    setOpponentWantsRematch(false);
+    setMyScore(0);
+    setOpponentScore(0);
+    setMessages([]);
+    setOpponentDisconnected(false);
+    setOpponentLeft(false);
+    setPrivateRoomCode(null);
+    setPrivateRoomError(null);
+    setGameMode(null);
+    setTimer(null);
+  }, []);
+
   const connect = useCallback(() => {
-    // Réutiliser le socket global s'il existe déjà
-    if (globalSocket) {
+    // Réutiliser le socket global s'il existe déjà ET est connecté
+    if (globalSocket && globalSocket.connected) {
       socketRef.current = globalSocket;
-      if (globalSocket.connected) {
-        setIsConnected(true);
-        setSocketId(globalSocket.id);
-      }
+      setIsConnected(true);
+      setSocketId(globalSocket.id);
       return;
+    }
+
+    // ✅ BUG 1 FIX — Si le socket global existe mais est déconnecté, le nettoyer
+    if (globalSocket && !globalSocket.connected) {
+      globalSocket.removeAllListeners();
+      globalSocket.disconnect();
+      globalSocket = null;
     }
 
     const options = {
@@ -80,7 +113,7 @@ export default function useSocket(token = null) {
     }
 
     socketRef.current = io(SOCKET_URL, options);
-    globalSocket = socketRef.current; // Sauvegarder dans le singleton
+    globalSocket = socketRef.current;
 
     socketRef.current.on('connect', () => {
       setIsConnected(true);
@@ -131,6 +164,7 @@ export default function useSocket(token = null) {
     });
 
     socketRef.current.on('match-found', ({ roomId, isYourTurn, opponentId, gameData, playerName, opponentName, myScore, opponentScore, gameMode, timer }) => {
+      // ✅ BUG 1 FIX — Réinitialiser TOUT l'état de jeu avant de démarrer une nouvelle partie
       setInQueue(false);
       setPrivateRoomCode(null);
       setPrivateRoomError(null);
@@ -144,6 +178,7 @@ export default function useSocket(token = null) {
       setOpponentScore(opponentScore || 0);
       setGameMode(gameMode || 'turnbased');
       setTimer(timer);
+      // Réinitialiser complètement les données de la partie précédente
       setMyAttempts([]);
       setOpponentAttempts([]);
       setMessages([]);
@@ -167,23 +202,38 @@ export default function useSocket(token = null) {
       console.error('Guess error:', error);
     });
 
+    // ✅ BUG 2 FIX — opponent-guess : toujours remplacer les placeholders par le vrai essai
     socketRef.current.on('opponent-guess', ({ attempt, isYourTurn }) => {
-      setOpponentAttempts(prev => [attempt, ...prev]);
+      setOpponentAttempts(prev => {
+        // Retirer le premier placeholder s'il existe (créé par opponent-attempt-update)
+        // et le remplacer par le vrai attempt
+        const withoutFirstPlaceholder = prev.filter((a, i) => {
+          if (i === 0 && String(a.guess?.id).startsWith('placeholder-')) return false;
+          return true;
+        });
+        return [attempt, ...withoutFirstPlaceholder];
+      });
       setIsYourTurn(isYourTurn);
     });
 
-    // ✅ BUG 3 FIX — Compteur adversaire fiable en mode simultané
+    // ✅ BUG 2 FIX — opponent-attempt-update : ne créer un placeholder QUE si on n'a pas déjà le vrai attempt
     socketRef.current.on('opponent-attempt-update', ({ attempts }) => {
       setOpponentAttempts(prev => {
-        // Si on a déjà de vraies données (mode turnbased via opponent-guess), ne pas écraser
-        const hasRealData = prev.length > 0 && prev[0].guess?.id && !String(prev[0].guess.id).startsWith('placeholder-');
-        if (hasRealData) return prev;
+        // En mode turnbased, opponent-guess arrive aussi — ne pas interférer avec les vrais attempts
+        // Compter les vrais attempts (non-placeholders)
+        const realAttempts = prev.filter(a => !String(a.guess?.id).startsWith('placeholder-'));
+        
+        // Si on a déjà autant de vrais attempts que le total annoncé, ignorer
+        if (realAttempts.length >= attempts) return prev;
 
-        // Mode simultané : reconstruire les placeholders avec le bon count
-        return Array.from({ length: attempts }, (_, i) => ({
-          guess: { id: `placeholder-${i}`, name: '???' },
+        // Sinon reconstruire : vrais attempts + placeholders pour le reste
+        const placeholderCount = attempts - realAttempts.length;
+        const newPlaceholders = Array.from({ length: placeholderCount }, (_, i) => ({
+          guess: { id: `placeholder-${realAttempts.length + i}`, name: '???' },
           feedback: {}
         }));
+
+        return [...newPlaceholders, ...realAttempts];
       });
     });
 
@@ -193,15 +243,15 @@ export default function useSocket(token = null) {
       setTarget(target);
       if (myScore !== undefined) setMyScore(myScore);
       if (opponentScore !== undefined) setOpponentScore(opponentScore);
-      // ✅ BUG 3 FIX — En mode simultané, mettre à jour opponentAttempts depuis game-over
+
       const currentSocketId = socketRef.current?.id;
       if (winnerAttempts !== undefined && loserAttempts !== undefined) {
         const iAmWinner = winnerId === currentSocketId;
         const opponentCount = iAmWinner ? loserAttempts : winnerAttempts;
         setOpponentAttempts(prev => {
-          // Seulement si placeholders (mode simultané)
-          const hasPlaceholders = prev.length === 0 || String(prev[0]?.guess?.id).startsWith('placeholder-');
-          if (hasPlaceholders) {
+          // Seulement remplacer si on n'a que des placeholders (mode simultané)
+          const hasOnlyPlaceholders = prev.every(a => String(a.guess?.id).startsWith('placeholder-'));
+          if (hasOnlyPlaceholders || prev.length === 0) {
             return Array.from({ length: opponentCount }, (_, i) => ({
               guess: { id: `placeholder-${i}`, name: '???' },
               feedback: {}
@@ -261,6 +311,7 @@ export default function useSocket(token = null) {
     });
 
     socketRef.current.on('room-left', () => {
+      // ✅ BUG 1 FIX — Réinitialiser tout l'état de jeu proprement
       setRoomId(null);
       setIsYourTurn(false);
       setOpponentId(null);
@@ -271,6 +322,17 @@ export default function useSocket(token = null) {
       setGameOver(false);
       setWinner(null);
       setTarget(null);
+      setRematchRequested(false);
+      setOpponentWantsRematch(false);
+      setOpponentDisconnected(false);
+      setOpponentLeft(false);
+      setGameMode(null);
+      setTimer(null);
+      setMyScore(0);
+      setOpponentScore(0);
+      setInQueue(false);
+      setPrivateRoomCode(null);
+      setPrivateRoomError(null);
     });
   }, []);
 
@@ -279,8 +341,10 @@ export default function useSocket(token = null) {
     tokenRef.current = token;
 
     if (oldToken !== token && socketRef.current) {
+      socketRef.current.removeAllListeners();
       socketRef.current.disconnect();
       socketRef.current = null;
+      globalSocket = null;
       setIsConnected(false);
       setNeedsReconnect(true);
     }
@@ -295,15 +359,15 @@ export default function useSocket(token = null) {
 
   const disconnect = useCallback(() => {
     if (socketRef.current) {
+      socketRef.current.removeAllListeners();
       socketRef.current.disconnect();
       socketRef.current = null;
-      globalSocket = null; // Nettoyer le singleton
+      globalSocket = null;
       setIsConnected(false);
       setSocketId(null);
-      setInQueue(false);
-      setRoomId(null);
+      resetGameState();
     }
-  }, []);
+  }, [resetGameState]);
 
   const joinQueue = useCallback((gameId, gameData, category = 'anime', gameMode = 'turnbased') => {
     if (socketRef.current?.connected) {
@@ -363,7 +427,6 @@ export default function useSocket(token = null) {
   }, []);
 
   useEffect(() => {
-    // Cleanup uniquement quand l'utilisateur quitte vraiment la page
     return () => {
       // Ne pas déconnecter au simple démontage du composant
       // Le socket reste actif pour survivre aux navigations
@@ -382,6 +445,7 @@ export default function useSocket(token = null) {
     opponentDisconnected, opponentLeft, leaveRoom,
     messages, sendChatMessage,
     createPrivateRoom, joinPrivateRoom, cancelPrivateRoom, privateRoomCode, privateRoomError,
-    gameMode, timer
+    gameMode, timer,
+    resetGameState
   };
 }
