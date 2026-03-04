@@ -321,4 +321,17 @@ router.put('/avatar', authMiddleware, async (req, res) => {
   }
 });
 
+// GET /api/auth/public/:userId - Profil public d'un utilisateur
+router.get('/public/:userId', async (req, res) => {
+  try {
+    const user = await findUserById(parseInt(req.params.userId));
+    if (!user) return res.status(404).json({ error: 'Utilisateur non trouvé' });
+    // Ne pas exposer l'email dans le profil public
+    res.json({ user: { id: user.id, username: user.username, avatar_color: user.avatar_color, avatar_image: user.avatar_image } });
+  } catch (error) {
+    console.error('Public profile error:', error);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
 module.exports = router;

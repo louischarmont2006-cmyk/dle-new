@@ -1,16 +1,106 @@
 const express = require('express');
-const { getStats, getAllStatsForUser, updateStats } = require('../db/database');
+const { getStats, getAllStatsForUser, updateStats, getLeaderboard, findUserById } = require('../db/database');
 const { authMiddleware } = require('../auth/authMiddleware');
 
 const router = express.Router();
 
-// GET /api/stats/all - Récupérer toutes les stats de l'utilisateur
+// ⚠️ IMPORTANT : /leaderboard et /public/:userId DOIVENT être AVANT /:animeId
+// sinon Express interprète "leaderboard" comme un animeId
+
+// GET /api/stats/leaderboard - Classement global de tous les joueurs
+router.get('/leaderboard', async (req, res) => {
+  try {
+    const rows = await getLeaderboard();
+
+    const leaderboard = rows.map(r => ({
+      id: r.id,
+      username: r.username,
+      avatarColor: r.avatar_color,
+      avatarImage: r.avatar_image,
+      total: {
+        played: parseInt(r.total_played) || 0,
+        wins: parseInt(r.total_wins) || 0,
+        winRate: r.total_played > 0 ? Math.round((r.total_wins / r.total_played) * 100) : 0
+      },
+      solo: {
+        played: parseInt(r.solo_played) || 0,
+        wins: parseInt(r.solo_wins) || 0,
+        winRate: r.solo_played > 0 ? Math.round((r.solo_wins / r.solo_played) * 100) : 0
+      },
+      duo: {
+        played: parseInt(r.duo_played) || 0,
+        wins: parseInt(r.duo_wins) || 0,
+        winRate: r.duo_played > 0 ? Math.round((r.duo_wins / r.duo_played) * 100) : 0
+      }
+    }));
+
+    res.json(leaderboard);
+  } catch (error) {
+    console.error('Leaderboard error:', error);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+// GET /api/stats/public/:userId - Stats publiques d'un joueur (pour son profil public)
+router.get('/public/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const allStats = await getAllStatsForUser(parseInt(userId));
+
+    let totalPlayed = 0, totalWins = 0, totalDuoPlayed = 0, totalDuoWins = 0, totalAttempts = 0;
+    let bestStreak = 0;
+    const statsByAnime = {};
+
+    allStats.forEach(s => {
+      totalPlayed += s.games_played;
+      totalWins += s.wins;
+      totalDuoPlayed += s.duo_played || 0;
+      totalDuoWins += s.duo_wins || 0;
+      totalAttempts += s.total_attempts || 0;
+      bestStreak = Math.max(bestStreak, s.max_streak);
+
+      statsByAnime[s.anime_id] = {
+        played: s.games_played,
+        wins: s.wins,
+        streak: s.current_streak,
+        maxStreak: s.max_streak,
+        duoPlayed: s.duo_played || 0,
+        duoWins: s.duo_wins || 0,
+        totalAttempts: s.total_attempts || 0
+      };
+    });
+
+    const soloPlayed = totalPlayed - totalDuoPlayed;
+    const soloWins = totalWins - totalDuoWins;
+
+    res.json({
+      global: {
+        totalPlayed,
+        totalWins,
+        winRate: totalPlayed > 0 ? Math.round((totalWins / totalPlayed) * 100) : 0,
+        soloPlayed,
+        soloWins,
+        soloWinRate: soloPlayed > 0 ? Math.round((soloWins / soloPlayed) * 100) : 0,
+        duoPlayed: totalDuoPlayed,
+        duoWins: totalDuoWins,
+        duoWinRate: totalDuoPlayed > 0 ? Math.round((totalDuoWins / totalDuoPlayed) * 100) : 0,
+        avgAttempts: totalPlayed > 0 ? (totalAttempts / totalPlayed).toFixed(1) : 0,
+        bestStreak
+      },
+      byAnime: statsByAnime
+    });
+  } catch (error) {
+    console.error('Public stats error:', error);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+});
+
+// GET /api/stats/all - Récupérer toutes les stats de l'utilisateur connecté
 router.get('/all', authMiddleware, async (req, res) => {
   try {
     const userId = req.user.userId;
     const allStats = await getAllStatsForUser(userId);
 
-    // Calculer les stats globales
     let totalPlayed = 0, totalWins = 0, totalDuoPlayed = 0, totalDuoWins = 0, totalAttempts = 0;
     let bestStreak = 0;
 

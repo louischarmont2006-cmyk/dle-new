@@ -150,7 +150,6 @@ export default function Profile() {
   const global = stats?.global || {};
   const byAnime = stats?.byAnime || {};
 
-  // ⭐ Fusionner les mangas et les jeux vidéo pour l'affichage des stats
   const allGames = [
     ...animes.map(a => ({ ...a, type: 'manga' })),
     ...games.map(g => ({ ...g, type: 'game' }))
@@ -161,7 +160,11 @@ export default function Profile() {
       <header className="profile-header">
         <Link to="/" className="back-link">&larr; Retour</Link>
         <h1>Mon Profil</h1>
-        <Link to="/friends" className="friends-link">Voir liste d'amis</Link>
+        {/* ⭐ NOUVEAUX BOUTONS */}
+        <div className="profile-header-actions">
+          <Link to="/leaderboard" className="friends-link">Voir classement</Link>
+          <Link to="/friends" className="friends-link">Voir liste d'amis</Link>
+        </div>
       </header>
 
       <div className="profile-content">
@@ -264,7 +267,7 @@ export default function Profile() {
           )}
         </div>
 
-        {/* ⭐ Stats par jeu - MANGAS ET JEUX VIDÉO */}
+        {/* Stats par jeu */}
         <div className="profile-card game-stats">
           <h3>Stats par jeu</h3>
           <div className="games-stats-list">
@@ -276,10 +279,7 @@ export default function Profile() {
               return (
                 <div key={game.id} className="game-stat-row">
                   <div className="game-info">
-                    <span className="game-name">
-                      {game.type === 'game' ? '' : ''}
-                      {game.name}
-                    </span>
+                    <span className="game-name">{game.name}</span>
                     <span className="game-total">{s.played} parties - {s.wins} victoires</span>
                   </div>
                   <div className="game-modes">
@@ -306,7 +306,7 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* Modal de selection d'avatar */}
+      {/* Modal de sélection d'avatar */}
       {showAvatarPicker && (
         <div className="avatar-picker-overlay" onClick={() => setShowAvatarPicker(false)}>
           <div className="avatar-picker-modal" onClick={e => e.stopPropagation()}>
@@ -315,7 +315,6 @@ export default function Profile() {
               <button className="close-btn" onClick={() => setShowAvatarPicker(false)}>&times;</button>
             </div>
 
-            {/* ★ NOUVEAU - Barre de recherche */}
             <div className="avatar-search-container">
               <input
                 type="text"
@@ -327,9 +326,8 @@ export default function Profile() {
             </div>
 
             <div className="avatar-picker-content">
-              {/* Option pour revenir a l'avatar par defaut */}
               <div className="avatar-section">
-                <h3>Avatar par defaut</h3>
+                <h3>Avatar par défaut</h3>
                 <div className="avatar-grid">
                   <button
                     className={`avatar-option ${!user.avatar_image ? 'selected' : ''}`}
@@ -346,16 +344,13 @@ export default function Profile() {
                 </div>
               </div>
 
-              {/* Personnages par anime ET par jeu vidéo */}
               {avatarOptions.map(item => {
-                // ★ NOUVEAU - Filtrer selon la recherche
                 const filteredCharacters = avatarSearch
                   ? item.characters.filter(char =>
                       char.name.toLowerCase().includes(avatarSearch.toLowerCase())
                     )
                   : item.characters;
 
-                // Ne pas afficher si aucun résultat
                 if (filteredCharacters.length === 0) return null;
 
                 return (

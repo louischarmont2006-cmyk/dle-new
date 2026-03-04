@@ -331,6 +331,27 @@ async function getFriendStats(userId, friendId) {
   };
 }
 
+async function getLeaderboard() {
+  const result = await pool.query(`
+    SELECT 
+      u.id,
+      u.username,
+      u.avatar_color,
+      u.avatar_image,
+      COALESCE(SUM(s.games_played), 0) AS total_played,
+      COALESCE(SUM(s.wins), 0) AS total_wins,
+      COALESCE(SUM(s.duo_played), 0) AS duo_played,
+      COALESCE(SUM(s.duo_wins), 0) AS duo_wins,
+      COALESCE(SUM(s.games_played) - SUM(s.duo_played), 0) AS solo_played,
+      COALESCE(SUM(s.wins) - SUM(s.duo_wins), 0) AS solo_wins
+    FROM users u
+    LEFT JOIN user_stats s ON s.user_id = u.id
+    GROUP BY u.id
+    ORDER BY total_wins DESC
+  `);
+  return result.rows;
+}
+
 module.exports = {
   pool,
   createUser,
@@ -349,5 +370,6 @@ module.exports = {
   updateStats,
   recordDuoMatch,
   getFriends,
-  getFriendStats
+  getFriendStats,
+  getLeaderboard
 };

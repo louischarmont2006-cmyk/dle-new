@@ -13,6 +13,8 @@ import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import FriendsList from './pages/FriendsList';
 import FriendProfile from './pages/FriendProfile';
+import Leaderboard from './pages/Leaderboard';
+import PublicProfile from './pages/PublicProfile';
 import './App.css'
 
 function App() {
@@ -38,14 +40,18 @@ function App() {
         <Route path="/anime/:id/play" element={<Game />} />
         <Route path="/anime/:id/characters" element={<CharactersList />} />
         
-        {/* Routes Video Games - NOUVELLES */}
+        {/* Routes Video Games */}
         <Route path="/game/:id" element={<GameDetail />} />
         <Route path="/game/:id/play" element={<Game />} />
         <Route path="/game/:id/characters" element={<CharactersList />} />
 
-        {/*Routes Amis */}
+        {/* Routes Amis */}
         <Route path="/friends" element={<FriendsList />} />
         <Route path="/friend/:friendId" element={<FriendProfile />} />
+
+        {/* Routes Classement */}
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/player/:userId" element={<PublicProfile />} />
       </Routes>
     </BrowserRouter>
   )
