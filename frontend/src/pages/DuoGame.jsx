@@ -29,7 +29,6 @@ export default function DuoGame() {
   
   const [selectedGameMode, setSelectedGameMode] = useState(null);
   const [duoMode, setDuoMode] = useState(null);
-  // ✅ BUG 1 FIX — Compteur pour forcer le ré-affichage du sélecteur après une partie
   const [gameKey, setGameKey] = useState(0);
 
   const searchRef = useRef(null);
@@ -117,14 +116,16 @@ export default function DuoGame() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // ✅ BUG 1 FIX — Afficher le sélecteur dès que les données sont chargées,
+  // sans attendre isConnected (le socket se connecte en parallèle).
+  // gameKey est incrémenté dans handleLeave() pour forcer ce bloc à se
+  // re-exécuter même si localGameData/roomId n'ont pas changé.
   useEffect(() => {
-    // ✅ BUG 1 FIX — gameKey change force ce useEffect à se redéclencher
-    // même si isConnected/localGameData/roomId n'ont pas changé
-    if (isConnected && localGameData && !roomId && duoMode === null) {
+    if (localGameData && !roomId) {
       setDuoMode('game-mode-selector');
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isConnected, localGameData, roomId, duoMode, gameKey]);
+  }, [gameKey, localGameData]);
 
   useEffect(() => {
     if (roomId) {
@@ -168,8 +169,6 @@ export default function DuoGame() {
     }
   }, [gameOver, statsUpdated]);
 
-  // ✅ BUG 2 FIX — Filtrer les placeholders : ce sont des marqueurs internes
-  // pour compter les essais adversaire en mode simultané, pas à afficher
   const realOpponentAttempts = opponentAttempts.filter(
     a => !String(a.guess?.id).startsWith('placeholder-')
   );
@@ -209,9 +208,7 @@ export default function DuoGame() {
     leaveRoom();
     setDuoMode(null);
     setSelectedGameMode(null);
-    // ✅ BUG 1 FIX — Incrémenter gameKey pour forcer le useEffect à se redéclencher
-    // et réafficher le sélecteur de mode lors de la prochaine partie
-    setGameKey(k => k + 1);
+    setGameKey(k => k + 1); // ✅ BUG 1 FIX — Force le useEffect à se redéclencher
     if (category === 'game') {
       navigate(`/game/${id}`);
     } else {
