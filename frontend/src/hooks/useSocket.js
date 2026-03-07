@@ -171,8 +171,29 @@ export default function useSocket(token = null) {
     });
 
     socketRef.current.on('opponent-guess', ({ attempt, isYourTurn }) => {
-      setOpponentAttempts(prev => [attempt, ...prev]);
+      setOpponentAttempts(prev => {
+        // Retirer le premier placeholder s'il existe, remplacer par le vrai attempt
+        const withoutFirstPlaceholder = prev.filter((a, i) => {
+          if (i === 0 && String(a.guess?.id).startsWith('placeholder-')) return false;
+          return true;
+        });
+        return [attempt, ...withoutFirstPlaceholder];
+      });
       setIsYourTurn(isYourTurn);
+    });
+
+    // Compteur adversaire en mode simultané (pas de opponent-guess dans ce mode)
+    socketRef.current.on('opponent-attempt-update', ({ attempts }) => {
+      setOpponentAttempts(prev => {
+        const realAttempts = prev.filter(a => !String(a.guess?.id).startsWith('placeholder-'));
+        if (realAttempts.length >= attempts) return prev;
+        const placeholderCount = attempts - realAttempts.length;
+        const newPlaceholders = Array.from({ length: placeholderCount }, (_, i) => ({
+          guess: { id: `placeholder-${realAttempts.length + i}`, name: '???' },
+          feedback: {}
+        }));
+        return [...newPlaceholders, ...realAttempts];
+      });
     });
 
     socketRef.current.on('game-over', ({ target, winnerId, myScore, opponentScore }) => {
@@ -270,6 +291,35 @@ export default function useSocket(token = null) {
     }
   }, [needsReconnect, connect]);
 
+  // Réinitialise tout l'état de jeu sans toucher au socket
+  const resetGameState = useCallback(() => {
+    setInQueue(false);
+    setQueuePosition(0);
+    setQueueError(null);
+    setRoomId(null);
+    setIsYourTurn(false);
+    setOpponentId(null);
+    setGameData(null);
+    setPlayerName(null);
+    setOpponentName(null);
+    setMyAttempts([]);
+    setOpponentAttempts([]);
+    setGameOver(false);
+    setWinner(null);
+    setTarget(null);
+    setRematchRequested(false);
+    setOpponentWantsRematch(false);
+    setMyScore(0);
+    setOpponentScore(0);
+    setMessages([]);
+    setOpponentDisconnected(false);
+    setOpponentLeft(false);
+    setPrivateRoomCode(null);
+    setPrivateRoomError(null);
+    setGameMode(null);
+    setTimer(null);
+  }, []);
+
   // Déconnexion du serveur
   const disconnect = useCallback(() => {
     if (socketRef.current) {
@@ -343,13 +393,14 @@ export default function useSocket(token = null) {
     }
   }, []);
 
-  const joinPrivateRoom = useCallback((roomCode, gameId = null) => {
+  const joinPrivateRoom = useCallback((roomCode, gameId = null, gameMode = null) => {
     if (socketRef.current?.connected) {
-      console.log(`[useSocket] Joining private room: ${roomCode} for game: ${gameId}`);
+      console.log(`[useSocket] Joining private room: ${roomCode} for game: ${gameId} (${gameMode})`);
       setPrivateRoomError(null);
       socketRef.current.emit('join-private-room', {
         roomCode: roomCode.toUpperCase(),
-        gameId
+        gameId,
+        gameMode
       });
     }
   }, []);
@@ -430,6 +481,9 @@ export default function useSocket(token = null) {
 
     // ★ NOUVEAU - Game mode et timer
     gameMode,
-    timer
+    timer,
+
+    // Reset état de jeu
+    resetGameState
   };
 }

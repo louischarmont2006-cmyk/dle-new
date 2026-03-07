@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Timer.css';
 
-export default function Timer({ startTime, duration, onExpire, gameOver = false }) { // ★ NOUVEAU - gameOver prop
+export default function Timer({ startTime, duration, onExpire, gameOver = false }) {
   const [timeLeft, setTimeLeft] = useState(duration);
+  const frozenTimeRef = useRef(null); // Mémoriser le temps au moment du game over
 
   useEffect(() => {
-    if (!startTime || !duration || gameOver) return; // ★ NOUVEAU - Arrêter si gameOver
+    if (!startTime || !duration) return;
 
-    // Calculer le temps restant basé sur le temps de démarrage du serveur
     const updateTimer = () => {
       const elapsed = Date.now() - startTime;
       const remaining = Math.max(0, duration - elapsed);
@@ -18,18 +18,25 @@ export default function Timer({ startTime, duration, onExpire, gameOver = false 
       }
     };
 
-    // Mise à jour immédiate
     updateTimer();
-
-    // Mise à jour toutes les 100ms pour une précision fluide
     const interval = setInterval(updateTimer, 100);
-
     return () => clearInterval(interval);
-  }, [startTime, duration, onExpire, gameOver]); // ★ NOUVEAU - Ajouter gameOver dans deps
+  }, [startTime, duration, onExpire]); // gameOver retiré des deps — ne pas relancer l'effet
 
-  const minutes = Math.floor(timeLeft / 60000);
-  const seconds = Math.floor((timeLeft % 60000) / 1000);
-  const isLowTime = timeLeft < 30000; // Moins de 30 secondes
+  // Geler le temps affiché quand la partie se termine
+  useEffect(() => {
+    if (gameOver && frozenTimeRef.current === null) {
+      frozenTimeRef.current = timeLeft;
+    }
+    if (!gameOver) {
+      frozenTimeRef.current = null;
+    }
+  }, [gameOver, timeLeft]);
+
+  const displayTime = gameOver && frozenTimeRef.current !== null ? frozenTimeRef.current : timeLeft;
+  const minutes = Math.floor(displayTime / 60000);
+  const seconds = Math.floor((displayTime % 60000) / 1000);
+  const isLowTime = displayTime < 30000;
 
   return (
     <div className={`timer-display ${isLowTime && !gameOver ? 'low-time' : ''} ${gameOver ? 'game-over' : ''}`}>

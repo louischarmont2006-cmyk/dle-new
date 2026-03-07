@@ -87,7 +87,7 @@ class GameManager {
   }
 
   // Rejoindre un salon privé
-  joinPrivateRoom(socket, roomCode, user = null, gameId = null) {
+  joinPrivateRoom(socket, roomCode, user = null, gameId = null, gameMode = null) {
     const privateRoom = this.privateRooms.get(roomCode.toUpperCase());
 
     if (!privateRoom) {
@@ -97,6 +97,13 @@ class GameManager {
     // Vérifier que le salon correspond bien au bon jeu
     if (gameId && privateRoom.gameId !== gameId) {
       return { status: 'wrong-game' };
+    }
+
+    // Vérifier que le mode de jeu correspond
+    console.log(`[gameManager] joinPrivateRoom — roomCode: ${roomCode} | requested gameMode: ${gameMode} | room gameMode: ${privateRoom.gameMode}`);
+    if (gameMode && privateRoom.gameMode !== gameMode) {
+      console.log(`[gameManager] BLOCKING — wrong gamemode`);
+      return { status: 'wrong-gamemode' };
     }
 
     // Vérifier si l'utilisateur connecté est déjà occupé

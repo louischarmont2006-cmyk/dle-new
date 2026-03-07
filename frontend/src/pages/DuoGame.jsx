@@ -27,19 +27,17 @@ export default function DuoGame() {
   const [showHints, setShowHints] = useState(false);
   const [statsUpdated, setStatsUpdated] = useState(false);
   
-  // ★ NOUVEAU - États pour gérer les modes de jeu
-  const [selectedGameMode, setSelectedGameMode] = useState(null); // null | 'turnbased' | 'simultaneous'
-  const [duoMode, setDuoMode] = useState(null); // null | 'game-mode-selector' | 'duo-mode-selector' | 'matchmaking' | 'create-private' | 'join-private'
+  const [selectedGameMode, setSelectedGameMode] = useState(null);
+  const [duoMode, setDuoMode] = useState(null);
+  const [gameKey, setGameKey] = useState(0);
 
   const searchRef = useRef(null);
 
-  // ⭐ NOUVEAU - Détecter la catégorie basée sur l'URL
   const category = location.pathname.includes('/video-games') || 
                    location.pathname.includes('/game/') ? 'game' : 'anime';
 
   const {
     connect,
-    disconnect,
     isConnected,
     connectionError,
     socketId,
@@ -68,20 +66,18 @@ export default function DuoGame() {
     leaveRoom,
     messages,
     sendChatMessage,
-    // ★ NOUVEAU - Fonctions et états pour les salons privés
     createPrivateRoom,
     joinPrivateRoom,
     cancelPrivateRoom,
     privateRoomCode,
     privateRoomError,
-    // ★ NOUVEAU - Game mode et timer
     gameMode,
-    timer
+    timer,
+    resetGameState
   } = useSocket(token);
 
   const [chatOpen, setChatOpen] = useState(false);
 
-  // ⭐ MODIFIÉ - Charger les données selon la catégorie avec retry
   useEffect(() => {
     const endpoint = category === 'game' ? `/api/games/${id}` : `/api/anime/${id}`;
     const fullUrl = `${API_URL}${endpoint}`;
@@ -92,9 +88,7 @@ export default function DuoGame() {
     function loadData() {
       fetch(fullUrl)
         .then((r) => {
-          if (!r.ok) {
-            throw new Error(`HTTP ${r.status}: ${r.statusText}`);
-          }
+          if (!r.ok) throw new Error(`HTTP ${r.status}: ${r.statusText}`);
           return r.json();
         })
         .then((data) => {
@@ -103,13 +97,10 @@ export default function DuoGame() {
         })
         .catch((err) => {
           console.error('Error loading data:', err);
-          
-          // Retry si backend endormi (souvent timeout ou HTML au lieu de JSON)
           if (retryCount < maxRetries) {
             retryCount++;
             setTimeout(loadData, 2000);
           } else {
-            console.error('Max retries reached. Backend may be asleep.');
             alert('Impossible de charger les données. Le serveur met peut-être du temps à démarrer. Veuillez réessayer dans 30 secondes.');
           }
         });
@@ -118,27 +109,32 @@ export default function DuoGame() {
     loadData();
   }, [id, category]);
 
-  // Se connecter au serveur Socket.IO
   useEffect(() => {
     connect();
-    return () => disconnect();
-  }, [connect, disconnect]);
+    // ✅ Pas de disconnect au démontage — le socket est un singleton
+    // qui survit aux navigations. disconnect() est appelé manuellement
+    // uniquement via le bouton "Quitter".
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  // ★ MODIFIÉ - Afficher le sélecteur de mode de jeu en premier
+  // ✅ BUG 1 FIX — Afficher le sélecteur dès que les données sont chargées,
+  // sans attendre isConnected (le socket se connecte en parallèle).
+  // gameKey est incrémenté dans handleLeave() pour forcer ce bloc à se
+  // re-exécuter même si localGameData/roomId n'ont pas changé.
   useEffect(() => {
-    if (isConnected && localGameData && !roomId && !duoMode) {
-      setDuoMode('game-mode-selector'); // Afficher d'abord le sélecteur de mode
+    if (localGameData) {
+      resetGameState(); // Nettoyer tout état résiduel (roomId, gameOver, etc.)
+      setDuoMode('game-mode-selector');
     }
-  }, [isConnected, localGameData, roomId, duoMode]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gameKey, localGameData]);
 
-  // ★ NOUVEAU - Réinitialiser duoMode quand un match est trouvé
   useEffect(() => {
     if (roomId) {
-      setDuoMode(null); // Reset le mode pour afficher le jeu
+      setDuoMode(null);
     }
   }, [roomId]);
 
-  // Fermer les suggestions au clic exterieur
   useEffect(() => {
     function handleClickOutside(e) {
       if (searchRef.current && !searchRef.current.contains(e.target)) {
@@ -149,7 +145,6 @@ export default function DuoGame() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Envoyer les stats duo quand la partie se termine
   useEffect(() => {
     if (!gameOver || statsUpdated || !token || !socketId) return;
 
@@ -170,37 +165,36 @@ export default function DuoGame() {
     setStatsUpdated(true);
   }, [gameOver, statsUpdated, token, id, winner, socketId, myAttempts.length]);
 
-  // Reset statsUpdated quand une nouvelle partie commence (rematch)
   useEffect(() => {
     if (!gameOver && statsUpdated) {
       setStatsUpdated(false);
     }
   }, [gameOver, statsUpdated]);
 
-  // ★ MODIFIÉ - Combine toutes les tentatives (moi + adversaire seulement en turnbased)
+  const realOpponentAttempts = opponentAttempts.filter(
+    a => !String(a.guess?.id).startsWith('placeholder-')
+  );
+
   const allAttempts = gameMode === 'simultaneous' 
-    ? myAttempts.map(a => ({ ...a, isMe: true })) // Mode simultané : seulement mes tentatives
-    : [ // Mode tour par tour : toutes les tentatives
+    ? myAttempts.map(a => ({ ...a, isMe: true }))
+    : [
         ...myAttempts.map(a => ({ ...a, isMe: true })),
-        ...opponentAttempts.map(a => ({ ...a, isMe: false }))
+        ...realOpponentAttempts.map(a => ({ ...a, isMe: false }))
       ].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
 
-  // ★ MODIFIÉ - IDs déjà joués (selon le mode)
   const playedIds = gameMode === 'simultaneous'
-    ? new Set(myAttempts.map(a => a.guess.id)) // Mode simultané : seulement mes tentatives
-    : new Set([ // Mode tour par tour : toutes les tentatives
+    ? new Set(myAttempts.map(a => a.guess.id))
+    : new Set([
         ...myAttempts.map(a => a.guess.id),
-        ...opponentAttempts.map(a => a.guess.id)
+        ...realOpponentAttempts.map(a => a.guess.id)
       ]);
 
   function validateSelection(char) {
     if (gameOver || (gameMode === 'turnbased' && !isYourTurn)) return;
-
     if (playedIds.has(char.id)) {
       alert("Ce personnage a deja ete joue !");
       return;
     }
-
     makeGuess(char);
     setQuery("");
     setShowSuggestions(false);
@@ -214,8 +208,9 @@ export default function DuoGame() {
 
   function handleLeave() {
     leaveRoom();
-    setDuoMode(null); // Reset mode
-    // ⭐ MODIFIÉ - Retourner à la bonne page selon la catégorie
+    setDuoMode(null);
+    setSelectedGameMode(null);
+    setGameKey(k => k + 1); // ✅ BUG 1 FIX — Force le useEffect à se redéclencher
     if (category === 'game') {
       navigate(`/game/${id}`);
     } else {
@@ -224,46 +219,39 @@ export default function DuoGame() {
   }
 
   function handleCancel() {
-    // Annuler selon le mode actuel
     if (duoMode === 'matchmaking') {
       leaveQueue(id, category);
     } else if (duoMode === 'create-private') {
       cancelPrivateRoom();
     } else if (duoMode === 'duo-mode-selector') {
-      // Retour au sélecteur de mode de jeu
-      setDuoMode('game-mode-selector');
       setSelectedGameMode(null);
+      setDuoMode('game-mode-selector');
       return;
     }
-    setDuoMode(null); // Retour complet
+    // Retourner au sélecteur de mode au lieu de null
+    setSelectedGameMode(null);
+    setDuoMode('game-mode-selector');
   }
 
-  // ★ NOUVEAU - Handler pour la sélection du mode de jeu (turnbased/simultaneous)
   function handleGameModeSelect(mode) {
     setSelectedGameMode(mode);
-    setDuoMode('duo-mode-selector'); // Passer au sélecteur de connexion
+    setDuoMode('duo-mode-selector');
   }
 
-  // ★ NOUVEAU - Handler pour la sélection du mode de connexion (matchmaking/private)
   function handleDuoModeSelect(mode) {
     setDuoMode(mode);
-    
     if (mode === 'matchmaking') {
-      // Rejoindre la queue publique avec le gameMode
       joinQueue(id, localGameData, category, selectedGameMode);
     } else if (mode === 'create-private') {
-      // Créer un salon privé avec le gameMode
       createPrivateRoom(id, localGameData, category, selectedGameMode);
     }
-    // join-private sera géré dans le composant JoinPrivateRoom
   }
 
-  // ★ NOUVEAU - Handler pour rejoindre un salon avec un code
+  // ✅ BUG 1 FIX — utilise `id` (useParams) au lieu de localGameData.id
   function handleJoinPrivate(code) {
-    joinPrivateRoom(code, id);
+    joinPrivateRoom(code, id, selectedGameMode);
   }
 
-  // ★ NOUVEAU - Handler pour annuler le sélecteur
   function handleCancelSelector() {
     setDuoMode(null);
     setSelectedGameMode(null);
@@ -281,7 +269,6 @@ export default function DuoGame() {
       })
     : [];
 
-  // Erreur de connexion
   if (connectionError) {
     return (
       <div className="game-container">
@@ -298,7 +285,6 @@ export default function DuoGame() {
     );
   }
 
-  // Erreur de queue (déjà en partie, etc.)
   if (queueError) {
     return (
       <div className="game-container">
@@ -315,12 +301,10 @@ export default function DuoGame() {
     );
   }
 
-  // Chargement
   if (!localGameData || pool.length === 0) {
     return <div className="loading">Chargement...</div>;
   }
 
-  // ★ NOUVEAU - Afficher le sélecteur de mode de jeu
   if (duoMode === 'game-mode-selector') {
     return (
       <div className="game-container">
@@ -335,7 +319,6 @@ export default function DuoGame() {
     );
   }
 
-  // ★ NOUVEAU - Afficher le sélecteur de mode de connexion
   if (duoMode === 'duo-mode-selector') {
     return (
       <div className="game-container">
@@ -350,7 +333,6 @@ export default function DuoGame() {
     );
   }
 
-  // ★ NOUVEAU - En attente de matchmaking public
   if (duoMode === 'matchmaking' && inQueue) {
     return (
       <div className="game-container">
@@ -365,7 +347,6 @@ export default function DuoGame() {
     );
   }
 
-  // ★ NOUVEAU - Salon privé créé, en attente d'un adversaire
   if (duoMode === 'create-private' && privateRoomCode) {
     return (
       <div className="game-container">
@@ -380,7 +361,6 @@ export default function DuoGame() {
     );
   }
 
-  // ★ NOUVEAU - Interface pour rejoindre un salon privé
   if (duoMode === 'join-private') {
     return (
       <div className="game-container">
@@ -389,6 +369,7 @@ export default function DuoGame() {
             onJoin={handleJoinPrivate}
             onCancel={handleCancel}
             animeName={localGameData.name}
+            gameId={id}          // ✅ BUG 1 FIX — `id` depuis useParams
             error={privateRoomError}
           />
         </div>
@@ -396,7 +377,6 @@ export default function DuoGame() {
     );
   }
 
-  // Pas encore connecte
   if (!isConnected) {
     return (
       <div className="game-container">
@@ -411,7 +391,6 @@ export default function DuoGame() {
   const hintsData = attributes.filter(attr => attr.hints || attr.order);
   const isWinner = winner === socketId;
 
-  // ⭐ MODIFIÉ - Chemin de l'image de fond selon la catégorie
   const backgroundPath = category === 'game' 
     ? `${API_URL}/api/images/games/${id}/${localGameData.background}`
     : `${API_URL}/api/images/${id}/${localGameData.background}`;
@@ -419,7 +398,6 @@ export default function DuoGame() {
   return (
     <div className="game-container duo-mode" style={{ backgroundImage: `url(${backgroundPath})` }}>
       <div className="game-overlay">
-        {/* Bouton retour */}
         <div className="nav-back">
           <Link 
             to={category === 'game' ? `/game/${id}` : `/anime/${id}`} 
@@ -430,12 +408,10 @@ export default function DuoGame() {
           </Link>
         </div>
 
-        {/* Header */}
         <div className="game-header">
           <h1 className="game-title">{localGameData.name}</h1>
           <div className="mode-badge">Mode Duo</div>
 
-          {/* Affichage des joueurs et score */}
           <div className="players-display">
             <span className="player-name me">{playerName || "Joueur 1"}</span>
             <span className="session-score">
@@ -446,18 +422,17 @@ export default function DuoGame() {
             <span className="player-name opponent">{opponentName || "Joueur 2"}</span>
           </div>
 
-          {/* ★ MODIFIÉ - Afficher Timer en mode simultané, TurnIndicator en mode tour par tour */}
           {gameMode === 'simultaneous' && timer ? (
             <Timer 
               startTime={timer.startTime} 
               duration={timer.duration}
-              onExpire={() => {/* Géré par le serveur */}}
+              onExpire={() => {}}
+              gameOver={gameOver}
             />
           ) : (
             <TurnIndicator isYourTurn={isYourTurn} gameOver={gameOver} />
           )}
 
-          {/* Barre de recherche */}
           <div className="search-container" ref={searchRef}>
             <input
               type="text"
@@ -473,11 +448,9 @@ export default function DuoGame() {
               disabled={gameOver || (gameMode === 'turnbased' && !isYourTurn)}
             />
 
-            {/* Suggestions */}
             {showSuggestions && filteredSuggestions.length > 0 && !gameOver && (gameMode === 'simultaneous' || isYourTurn) && (
               <div className="suggestions-dropdown">
                 {filteredSuggestions.map((char) => {
-                  // ⭐ MODIFIÉ - Chemin de l'image selon la catégorie
                   const imagePath = category === 'game'
                     ? `${API_URL}/api/images/games/${id}/characters/${char.image}`
                     : `${API_URL}/api/images/${id}/characters/${char.image}`;
@@ -500,17 +473,15 @@ export default function DuoGame() {
           </div>
         </div>
 
-        {/* Toutes les tentatives combinées */}
         <div className="attempts-section">
           <h3 className="section-title">
             {gameMode === 'simultaneous' 
-              ? `Tes essais (${myAttempts.length})`
+              ? `Tes essais (${myAttempts.length}) | Adversaire : ${opponentAttempts.length} coup${opponentAttempts.length > 1 ? 's' : ''}`
               : `Essais (${allAttempts.length}) - Toi: ${myAttempts.length} | Adversaire: ${opponentAttempts.length}`
             }
           </h3>
           <div className="attempts-wrapper">
             <div className="attempts-table">
-              {/* En-tetes */}
               <div className="table-headers">
                 {gameMode !== 'simultaneous' && <div className="table-header">Joueur</div>}
                 <div className="table-header">Image</div>
@@ -522,36 +493,30 @@ export default function DuoGame() {
                 ))}
               </div>
 
-              {/* Lignes */}
               <div className="attempts-list">
                 {allAttempts.map((a, i) => {
-                  // ⭐ MODIFIÉ - Chemin de l'image selon la catégorie
                   const imagePath = category === 'game'
                     ? `${API_URL}/api/images/games/${id}/characters/${a.guess.image}`
                     : `${API_URL}/api/images/${id}/characters/${a.guess.image}`;
                   
                   return (
                     <div key={i} className={`attempt-row ${a.isMe ? "my-attempt" : "opponent-attempt"}`}>
-                      {/* Badge joueur - masqué en mode simultané */}
                       {gameMode !== 'simultaneous' && (
                         <div className={`cell-player ${a.isMe ? "player-me" : "player-opponent"}`}>
                           {a.isMe ? (playerName || "Toi") : (opponentName || "Adv")}
                         </div>
                       )}
 
-                      {/* Image */}
                       <div className="cell-image">
                         <div className="character-image">
                           <img src={imagePath} alt={a.guess.name} />
                         </div>
                       </div>
 
-                      {/* Nom */}
                       <div className={`cell bg-${a.isCorrect ? "correct" : "wrong"}`}>
                         <div className="cell-text">{a.guess.name}</div>
                       </div>
 
-                      {/* Attributs dynamiques */}
                       {attributes.map((attr) => {
                         const fb = a.feedback[attr.key];
                         const showArrow = attr.type === "number" || attr.type === "ordered";
@@ -580,7 +545,6 @@ export default function DuoGame() {
           </div>
         </div>
 
-        {/* Section des indices */}
         {hintsData.length > 0 && (
           <div className="hints-section">
             <button onClick={() => setShowHints(!showHints)} className="hints-toggle">
@@ -606,7 +570,6 @@ export default function DuoGame() {
           </div>
         )}
 
-        {/* Modal de fin de partie */}
         {gameOver && (
           <RematchModal
             isWinner={isWinner}
@@ -625,16 +588,15 @@ export default function DuoGame() {
             myScore={myScore}
             opponentScore={opponentScore}
             category={category}
-            gameMode={gameMode} // ★ NOUVEAU
+            gameMode={gameMode}
           />
         )}
 
-        {/* Notification adversaire deconnecte pendant la partie */}
         {(opponentDisconnected || opponentLeft) && !gameOver && (
           <div className="opponent-gone-overlay">
             <div className="opponent-gone-modal">
               <h2>{opponentDisconnected ? "Adversaire deconnecte" : "Adversaire parti"}</h2>
-              <p>La partie est terminee.</p>
+              <p>La partie est terminée.</p>
               <button onClick={handleLeave} className="leave-btn">
                 Retour
               </button>
@@ -642,7 +604,6 @@ export default function DuoGame() {
           </div>
         )}
 
-        {/* Chat */}
         <ChatBox
           messages={messages}
           onSend={sendChatMessage}

@@ -132,8 +132,8 @@ function setupSocketHandlers(io) {
       }
     });
 
-    socket.on('join-private-room', async ({ roomCode, gameId }) => {
-      console.log(`${socket.id} trying to join private room: ${roomCode} for game: ${gameId}`);
+    socket.on('join-private-room', async ({ roomCode, gameId, gameMode }) => {
+      console.log(`${socket.id} trying to join private room: ${roomCode} for game: ${gameId} (${gameMode})`);
 
       if (!socket.user) {
         socket.emit('private-room-error', { error: 'Tu dois être connecté pour rejoindre un salon privé' });
@@ -145,12 +145,14 @@ function setupSocketHandlers(io) {
         return;
       }
 
-      const result = gameManager.joinPrivateRoom(socket, roomCode, socket.user, gameId);
+      const result = gameManager.joinPrivateRoom(socket, roomCode, socket.user, gameId, gameMode);
 
       if (result.status === 'room-not-found') {
         socket.emit('private-room-error', { error: 'Code de salon invalide' });
       } else if (result.status === 'wrong-game') {
         socket.emit('private-room-error', { error: 'Ce salon est pour un autre jeu !' });
+      } else if (result.status === 'wrong-gamemode') {
+        socket.emit('private-room-error', { error: 'Ce salon utilise un mode de jeu différent !' });
       } else if (result.status === 'already-in-game') {
         socket.emit('private-room-error', { error: 'Tu es déjà dans une partie en cours' });
       } else if (result.status === 'already-in-queue') {
