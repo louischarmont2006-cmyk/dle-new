@@ -796,6 +796,19 @@
   },
   {
     "id": 53,
+    "name": "Koitsu Chigyo",
+    "image": "koitsu chigyo.webp",
+    "age": "Unknown",
+    "height": "Unknown",
+    "gender": "Male",
+    "species": "Human",
+    "kaguneType": "None",
+    "occupation": "Doctor",
+    "affiliation": "Commission of Counter Ghoul",
+    "firstArc": "Aogiri arc"
+  },
+  {
+    "id": 54,
     "name": "Kooki Ui",
     "image": "koori ui.webp",
     "age": "35",
@@ -808,7 +821,7 @@
     "firstArc": "Owl Suppression Operation arc"
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Kousuke Houji",
     "image": "kousuke houji.jpg",
     "age": "Unknown",
@@ -821,7 +834,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Kuki Urie",
     "image": "kuki urie.webp",
     "age": "27",
@@ -834,7 +847,7 @@
     "firstArc": "Torso Investigation arc"
   },
   {
-    "id": 56,
+    "id": 57,
     "name": "Kurei",
     "image": "kurei.webp",
     "age": "Unknown",
@@ -847,7 +860,7 @@
     "firstArc": "Tsukiyama Family Extermination Operation arc"
   },
   {
-    "id": 57,
+    "id": 58,
     "name": "Kureo Mado",
     "image": "kureo mado.webp",
     "age": "Unknown",
@@ -860,7 +873,7 @@
     "firstArc": "Hinami arc"
   },
   {
-    "id": 58,
+    "id": 59,
     "name": "Kurona Yasuhisa",
     "image": "kurona yasuhisa.webp",
     "age": "29",
@@ -873,7 +886,7 @@
     "firstArc": "Raid of Kanou's Lab arc"
   },
   {
-    "id": 59,
+    "id": 60,
     "name": "Kuzen Yoshimura",
     "image": "kuzen yoshimura.jpg",
     "age": "80",
@@ -886,7 +899,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 60,
+    "id": 61,
     "name": "Maiko Abe (Madam A)",
     "image": "maiko abe (madam a).webp",
     "age": "Unknown",
@@ -899,7 +912,20 @@
     "firstArc": "Gourmet arc"
   },
   {
-    "id": 61,
+    "id": 62,
+    "name": "Mairo",
+    "image": "mairo.jpg",
+    "age": "Unknown",
+    "height": "Unknown",
+    "gender": "Male",
+    "species": "Ghoul",
+    "kaguneType": "Koukaku",
+    "occupation": "None",
+    "affiliation": "Tsukiyama Family",
+    "firstArc": "Rose Investigation arc"
+  },
+  {
+    "id": 63,
     "name": "Matasaka Kamishiro",
     "image": "matasaka kamishiro.webp",
     "age": "Unknown",
@@ -912,7 +938,7 @@
     "firstArc": "Raid of Kanou's Lab arc"
   },
   {
-    "id": 62,
+    "id": 64,
     "name": "Matsumae",
     "image": "matsumae.webp",
     "age": "Unknown",
@@ -925,7 +951,7 @@
     "firstArc": "Auction Mopping-up Operation arc"
   },
   {
-    "id": 63,
+    "id": 65,
     "name": "Matsuri Washuu",
     "image": "matsuri washuu.webp",
     "age": "36",
@@ -938,7 +964,7 @@
     "firstArc": "Nutcracker Investigation arc"
   },
   {
-    "id": 64,
+    "id": 66,
     "name": "Mayuzumi",
     "image": "mayuzumi.webp",
     "age": "Unknown",
@@ -951,7 +977,7 @@
     "firstArc": "Rushima Landing Operation arc"
   },
   {
-    "id": 65,
+    "id": 67,
     "name": "Mikito Urie",
     "image": "mikito urie.webp",
     "age": "Unknown",
@@ -964,7 +990,7 @@
     "firstArc": "Clown Siege arc"
   },
   {
-    "id": 66,
+    "id": 68,
     "name": "Mirumo Tsukiyama",
     "image": "mirumo tsukiyama.webp",
     "age": "Unknown",
@@ -977,7 +1003,7 @@
     "firstArc": "Rose Investigation arc"
   },
   {
-    "id": 67,
+    "id": 69,
     "name": "Misato Gori",
     "image": "misato gori.webp",
     "age": "30",
@@ -990,7 +1016,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 68,
+    "id": 70,
     "name": "Miza Kusakari",
     "image": "miza kusakari.webp",
     "age": "38",
@@ -1003,7 +1029,7 @@
     "firstArc": "Nutcracker Investigation arc"
   },
   {
-    "id": 69,
+    "id": 71,
     "name": "Mougan Tanakamaru",
     "image": "mougan tanakamaru.webp",
     "age": "56",
@@ -1016,7 +1042,7 @@
     "firstArc": "Owl Suppression Operation arc"
   },
   {
-    "id": 70,
+    "id": 72,
     "name": "Naki",
     "image": "naki.webp",
     "age": "Unknown",
@@ -1029,7 +1055,7 @@
     "firstArc": "Raid of Kanou's Lab arc"
   },
   {
-    "id": 71,
+    "id": 73,
     "name": "Naoto Hayashimura",
     "image": "naoto hayashimura.jpg",
     "age": "Unknown",
@@ -1042,7 +1068,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 72,
+    "id": 74,
     "name": "Nashiro Yasuhisa",
     "image": "nashiro yasuhisa.webp",
     "age": "20",
@@ -1055,7 +1081,7 @@
     "firstArc": "Raid of Kanou's Lab arc"
   },
   {
-    "id": 73,
+    "id": 75,
     "name": "Nico",
     "image": "nico.webp",
     "age": "Unknown",
@@ -1068,7 +1094,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 74,
+    "id": 76,
     "name": "Nishiki Nishio",
     "image": "nishiki nishio.jpg",
     "age": "30",
@@ -1081,7 +1107,7 @@
     "firstArc": "Nishiki arc"
   },
   {
-    "id": 75,
+    "id": 77,
     "name": "Nobu Shimoguchi",
     "image": "nobu shimoguchi.webp",
     "age": "Unknown",
@@ -1094,7 +1120,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 76,
+    "id": 78,
     "name": "Noro",
     "image": "noro.jpg",
     "age": "Unknown",
@@ -1107,7 +1133,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 77,
+    "id": 79,
     "name": "Noyama",
     "image": "noyama.webp",
     "age": "Unknown",
@@ -1120,7 +1146,7 @@
     "firstArc": "Torso Investigation arc"
   },
   {
-    "id": 78,
+    "id": 80,
     "name": "Nutcracker",
     "image": "nutcracker.webp",
     "age": "21",
@@ -1133,7 +1159,7 @@
     "firstArc": "Nutcracker Investigation arc"
   },
   {
-    "id": 79,
+    "id": 81,
     "name": "Nutcracker's partner",
     "image": "nutcracker's partner.webp",
     "age": "Unknown",
@@ -1146,7 +1172,7 @@
     "firstArc": "Nutcracker Investigation arc"
   },
   {
-    "id": 80,
+    "id": 82,
     "name": "Okahira",
     "image": "okahira.jpg",
     "age": "Unknown",
@@ -1159,7 +1185,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 81,
+    "id": 83,
     "name": "Renji Yomo",
     "image": "renji yomo.webp",
     "age": "Unknown",
@@ -1172,7 +1198,7 @@
     "firstArc": "Hinami arc"
   },
   {
-    "id": 82,
+    "id": 84,
     "name": "Rio",
     "image": "rio.webp",
     "age": "15",
@@ -1185,7 +1211,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 83,
+    "id": 85,
     "name": "Rize Kamishiro",
     "image": "rize kamishiro.webp",
     "age": "Unknown",
@@ -1198,7 +1224,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 84,
+    "id": 86,
     "name": "Roma Hoito",
     "image": "roma hoito.webp",
     "age": "55",
@@ -1211,7 +1237,7 @@
     "firstArc": "Auction Mopping-up Operation arc"
   },
   {
-    "id": 85,
+    "id": 87,
     "name": "Rou",
     "image": "rou.webp",
     "age": "Unknown",
@@ -1224,7 +1250,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 86,
+    "id": 88,
     "name": "Ryouko Fueguchi",
     "image": "ryouko fueguchi.webp",
     "age": "Unknown",
@@ -1237,7 +1263,7 @@
     "firstArc": "Hinami arc"
   },
   {
-    "id": 87,
+    "id": 89,
     "name": "Saiko Yonebayashi",
     "image": "saiko yonebayashi.webp",
     "age": "21",
@@ -1250,7 +1276,7 @@
     "firstArc": "Torso Investigation arc"
   },
   {
-    "id": 88,
+    "id": 90,
     "name": "Seidou Takizawa",
     "image": "seidou takizawa.webp",
     "age": "25",
@@ -1263,7 +1289,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 89,
+    "id": 91,
     "name": "Shiki Kijima",
     "image": "shiki kijima.webp",
     "age": "Unknown",
@@ -1276,7 +1302,7 @@
     "firstArc": "Tsukiyama Family Extermination Operation arc"
   },
   {
-    "id": 90,
+    "id": 92,
     "name": "Shikorae",
     "image": "shikorae.webp",
     "age": "Unknown",
@@ -1289,7 +1315,7 @@
     "firstArc": "Rushima Landing Operation arc"
   },
   {
-    "id": 91,
+    "id": 93,
     "name": "Shinsanpei Aura",
     "image": "shinsanpei aura.webp",
     "age": "19",
@@ -1302,7 +1328,7 @@
     "firstArc": "Rushima Landing Operation arc"
   },
   {
-    "id": 92,
+    "id": 94,
     "name": "Shuu Tsukiyama",
     "image": "shuu tsukiyama.webp",
     "age": "32",
@@ -1315,7 +1341,7 @@
     "firstArc": "Gourmet arc"
   },
   {
-    "id": 93,
+    "id": 95,
     "name": "Take Hirako",
     "image": "take hirako.webp",
     "age": "31",
@@ -1328,7 +1354,7 @@
     "firstArc": "Owl Suppression Operation arc"
   },
   {
-    "id": 94,
+    "id": 96,
     "name": "Takeomi Kuroiwa",
     "image": "takeomi kuroiwa.webp",
     "age": "21",
@@ -1341,7 +1367,7 @@
     "firstArc": "Auction Mopping-up Operation arc"
   },
   {
-    "id": 95,
+    "id": 97,
     "name": "Tatara",
     "image": "tatara.jpg",
     "age": "Unknown",
@@ -1354,7 +1380,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 96,
+    "id": 98,
     "name": "Toma Higemaru",
     "image": "toma higemaru.jpg",
     "age": "18",
@@ -1367,7 +1393,7 @@
     "firstArc": "Rushima Landing Operation arc"
   },
   {
-    "id": 97,
+    "id": 99,
     "name": "Tooru Mutsuki",
     "image": "tooru mutsuki.webp",
     "age": "21",
@@ -1380,7 +1406,7 @@
     "firstArc": "Torso Investigation arc"
   },
   {
-    "id": 98,
+    "id": 100,
     "name": "Uta",
     "image": "uta.webp",
     "age": "32",
@@ -1393,7 +1419,7 @@
     "firstArc": "Hinami arc"
   },
   {
-    "id": 99,
+    "id": 101,
     "name": "Yakumo Oomori",
     "image": "yakumo oomori - jason yamori.webp",
     "age": "40",
@@ -1406,7 +1432,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 100,
+    "id": 102,
     "name": "Yoriko Kuroiwa",
     "image": "yoriko kuroiwa.webp",
     "age": "28",
@@ -1419,7 +1445,7 @@
     "firstArc": "Introduction arc"
   },
   {
-    "id": 101,
+    "id": 103,
     "name": "Yukinori Shinohara",
     "image": "yukinori shinohara.webp",
     "age": "37",
@@ -1432,7 +1458,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 102,
+    "id": 104,
     "name": "Yoshitoki Washuu",
     "image": "yoshitoki washuu.webp",
     "age": "Unknown",
@@ -1445,7 +1471,7 @@
     "firstArc": "Aogiri arc"
   },
   {
-    "id": 103,
+    "id": 105,
     "name": "Tsuneyoshi Washuu",
     "image": "tsuneyoshi washuu.webp",
     "age": "Unknown",
@@ -1458,7 +1484,7 @@
     "firstArc": "Nutcracker Investigation arc"
   },
   {
-    "id": 104,
+    "id": 106,
     "name": "Ken Kaneki (Dragon)",
     "image": "ken kaneki (dragon).jpg",
     "age": "29",

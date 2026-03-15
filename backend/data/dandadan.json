@@ -224,6 +224,22 @@
   },
   {
     "id": 5,
+    "name": "Aja",
+    "image": "aja.webp",
+    "gender": "Female",
+    "age": "Unknown",
+    "race": "Sumerian",
+    "eyeColor": "Green",
+    "hairColor": "Black",
+    "planet": "Sumer",
+    "combatStyle": "Exo Suit",
+    "residence": "Space",
+    "occupation": "Unknown",
+    "affiliation": "None",
+    "firstArc": "Space Globalists arc"
+  },
+  {
+    "id": 6,
     "name": "Chameleon",
     "image": "chameleon.webp",
     "gender": "Male",
@@ -239,7 +255,7 @@
     "firstArc": "Current arc"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Chiquitita",
     "image": "chiquitita.webp",
     "gender": "Male",
@@ -255,7 +271,7 @@
     "firstArc": "Serpo arc"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Count Saint-Germain",
     "image": "count saint-germain.webp",
     "gender": "Male",
@@ -271,7 +287,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Daiki Hakono",
     "image": "daiki hakono.webp",
     "gender": "Male",
@@ -287,7 +303,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Dark Knight",
     "image": "dark knight.webp",
     "gender": "Male",
@@ -303,7 +319,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Death Patissier",
     "image": "death patissier.webp",
     "gender": "Male",
@@ -319,7 +335,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Earthbound Spirit Crab",
     "image": "earthbound spirit crab.webp",
     "gender": "Female",
@@ -335,7 +351,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Evil Eye",
     "image": "evil eye.webp",
     "gender": "Male",
@@ -351,7 +367,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Fairy Tail Card",
     "image": "fairy tail card.jpeg",
     "gender": "Male",
@@ -367,7 +383,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Flatwoods Monster",
     "image": "flatwoods monster.webp",
     "gender": "Male",
@@ -383,7 +399,7 @@
     "firstArc": "Serpo arc"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Futa Zuma",
     "image": "futa zuma.webp",
     "gender": "Male",
@@ -399,7 +415,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Hana",
     "image": "hana.webp",
     "gender": "Female",
@@ -415,7 +431,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Hase",
     "image": "hase.webp",
     "gender": "Male",
@@ -431,7 +447,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Hayashi Performers",
     "image": "hayashi performers.jpg",
     "gender": "Male/Female",
@@ -447,7 +463,7 @@
     "firstArc": "Evil Eye arc"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Jet Booster Exosuit Kur",
     "image": "jet booster exosuit kur.webp",
     "gender": "Female",
@@ -463,7 +479,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Jiji (Jin Enjoji)",
     "image": "jiji (jin enjoji).webp",
     "gender": "Male",
@@ -479,7 +495,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Kashimoto",
     "image": "kashimoto.webp",
     "gender": "Male",
@@ -495,7 +511,7 @@
     "firstArc": "Current arc"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Kei",
     "image": "kei.webp",
     "gender": "Female",
@@ -511,7 +527,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Kinta Sakata",
     "image": "kinta sakata.webp",
     "gender": "Male",
@@ -527,7 +543,7 @@
     "firstArc": "Kaiju arc"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Koki Yukishiro",
     "image": "koki yukishiro.webp",
     "gender": "Female",
@@ -543,7 +559,7 @@
     "firstArc": "Current arc"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Kur",
     "image": "kur.webp",
     "gender": "Female",
@@ -559,7 +575,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Ludris",
     "image": "ludris.webp",
     "gender": "Male",
@@ -575,7 +591,7 @@
     "firstArc": "Evil Eye arc"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Mai Kawabanga",
     "image": "mai kawabanga.webp",
     "gender": "Female",
@@ -591,7 +607,7 @@
     "firstArc": "Onbusuman arc"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Mandrill Alien",
     "image": "mandrill alien.webp",
     "gender": "Male",
@@ -607,7 +623,7 @@
     "firstArc": "Serpo arc"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Manjiro",
     "image": "manjiro.webp",
     "gender": "Male",
@@ -623,7 +639,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Masamichi Vega",
     "image": "masamichi vega.webp",
     "gender": "Male",
@@ -639,7 +655,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "Medusa",
     "image": "medusa.webp",
     "gender": "Female",
@@ -655,7 +671,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Mika Adachi",
     "image": "mika adachi.webp",
     "gender": "Female",
@@ -671,7 +687,7 @@
     "firstArc": "Onbusuman arc"
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Miko",
     "image": "miko.webp",
     "gender": "Female",
@@ -687,7 +703,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Minotaur",
     "image": "minotaur.webp",
     "gender": "Male",
@@ -699,11 +715,11 @@
     "combatStyle": "Hand-to-hand",
     "residence": "Kamigoe City",
     "occupation": "Unknown",
-    "affiliation": "Kami High",
+    "affiliation": "None",
     "firstArc": "Current arc"
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Mongolian Death Worm (Hatchling)",
     "image": "mongolian death worm (hatchling).webp",
     "gender": "Female",
@@ -719,7 +735,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Mr. Mantis Shrimp",
     "image": "mr. mantis shrimp.webp",
     "gender": "Male",
@@ -735,7 +751,7 @@
     "firstArc": "Serpo arc"
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "Music Room Portraits",
     "image": "music room portraits.webp",
     "gender": "Male",
@@ -751,7 +767,7 @@
     "firstArc": "Evil Eye arc"
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "Naki Kito",
     "image": "naki kito.webp",
     "gender": "Female",
@@ -767,7 +783,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "Nessie",
     "image": "nessie.webp",
     "gender": "Male",
@@ -783,7 +799,7 @@
     "firstArc": "Serpo arc"
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "Payase",
     "image": "payase.webp",
     "gender": "Male",
@@ -799,7 +815,7 @@
     "firstArc": "Current arc"
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "Queen Sensei",
     "image": "queen sensei.webp",
     "gender": "Female",
@@ -815,7 +831,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 42,
+    "id": 43,
     "name": "Reiko Kashima",
     "image": "reiko kashima.webp",
     "gender": "Female",
@@ -831,7 +847,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 43,
+    "id": 44,
     "name": "Rin Sawaki",
     "image": "rin sawaki.webp",
     "gender": "Female",
@@ -847,7 +863,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Rokuro Serpo",
     "image": "rokuro serpo.webp",
     "gender": "Male",
@@ -863,7 +879,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "Seiko Ayase",
     "image": "seiko ayase.webp",
     "gender": "Female",
@@ -879,7 +895,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "Serpo",
     "image": "serpo.webp",
     "gender": "Male",
@@ -895,7 +911,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 47,
+    "id": 48,
     "name": "Takeshi Murakami",
     "image": "takeshi murakami.webp",
     "gender": "Male",
@@ -911,7 +927,7 @@
     "firstArc": "Onbusuman arc"
   },
   {
-    "id": 48,
+    "id": 49,
     "name": "Taro",
     "image": "taro.jpg",
     "gender": "Male",
@@ -927,7 +943,23 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 49,
+    "id": 50,
+    "name": "Tome",
+    "image": "tome.webp",
+    "gender": "Female",
+    "age": "Unknown",
+    "race": "Sumerian",
+    "eyeColor": "Green",
+    "hairColor": "White",
+    "planet": "Sumer",
+    "combatStyle": "Exo Suit",
+    "residence": "Space",
+    "occupation": "Unknown",
+    "affiliation": "None",
+    "firstArc": "Space Globalists arc"
+  },
+  {
+    "id": 51,
     "name": "Tsuchinoko",
     "image": "tsuchinoko.webp",
     "gender": "Male",
@@ -943,7 +975,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 50,
+    "id": 52,
     "name": "Turbo Granny",
     "image": "turbo granny.webp",
     "gender": "Female",
@@ -959,7 +991,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 51,
+    "id": 53,
     "name": "Unji Zuma",
     "image": "unji zuma.webp",
     "gender": "Male",
@@ -975,11 +1007,11 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 52,
+    "id": 54,
     "name": "Vamola (Bamora)",
     "image": "vamola (bamora).webp",
     "gender": "Female",
-    "age": "1000",
+    "age": "16",
     "race": "Sumerian",
     "eyeColor": "Green",
     "hairColor": "Blonde",
@@ -991,11 +1023,11 @@
     "firstArc": "Kaiju arc"
   },
   {
-    "id": 53,
-    "name": "Vamola's Mother",
-    "image": "vamola's mother.webp",
+    "id": 55,
+    "name": "Vamola's Adoptive Mother (Banga)",
+    "image": "vamola's adoptive mother (banga).webp",
     "gender": "Female",
-    "age": "10000",
+    "age": "Unknown",
     "race": "Sumerian",
     "eyeColor": "Green",
     "hairColor": "White",

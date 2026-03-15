@@ -36,6 +36,7 @@
       "Chacal",
       "Ornithorynque",
       "Grenouille",
+      "Cordyle géant",
       "Plante",
       "Épée",
       "Entité aquatique",
@@ -89,13 +90,16 @@
       "IDW Publishing Sonic comics (2018)",
       "IDW Publishing Sonic comics (2021)",
       "IDW Sonic le hérisson #46 (2021))",
-      "Sonic Frontiers (2022)"],
+      "Sonic Frontiers (2022)",
+      "Sonic Superstars (2023)"
+      ],
       "hints": ["Sonic the Hedgehog (1991)",
       "Sonic The Hedgehog 2 (1992)",
       "Les Aventures de Sonic (1993)",
       "Sonic CD (1993)",
       "Sonic the Hedgehog 3 & Knuckles (1994)",
       "IDW Sonic le hérisson #11 (1994)",
+      "Sonic the Hedgehog: Triple Trouble (1994)",
       "Knuckles' Chaotix (1995)",
       "Sonic Super Special #2 (1997)",
       "Sonic R (1997)",
@@ -124,7 +128,9 @@
       "IDW Publishing Sonic comics (2018)",
       "IDW Publishing Sonic comics (2021)",
       "IDW Sonic le hérisson #46 (2021))",
-      "Sonic Frontiers (2022)"]
+      "Sonic Frontiers (2022)",
+      "Sonic Superstars (2023)"
+      ]
     },
     {
       "key": "camp",
@@ -163,6 +169,17 @@
   "characters": [
     {
     "id": 1,
+    "name": "Sonic",
+    "image": "sonic.webp",
+    "species": "Hérisson",
+    "firstAppearance": "Sonic the Hedgehog (1991)",
+    "camp": "Gentil",
+    "age": "15 ans",
+    "gender": "Masculin",
+    "combatStyle": "Vitesse"
+  },
+  {
+    "id": 2,
     "name": "Alf Layla Wa-Layla",
     "image": "alf layla wa layla.jpg",
     "species": "Génie",
@@ -173,51 +190,51 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Amy Rose",
     "image": "amy rose.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic CD (1993)",
     "camp": "Gentil",
-    "age": "12",
+    "age": "12 ans",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Antoine D'Coolette",
     "image": "antoine d'coolette.webp",
     "species": "Coyote",
     "firstAppearance": "Les Aventures de Sonic (1993)",
     "camp": "Gentil",
-    "age": "20",
+    "age": "20 ans",
     "gender": "Masculin",
     "combatStyle": "Agilité"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Bernadette Hedgehog",
     "image": "bernadette hedgehog.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic Super Special #2 (1997)",
     "camp": "Gentil",
-    "age": "42",
+    "age": "42 ans",
     "gender": "Féminin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Big",
     "image": "big.png",
     "species": "Chat",
     "firstAppearance": "Sonic Adventure (1998)",
     "camp": "Gentil",
-    "age": "18",
+    "age": "18 ans",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Biolizard",
     "image": "biolizard.webp",
     "species": "Lézard",
@@ -228,7 +245,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Black Doom",
     "image": "black doom.webp",
     "species": "Démon",
@@ -239,7 +256,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Black Knight",
     "image": "black knight.webp",
     "species": "Humain",
@@ -250,18 +267,18 @@
     "combatStyle": "Force"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Blaze",
     "image": "blaze.webp",
     "species": "Chat",
     "firstAppearance": "Sonic Rush (2005)",
     "camp": "Gentil",
-    "age": "14",
+    "age": "14 ans",
     "gender": "Féminin",
     "combatStyle": "Pyrokinésie"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Bocoe",
     "image": "bocoe.jpg",
     "species": "Robot",
@@ -272,7 +289,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Bokkun",
     "image": "bokkun.webp",
     "species": "Robot",
@@ -283,7 +300,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "Caliburn",
     "image": "caliburn.webp",
     "species": "Épée",
@@ -294,7 +311,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "Chao",
     "image": "chao.png",
     "species": "Chao",
@@ -305,7 +322,7 @@
     "combatStyle": "Inoffensif"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Chaos",
     "image": "chaos.webp",
     "species": "Entité aquatique",
@@ -316,51 +333,51 @@
     "combatStyle": "Aquatique"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Charmy Bee",
     "image": "charmy bee.webp",
     "species": "Abeille",
     "firstAppearance": "Knuckles' Chaotix (1995)",
     "camp": "Gentil",
-    "age": "6",
+    "age": "6 ans",
     "gender": "Masculin",
     "combatStyle": "Agilité"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Chip",
     "image": "chip.webp",
     "species": "Gaia",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "1000000",
+    "age": "1000000 ans",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 17,
-    "name": "Chris Thorndyke",
-    "image": "chris.webp",
-    "species": "Humain",
-    "firstAppearance": "Sonic X (2003)",
-    "camp": "Gentil",
-    "age": "18",
-    "gender": "Masculin",
-    "combatStyle": "Inoffensif"
-  },
-  {
     "id": 18,
-    "name": "Chuck Thorndyke",
-    "image": "chuck thorndyke.webp",
+    "name": "Chris Thorndyke",
+    "image": "chris thorndyke.webp",
     "species": "Humain",
     "firstAppearance": "Sonic X (2003)",
     "camp": "Gentil",
-    "age": "55",
+    "age": "18 ans",
     "gender": "Masculin",
     "combatStyle": "Inoffensif"
   },
   {
     "id": 19,
+    "name": "Chuck Thorndyke",
+    "image": "chuck thorndyke.webp",
+    "species": "Humain",
+    "firstAppearance": "Sonic X (2003)",
+    "camp": "Gentil",
+    "age": "55 ans",
+    "gender": "Masculin",
+    "combatStyle": "Inoffensif"
+  },
+  {
+    "id": 20,
     "name": "Cosmo",
     "image": "cosmo.webp",
     "species": "Plante",
@@ -371,18 +388,18 @@
     "combatStyle": "Inoffensif"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Cream",
     "image": "cream.webp",
     "species": "Lapin",
     "firstAppearance": "Sonic Advance 2 (2002)",
     "camp": "Gentil",
-    "age": "6",
+    "age": "6 ans",
     "gender": "Féminin",
     "combatStyle": "Vol"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Cubot",
     "image": "cubot.webp",
     "species": "Robot",
@@ -393,18 +410,18 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Cyber Super Sonic",
     "image": "cyber super sonic.png",
     "species": "Hérisson",
     "firstAppearance": "Sonic Frontiers (2022)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Dark Gaia",
     "image": "dark gaia.jpg",
     "species": "Gaia",
@@ -415,7 +432,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Dark Oak",
     "image": "dark oak.webp",
     "species": "Metarex",
@@ -426,7 +443,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Dark Queen",
     "image": "dark queen.jpg",
     "species": "Humain",
@@ -437,29 +454,29 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Dark Sonic",
     "image": "dark sonic.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic X (2003)",
     "camp": "Méchant",
-    "age": "16",
+    "age": "16 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Darkspine Sonic",
     "image": "darkspine sonic.webp",
     "species": "Génie Hérisson",
     "firstAppearance": "Sonic and the Secret Rings (2007)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Decoe",
     "image": "decoe.jpg",
     "species": "Robot",
@@ -470,7 +487,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Devil Doom",
     "image": "devil doom.webp",
     "species": "Démon",
@@ -481,7 +498,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Doom's Eye",
     "image": "doom's eye.webp",
     "species": "Démon",
@@ -492,7 +509,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "Dr. Starline",
     "image": "dr. starline.webp",
     "species": "Ornithorynque",
@@ -503,7 +520,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Eggman (Dr. Robotnik)",
     "image": "eggman (dr. robotnik).webp",
     "species": "Humain",
@@ -514,7 +531,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Emerl",
     "image": "emerl.webp",
     "species": "Robot",
@@ -525,7 +542,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Erazor Djinn",
     "image": "erazor djinn.webp",
     "species": "Génie",
@@ -536,29 +553,40 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Espio",
     "image": "espio.webp",
     "species": "Chaméléon",
     "firstAppearance": "Knuckles' Chaotix (1995)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Camouflage"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Excalibur Sonic",
     "image": "excalibur sonic.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic & the Black Knight (2009)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 37,
+    "id": 38,
+    "name": "Fang the Hunter",
+    "image": "fang the hunter.webp",
+    "species": "Loup",
+    "firstAppearance": "Sonic the Hedgehog: Triple Trouble (1994)",
+    "camp": "Neutre",
+    "age": "N/A",
+    "gender": "Masculin",
+    "combatStyle": "Distance"
+  },
+  {
+    "id": 39,
     "name": "Final Mova",
     "image": "final mova.webp",
     "species": "Metarex",
@@ -569,7 +597,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 38,
+    "id": 40,
     "name": "First of All, Your Jordan's are COMPLETELY Fake",
     "image": "first of all, your jordan's are completely fake.webp",
     "species": "Meme",
@@ -580,7 +608,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 39,
+    "id": 41,
     "name": "Froggy",
     "image": "froggy.webp",
     "species": "Grenouille",
@@ -591,18 +619,18 @@
     "combatStyle": "Inoffensif"
   },
   {
-    "id": 40,
+    "id": 42,
     "name": "Gaia Colossus",
     "image": "gaia colossus.webp",
     "species": "Gaia",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "1000000",
+    "age": "1000000 ans",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 41,
+    "id": 43,
     "name": "Giganto",
     "image": "giganto.webp",
     "species": "Titan",
@@ -613,18 +641,18 @@
     "combatStyle": "Force"
   },
   {
-    "id": 42,
+    "id": 44,
     "name": "Hyper Sonic",
     "image": "hyper sonic.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic the Hedgehog 3 & Knuckles (1994)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 43,
+    "id": 45,
     "name": "Iblis",
     "image": "iblis.webp",
     "species": "Dieu",
@@ -635,7 +663,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 44,
+    "id": 46,
     "name": "Infinite",
     "image": "infinite.jpg",
     "species": "Chacal",
@@ -646,18 +674,18 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 45,
+    "id": 47,
     "name": "Jet",
     "image": "jet.jpg",
     "species": "Oiseau",
     "firstAppearance": "Sonic Riders (2006)",
     "camp": "Neutre",
-    "age": "14",
+    "age": "14 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 46,
+    "id": 48,
     "name": "Jim Carrey",
     "image": "jim carrey.webp",
     "species": "Meme",
@@ -668,18 +696,18 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 47,
+    "id": 49,
     "name": "Jules Hedgehog",
     "image": "jules hedgehog.webp",
     "species": "Hérisson",
     "firstAppearance": "IDW Sonic le hérisson #11 (1994)",
     "camp": "Gentil",
-    "age": "42",
+    "age": "42 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 48,
+    "id": 50,
     "name": "Kitsunami",
     "image": "kitsunami.webp",
     "species": "Renard",
@@ -690,7 +718,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 49,
+    "id": 51,
     "name": "Knight",
     "image": "knight.webp",
     "species": "Titan",
@@ -701,29 +729,29 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 50,
+    "id": 52,
     "name": "Knuckles",
     "image": "knuckles.webp",
     "species": "Échidné",
     "firstAppearance": "Sonic the Hedgehog 3 & Knuckles (1994)",
     "camp": "Gentil",
-    "age": "16",
+    "age": "16 ans",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
   {
-    "id": 51,
+    "id": 53,
     "name": "Manic",
     "image": "manic.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic le Rebelle (1999)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 52,
+    "id": 54,
     "name": "Maria Robotnik",
     "image": "maria robotnik.jpg",
     "species": "Humain",
@@ -734,18 +762,18 @@
     "combatStyle": "Inoffensif"
   },
   {
-    "id": 53,
+    "id": 55,
     "name": "Master Zik",
     "image": "master zik.webp",
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "1036",
+    "age": "1036 ans",
     "gender": "Masculin",
     "combatStyle": "Sagesse"
   },
   {
-    "id": 54,
+    "id": 56,
     "name": "Mecha Sonic MKI",
     "image": "mecha sonic mki.webp",
     "species": "Robot",
@@ -756,7 +784,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 55,
+    "id": 57,
     "name": "Mecha Sonic MKII",
     "image": "mecha sonic mkii.webp",
     "species": "Robot",
@@ -767,7 +795,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 56,
+    "id": 58,
     "name": "Mecha Sonic MKIII",
     "image": "mecha sonic mkiii.webp",
     "species": "Robot",
@@ -778,7 +806,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 57,
+    "id": 59,
     "name": "Mephiles the Dark",
     "image": "mephiles the dark.webp",
     "species": "Dieu",
@@ -789,7 +817,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 58,
+    "id": 60,
     "name": "Merlina",
     "image": "merlina.jpg",
     "species": "Humain",
@@ -800,7 +828,7 @@
     "combatStyle": "Sagesse"
   },
   {
-    "id": 59,
+    "id": 61,
     "name": "Metal Knuckles",
     "image": "metal knuckles.webp",
     "species": "Robot",
@@ -811,7 +839,7 @@
     "combatStyle": "Force"
   },
   {
-    "id": 60,
+    "id": 62,
     "name": "Metal Madness",
     "image": "metal madness.webp",
     "species": "Robot",
@@ -822,7 +850,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 61,
+    "id": 63,
     "name": "Metal Overlord",
     "image": "metal overlord.jpg",
     "species": "Robot",
@@ -833,7 +861,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 62,
+    "id": 64,
     "name": "Metal Sonic",
     "image": "metal sonic.jpg",
     "species": "Robot",
@@ -844,7 +872,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 63,
+    "id": 65,
     "name": "Neo Devil Doom",
     "image": "neo devil doom.png",
     "species": "Démon",
@@ -855,7 +883,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 64,
+    "id": 66,
     "name": "Neo Metal Sonic",
     "image": "neo metal sonic.jpg",
     "species": "Robot",
@@ -866,7 +894,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 65,
+    "id": 67,
     "name": "Omega",
     "image": "omega.webp",
     "species": "Robot",
@@ -877,7 +905,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 66,
+    "id": 68,
     "name": "Orbot",
     "image": "orbot.png",
     "species": "Robot",
@@ -888,7 +916,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 67,
+    "id": 69,
     "name": "Perfect Chaos",
     "image": "perfect chaos.jpg",
     "species": "Entité aquatique",
@@ -899,7 +927,7 @@
     "combatStyle": "Aquatique"
   },
   {
-    "id": 68,
+    "id": 70,
     "name": "Perfect Dark Gaia",
     "image": "perfect dark gaia.webp",
     "species": "Gaia",
@@ -910,51 +938,51 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 69,
+    "id": 71,
     "name": "Princess Elise",
     "image": "princess elise.webp",
     "species": "Humain",
     "firstAppearance": "Sonic the Hedgehog (2006)",
     "camp": "Gentil",
-    "age": "17",
+    "age": "17 ans",
     "gender": "Féminin",
     "combatStyle": "Inoffensif"
   },
   {
-    "id": 70,
+    "id": 72,
     "name": "Professor Gerald Robotnik",
     "image": "professor gerald robotnik.webp",
     "species": "Humain",
     "firstAppearance": "Sonic Adventure 2 (2001)",
     "camp": "Méchant",
-    "age": "60",
+    "age": "60 ans",
     "gender": "Masculin",
     "combatStyle": "Technologie"
   },
   {
-    "id": 71,
+    "id": 73,
     "name": "Professor Pickle",
     "image": "professor pickle.webp",
     "species": "Humain",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "81",
+    "age": "81 ans",
     "gender": "Masculin",
     "combatStyle": "Sagesse"
   },
   {
-    "id": 72,
+    "id": 74,
     "name": "Rouge",
     "image": "rouge.webp",
     "species": "Chauve-Souris",
     "firstAppearance": "Sonic Adventure 2 (2001)",
     "camp": "Neutre",
-    "age": "18",
+    "age": "18 ans",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
   {
-    "id": 73,
+    "id": 75,
     "name": "Sage",
     "image": "sage.jpg",
     "species": "Robot",
@@ -965,29 +993,29 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 74,
+    "id": 76,
     "name": "Sally Acorn",
     "image": "sally acorn.png",
     "species": "Écureuil",
     "firstAppearance": "Les Aventures de Sonic (1993)",
     "camp": "Gentil",
-    "age": "17",
+    "age": "17 ans",
     "gender": "Féminin",
     "combatStyle": "Distance"
   },
   {
-    "id": 75,
+    "id": 77,
     "name": "Scourge",
     "image": "scourge.webp",
     "species": "Hérisson",
     "firstAppearance": "IDW Sonic le hérisson #11 (1994)",
     "camp": "Neutre",
-    "age": "17",
+    "age": "17 ans",
     "gender": "Masculin",
     "combatStyle": "Distance"
   },
   {
-    "id": 76,
+    "id": 78,
     "name": "Shadow",
     "image": "shadow.webp",
     "species": "Hérisson",
@@ -998,7 +1026,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 77,
+    "id": 79,
     "name": "Shahra",
     "image": "shahra.jpg",
     "species": "Génie",
@@ -1009,18 +1037,18 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 78,
+    "id": 80,
     "name": "Silver",
     "image": "silver.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic the Hedgehog (2006)",
     "camp": "Gentil",
-    "age": "14",
+    "age": "14 ans",
     "gender": "Masculin",
     "combatStyle": "Télékinésie"
   },
   {
-    "id": 79,
+    "id": 81,
     "name": "Solaris",
     "image": "solaris.webp",
     "species": "Dieu",
@@ -1031,29 +1059,18 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 80,
+    "id": 82,
     "name": "Sonia",
     "image": "sonia.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic le Rebelle (1999)",
     "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Féminin",
     "combatStyle": "Vitesse"
   },
   {
-    "id": 81,
-    "name": "Sonic",
-    "image": "sonic.webp",
-    "species": "Hérisson",
-    "firstAppearance": "Sonic the Hedgehog (1991)",
-    "camp": "Gentil",
-    "age": "15",
-    "gender": "Masculin",
-    "combatStyle": "Vitesse"
-  },
-  {
-    "id": 82,
+    "id": 83,
     "name": "Sonic.exe",
     "image": "sonicexe.png",
     "species": "Dieu Hérisson",
@@ -1064,51 +1081,51 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 83,
+    "id": 84,
     "name": "Sticks",
     "image": "sticks.webp",
     "species": "🦡Blaireau🦡",
     "firstAppearance": "Sonic Boom Rise of Lyric (2014)",
     "camp": "Gentil",
-    "age": "16",
+    "age": "16 ans",
     "gender": "Féminin",
     "combatStyle": "Distance"
   },
   {
-    "id": 84,
+    "id": 85,
     "name": "Storm",
     "image": "storm.webp",
     "species": "Oiseau",
     "firstAppearance": "Sonic Riders (2006)",
     "camp": "Neutre",
-    "age": "19",
+    "age": "19 ans",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
   {
-    "id": 85,
+    "id": 86,
     "name": "Super Sonic",
     "image": "super sonic.webp",
     "species": "Hérisson",
     "firstAppearance": "Sonic The Hedgehog 2 (1992)",
     "camp": "Gentil",
-    "age": "15",
-    "gender": "Masculin",
-    "combatStyle": "Vitesse"
-  },
-  {
-    "id": 86,
-    "name": "Super Sonic 2",
-    "image": "super sonic 2.webp",
-    "species": "Hérisson",
-    "firstAppearance": "Sonic Frontiers (2022)",
-    "camp": "Gentil",
-    "age": "15",
+    "age": "15 ans",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
   {
     "id": 87,
+    "name": "Super Sonic 2",
+    "image": "super sonic 2.webp",
+    "species": "Hérisson",
+    "firstAppearance": "Sonic Frontiers (2022)",
+    "camp": "Gentil",
+    "age": "15 ans",
+    "gender": "Masculin",
+    "combatStyle": "Vitesse"
+  },
+  {
+    "id": 88,
     "name": "Supreme",
     "image": "supreme.jpg",
     "species": "Titan",
@@ -1119,7 +1136,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 88,
+    "id": 89,
     "name": "Surge",
     "image": "surge.webp",
     "species": "Tenrec",
@@ -1130,18 +1147,18 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 89,
+    "id": 90,
     "name": "Tails",
     "image": "tails.webp",
     "species": "Renard",
     "firstAppearance": "Sonic The Hedgehog 2 (1992)",
     "camp": "Gentil",
-    "age": "8",
+    "age": "8 ans",
     "gender": "Masculin",
     "combatStyle": "Vol"
   },
   {
-    "id": 90,
+    "id": 91,
     "name": "Tails Doll",
     "image": "tails doll.webp",
     "species": "Robot",
@@ -1152,18 +1169,18 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 91,
+    "id": 92,
     "name": "Tangle",
     "image": "tangle.webp",
     "species": "Lémur",
     "firstAppearance": "IDW Publishing Sonic comics (2018)",
     "camp": "Gentil",
-    "age": "16",
+    "age": "16 ans",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
   {
-    "id": 92,
+    "id": 93,
     "name": "The End",
     "image": "the end.webp",
     "species": "Dieu",
@@ -1174,18 +1191,18 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 93,
+    "id": 94,
     "name": "Tikal",
     "image": "tikal.webp",
     "species": "Échidné",
     "firstAppearance": "Sonic Adventure (1998)",
     "camp": "Neutre",
-    "age": "16",
+    "age": "16 ans",
     "gender": "Féminin",
     "combatStyle": "Sagesse"
   },
   {
-    "id": 94,
+    "id": 95,
     "name": "Time Eater",
     "image": "time eater.jpg",
     "species": "Dieu",
@@ -1196,51 +1213,62 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 95,
+    "id": 96,
+    "name": "Trip",
+    "image": "trip.webp",
+    "species": "Cordyle géant",
+    "firstAppearance": "Sonic Superstars (2023)",
+    "camp": "Gentil",
+    "age": "N/A",
+    "gender": "Féminin",
+    "combatStyle": "Distance"
+  },
+  {
+    "id": 97,
     "name": "Vector",
     "image": "vector.webp",
     "species": "Crocodile",
     "firstAppearance": "Knuckles' Chaotix (1995)",
     "camp": "Gentil",
-    "age": "20",
-    "gender": "Masculin",
-    "combatStyle": "Force"
-  },
-  {
-    "id": 96,
-    "name": "Wave",
-    "image": "wave.jpg",
-    "species": "Oiseau",
-    "firstAppearance": "Sonic Riders (2006)",
-    "camp": "Neutre",
-    "age": "18",
-    "gender": "Féminin",
-    "combatStyle": "Technologie"
-  },
-  {
-    "id": 97,
-    "name": "Werehog Sonic",
-    "image": "werehog sonic.webp",
-    "species": "Hérisson",
-    "firstAppearance": "Sonic Unleashed (2008)",
-    "camp": "Gentil",
-    "age": "15",
+    "age": "20 ans",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
   {
     "id": 98,
+    "name": "Wave",
+    "image": "wave.jpg",
+    "species": "Oiseau",
+    "firstAppearance": "Sonic Riders (2006)",
+    "camp": "Neutre",
+    "age": "18 ans",
+    "gender": "Féminin",
+    "combatStyle": "Technologie"
+  },
+  {
+    "id": 99,
+    "name": "Werehog Sonic",
+    "image": "werehog sonic.webp",
+    "species": "Hérisson",
+    "firstAppearance": "Sonic Unleashed (2008)",
+    "camp": "Gentil",
+    "age": "15 ans",
+    "gender": "Masculin",
+    "combatStyle": "Force"
+  },
+  {
+    "id": 100,
     "name": "Whisper",
     "image": "whisper.webp",
     "species": "Loup",
     "firstAppearance": "IDW Publishing Sonic comics (2018)",
     "camp": "Gentil",
-    "age": "16",
+    "age": "16 ans",
     "gender": "Féminin",
     "combatStyle": "Distance"
   },
   {
-    "id": 99,
+    "id": 101,
     "name": "Wyvern",
     "image": "wyvern.webp",
     "species": "Titan",
@@ -1251,57 +1279,57 @@
     "combatStyle": "Vol"
   },
   {
-    "id": 100,
+    "id": 102,
     "name": "Zavok",
     "image": "zavok.webp",
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "148",
+    "age": "148 ans",
     "gender": "Masculin",
     "combatStyle": "Pyrokinésie"
   },
   {
-    "id": 101,
+    "id": 103,
     "name": "Zazz",
     "image": "zazz.webp",
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "127",
-    "gender": "Masculin",
-    "combatStyle": "Force"
-  },
-  {
-    "id": 102,
-    "name": "Zeena",
-    "image": "zeena.webp",
-    "species": "Zeti",
-    "firstAppearance": "Sonic Lost World (2013)",
-    "camp": "Méchant",
-    "age": "110",
-    "gender": "Féminin",
-    "combatStyle": "Agilité"
-  },
-  {
-    "id": 103,
-    "name": "Zomom",
-    "image": "zomom.webp",
-    "species": "Zeti",
-    "firstAppearance": "Sonic Lost World (2013)",
-    "camp": "Méchant",
-    "age": "133",
+    "age": "127 ans",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
   {
     "id": 104,
+    "name": "Zeena",
+    "image": "zeena.webp",
+    "species": "Zeti",
+    "firstAppearance": "Sonic Lost World (2013)",
+    "camp": "Méchant",
+    "age": "110 ans",
+    "gender": "Féminin",
+    "combatStyle": "Agilité"
+  },
+  {
+    "id": 105,
+    "name": "Zomom",
+    "image": "zomom.webp",
+    "species": "Zeti",
+    "firstAppearance": "Sonic Lost World (2013)",
+    "camp": "Méchant",
+    "age": "133 ans",
+    "gender": "Masculin",
+    "combatStyle": "Force"
+  },
+  {
+    "id": 106,
     "name": "Zor",
     "image": "zor.webp",
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "112",
+    "age": "112 ans",
     "gender": "Masculin",
     "combatStyle": "Camouflage"
   }

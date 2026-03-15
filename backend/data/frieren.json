@@ -61,7 +61,20 @@
     {
       "key": "affiliation",
       "label": "Affiliation",
-      "type": "text",
+      "type": "text-group",
+      "groups": [
+        [
+          "Frieren's Party",
+          "Hero Party"
+        ],
+        [
+          "1st Party",
+          "4th Party",
+          "8th Party",
+          "13th Party",
+          "17th Party"
+        ]
+      ],
       "hints": [
         "Continental Magic Association",
         "Northern Magic Corps",
@@ -70,7 +83,11 @@
         "Seven Sages of Destruction",
         "Hero Party",
         "Academy of Magic",
+        "1st Party",
+        "4th Party",
         "8th Party",
+        "13th Party",
+        "17th Party",
         "Frieren's Party",
         "Shadow Warriors",
         "Imperial Mages"
@@ -200,7 +217,7 @@
     "age": "28",
     "class": "Mage",
     "mageRank": "Unknown",
-    "affiliation": "None",
+    "affiliation": "17th Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -260,7 +277,7 @@
     "age": "42",
     "class": "Mage",
     "mageRank": "Unknown",
-    "affiliation": "None",
+    "affiliation": "17th Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -269,7 +286,7 @@
     "image": "edel.webp",
     "gender": "Female",
     "species": "Human",
-    "age": "26",
+    "age": "16",
     "class": "Mage",
     "mageRank": "Second Class",
     "affiliation": "None",
@@ -329,7 +346,7 @@
     "image": "frase.webp",
     "gender": "Female",
     "species": "Human",
-    "age": "31",
+    "age": "61",
     "class": "Mage",
     "mageRank": "Unknown",
     "affiliation": "Magic Special Forces",
@@ -476,7 +493,7 @@
     "age": "23",
     "class": "Mage",
     "mageRank": "First Class",
-    "affiliation": "None",
+    "affiliation": "4th Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -488,7 +505,7 @@
     "age": "14",
     "class": "Mage",
     "mageRank": "Unknown",
-    "affiliation": "None",
+    "affiliation": "1st Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -500,7 +517,7 @@
     "age": "19",
     "class": "Mage",
     "mageRank": "Third Class",
-    "affiliation": "None",
+    "affiliation": "13th Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -692,7 +709,7 @@
     "age": "39",
     "class": "Mage",
     "mageRank": "Second Class",
-    "affiliation": "None",
+    "affiliation": "13th Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -836,7 +853,7 @@
     "age": "31",
     "class": "Mage",
     "mageRank": "Unknown",
-    "affiliation": "None",
+    "affiliation": "1st Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
@@ -860,7 +877,7 @@
     "age": "20",
     "class": "Mage",
     "mageRank": "First Class",
-    "affiliation": "None",
+    "affiliation": "4th Party",
     "firstArc": "First-Class Mage Exam arc"
   },
   {
