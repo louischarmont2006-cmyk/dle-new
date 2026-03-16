@@ -174,7 +174,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic the Hedgehog (1991)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -196,7 +196,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic CD (1993)",
     "camp": "Gentil",
-    "age": "12 ans",
+    "age": "12",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
@@ -207,7 +207,7 @@
     "species": "Coyote",
     "firstAppearance": "Les Aventures de Sonic (1993)",
     "camp": "Gentil",
-    "age": "20 ans",
+    "age": "20",
     "gender": "Masculin",
     "combatStyle": "Agilité"
   },
@@ -218,7 +218,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic Super Special #2 (1997)",
     "camp": "Gentil",
-    "age": "42 ans",
+    "age": "42",
     "gender": "Féminin",
     "combatStyle": "Vitesse"
   },
@@ -229,7 +229,7 @@
     "species": "Chat",
     "firstAppearance": "Sonic Adventure (1998)",
     "camp": "Gentil",
-    "age": "18 ans",
+    "age": "18",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -273,7 +273,7 @@
     "species": "Chat",
     "firstAppearance": "Sonic Rush (2005)",
     "camp": "Gentil",
-    "age": "14 ans",
+    "age": "14",
     "gender": "Féminin",
     "combatStyle": "Pyrokinésie"
   },
@@ -339,7 +339,7 @@
     "species": "Abeille",
     "firstAppearance": "Knuckles' Chaotix (1995)",
     "camp": "Gentil",
-    "age": "6 ans",
+    "age": "6",
     "gender": "Masculin",
     "combatStyle": "Agilité"
   },
@@ -350,7 +350,7 @@
     "species": "Gaia",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "1000000 ans",
+    "age": "1000000",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
@@ -361,7 +361,7 @@
     "species": "Humain",
     "firstAppearance": "Sonic X (2003)",
     "camp": "Gentil",
-    "age": "18 ans",
+    "age": "18",
     "gender": "Masculin",
     "combatStyle": "Inoffensif"
   },
@@ -372,7 +372,7 @@
     "species": "Humain",
     "firstAppearance": "Sonic X (2003)",
     "camp": "Gentil",
-    "age": "55 ans",
+    "age": "55",
     "gender": "Masculin",
     "combatStyle": "Inoffensif"
   },
@@ -394,7 +394,7 @@
     "species": "Lapin",
     "firstAppearance": "Sonic Advance 2 (2002)",
     "camp": "Gentil",
-    "age": "6 ans",
+    "age": "6",
     "gender": "Féminin",
     "combatStyle": "Vol"
   },
@@ -416,7 +416,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic Frontiers (2022)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -460,7 +460,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic X (2003)",
     "camp": "Méchant",
-    "age": "16 ans",
+    "age": "16",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -471,7 +471,7 @@
     "species": "Génie Hérisson",
     "firstAppearance": "Sonic and the Secret Rings (2007)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
@@ -559,7 +559,7 @@
     "species": "Chaméléon",
     "firstAppearance": "Knuckles' Chaotix (1995)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Camouflage"
   },
@@ -570,7 +570,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic & the Black Knight (2009)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
@@ -625,7 +625,7 @@
     "species": "Gaia",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "1000000 ans",
+    "age": "1000000",
     "gender": "Masculin",
     "combatStyle": "Surnaturel"
   },
@@ -647,7 +647,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic the Hedgehog 3 & Knuckles (1994)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -680,7 +680,7 @@
     "species": "Oiseau",
     "firstAppearance": "Sonic Riders (2006)",
     "camp": "Neutre",
-    "age": "14 ans",
+    "age": "14",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -702,7 +702,7 @@
     "species": "Hérisson",
     "firstAppearance": "IDW Sonic le hérisson #11 (1994)",
     "camp": "Gentil",
-    "age": "42 ans",
+    "age": "42",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -735,7 +735,7 @@
     "species": "Échidné",
     "firstAppearance": "Sonic the Hedgehog 3 & Knuckles (1994)",
     "camp": "Gentil",
-    "age": "16 ans",
+    "age": "16",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -746,7 +746,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic le Rebelle (1999)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -768,7 +768,7 @@
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "1036 ans",
+    "age": "1036",
     "gender": "Masculin",
     "combatStyle": "Sagesse"
   },
@@ -944,7 +944,7 @@
     "species": "Humain",
     "firstAppearance": "Sonic the Hedgehog (2006)",
     "camp": "Gentil",
-    "age": "17 ans",
+    "age": "17",
     "gender": "Féminin",
     "combatStyle": "Inoffensif"
   },
@@ -955,7 +955,7 @@
     "species": "Humain",
     "firstAppearance": "Sonic Adventure 2 (2001)",
     "camp": "Méchant",
-    "age": "60 ans",
+    "age": "60",
     "gender": "Masculin",
     "combatStyle": "Technologie"
   },
@@ -966,7 +966,7 @@
     "species": "Humain",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "81 ans",
+    "age": "81",
     "gender": "Masculin",
     "combatStyle": "Sagesse"
   },
@@ -977,7 +977,7 @@
     "species": "Chauve-Souris",
     "firstAppearance": "Sonic Adventure 2 (2001)",
     "camp": "Neutre",
-    "age": "18 ans",
+    "age": "18",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
@@ -999,7 +999,7 @@
     "species": "Écureuil",
     "firstAppearance": "Les Aventures de Sonic (1993)",
     "camp": "Gentil",
-    "age": "17 ans",
+    "age": "17",
     "gender": "Féminin",
     "combatStyle": "Distance"
   },
@@ -1010,7 +1010,7 @@
     "species": "Hérisson",
     "firstAppearance": "IDW Sonic le hérisson #11 (1994)",
     "camp": "Neutre",
-    "age": "17 ans",
+    "age": "17",
     "gender": "Masculin",
     "combatStyle": "Distance"
   },
@@ -1043,7 +1043,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic the Hedgehog (2006)",
     "camp": "Gentil",
-    "age": "14 ans",
+    "age": "14",
     "gender": "Masculin",
     "combatStyle": "Télékinésie"
   },
@@ -1065,7 +1065,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic le Rebelle (1999)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Féminin",
     "combatStyle": "Vitesse"
   },
@@ -1087,7 +1087,7 @@
     "species": "🦡Blaireau🦡",
     "firstAppearance": "Sonic Boom Rise of Lyric (2014)",
     "camp": "Gentil",
-    "age": "16 ans",
+    "age": "16",
     "gender": "Féminin",
     "combatStyle": "Distance"
   },
@@ -1098,7 +1098,7 @@
     "species": "Oiseau",
     "firstAppearance": "Sonic Riders (2006)",
     "camp": "Neutre",
-    "age": "19 ans",
+    "age": "19",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -1109,7 +1109,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic The Hedgehog 2 (1992)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -1120,7 +1120,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic Frontiers (2022)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Vitesse"
   },
@@ -1153,7 +1153,7 @@
     "species": "Renard",
     "firstAppearance": "Sonic The Hedgehog 2 (1992)",
     "camp": "Gentil",
-    "age": "8 ans",
+    "age": "8",
     "gender": "Masculin",
     "combatStyle": "Vol"
   },
@@ -1175,7 +1175,7 @@
     "species": "Lémur",
     "firstAppearance": "IDW Publishing Sonic comics (2018)",
     "camp": "Gentil",
-    "age": "16 ans",
+    "age": "16",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
@@ -1197,7 +1197,7 @@
     "species": "Échidné",
     "firstAppearance": "Sonic Adventure (1998)",
     "camp": "Neutre",
-    "age": "16 ans",
+    "age": "16",
     "gender": "Féminin",
     "combatStyle": "Sagesse"
   },
@@ -1230,7 +1230,7 @@
     "species": "Crocodile",
     "firstAppearance": "Knuckles' Chaotix (1995)",
     "camp": "Gentil",
-    "age": "20 ans",
+    "age": "20",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -1241,7 +1241,7 @@
     "species": "Oiseau",
     "firstAppearance": "Sonic Riders (2006)",
     "camp": "Neutre",
-    "age": "18 ans",
+    "age": "18",
     "gender": "Féminin",
     "combatStyle": "Technologie"
   },
@@ -1252,7 +1252,7 @@
     "species": "Hérisson",
     "firstAppearance": "Sonic Unleashed (2008)",
     "camp": "Gentil",
-    "age": "15 ans",
+    "age": "15",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -1263,7 +1263,7 @@
     "species": "Loup",
     "firstAppearance": "IDW Publishing Sonic comics (2018)",
     "camp": "Gentil",
-    "age": "16 ans",
+    "age": "16",
     "gender": "Féminin",
     "combatStyle": "Distance"
   },
@@ -1285,7 +1285,7 @@
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "148 ans",
+    "age": "148",
     "gender": "Masculin",
     "combatStyle": "Pyrokinésie"
   },
@@ -1296,7 +1296,7 @@
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "127 ans",
+    "age": "127",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -1307,7 +1307,7 @@
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "110 ans",
+    "age": "110",
     "gender": "Féminin",
     "combatStyle": "Agilité"
   },
@@ -1318,7 +1318,7 @@
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "133 ans",
+    "age": "133",
     "gender": "Masculin",
     "combatStyle": "Force"
   },
@@ -1329,7 +1329,7 @@
     "species": "Zeti",
     "firstAppearance": "Sonic Lost World (2013)",
     "camp": "Méchant",
-    "age": "112 ans",
+    "age": "112",
     "gender": "Masculin",
     "combatStyle": "Camouflage"
   }
