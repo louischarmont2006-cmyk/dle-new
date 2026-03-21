@@ -339,7 +339,14 @@ function SoloGame() {
     setShowSuggestions(false);
   }
 
+  const [showRevealConfirm, setShowRevealConfirm] = useState(false);
+
   function revealAnswer() {
+    setShowRevealConfirm(true);
+  }
+
+  function confirmReveal() {
+    setShowRevealConfirm(false);
     setGameOver(true);
   }
 
@@ -380,6 +387,18 @@ function SoloGame() {
             <button onClick={revealAnswer} className="reveal-btn">
               Révéler
             </button>
+
+            {showRevealConfirm && (
+              <div className="reveal-confirm-overlay">
+                <div className="reveal-confirm-modal">
+                  <p className="reveal-confirm-text">Êtes-vous sûr(e) de vouloir révéler le personnage ?</p>
+                  <div className="reveal-confirm-buttons">
+                    <button onClick={confirmReveal} className="reveal-confirm-yes">Oui</button>
+                    <button onClick={() => setShowRevealConfirm(false)} className="reveal-confirm-no">Non</button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="search-container" ref={searchRef}>

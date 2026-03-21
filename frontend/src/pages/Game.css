@@ -1595,3 +1595,87 @@
     height: 350px;
   }
 }
+/* ── Reveal Confirm Modal ── */
+.reveal-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.reveal-confirm-modal {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 16px;
+  padding: 32px 28px 24px;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  animation: slideUp 0.18s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.reveal-confirm-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.reveal-confirm-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.reveal-confirm-yes,
+.reveal-confirm-no {
+  flex: 1;
+  max-width: 130px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+}
+
+.reveal-confirm-yes {
+  background: #ef4444;
+  color: #fff;
+}
+
+.reveal-confirm-no {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.reveal-confirm-yes:hover,
+.reveal-confirm-no:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.reveal-confirm-yes:active,
+.reveal-confirm-no:active {
+  transform: translateY(0);
+  opacity: 1;
+}
