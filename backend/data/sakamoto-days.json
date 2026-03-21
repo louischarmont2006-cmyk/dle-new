@@ -178,7 +178,7 @@
     "age": "Unknown",
     "height": "Unknown",
     "hairColor": "Black",
-    "occupation": "Other",
+    "occupation": "Scientist",
     "affiliation": "None",
     "firstArc": "Lab arc"
   },
@@ -227,7 +227,7 @@
     "height": "Unknown",
     "hairColor": "White",
     "occupation": "Other",
-    "affiliation": "JAA",
+    "affiliation": "JCC",
     "firstArc": "JCC Infiltration arc"
   },
   {
@@ -1077,7 +1077,7 @@
     "gender": "Male",
     "age": "21",
     "height": "183",
-    "hairColor": "Bald",
+    "hairColor": "Brown",
     "occupation": "Other",
     "affiliation": "None",
     "firstArc": "Death Row Prisoners arc"

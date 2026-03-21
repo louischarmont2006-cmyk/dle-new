@@ -54,6 +54,8 @@
         "Yamagata",
         "Shimane",
         "Hiroshima",
+        "Ehime",
+        "Tokushima",
         "United States of America",
         "Gunma",
         "Kagoshima",
@@ -345,6 +347,19 @@
   },
   {
     "id": 13,
+    "name": "Crimson Riot",
+    "image": "crimson riot.webp",
+    "age": "41-60",
+    "gender": "Male",
+    "nationality": "Japan",
+    "hairColor": "Red",
+    "quirkType": "Transformation",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Vs. Hero Killer arc"
+  },
+  {
+    "id": 14,
     "name": "Danjuro Tobita (Gentle Criminal)",
     "image": "danjuro tobita (gentle criminal).webp",
     "age": "21-40",
@@ -357,7 +372,7 @@
     "firstArc": "Remedial Course arc"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "Deidoro Sakaki",
     "image": "deidoro sakaki.webp",
     "age": "21-40",
@@ -370,7 +385,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Denki Kaminari (Chargebolt)",
     "image": "denki kaminari (chargebolt).webp",
     "age": "1-20",
@@ -383,7 +398,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Desutegoro (Death Arms)",
     "image": "desutegoro (death arms).webp",
     "age": "21-40",
@@ -396,7 +411,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Ectoplasm",
     "image": "ectoplasm.webp",
     "age": "41-60",
@@ -409,7 +424,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Eel Boy",
     "image": "eel boy.webp",
     "age": "21-40",
@@ -422,7 +437,7 @@
     "firstArc": "Paranormal Liberation War arc"
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "Eijiro Kirishima (Red Riot)",
     "image": "eijiro kirishima (red riot).webp",
     "age": "1-20",
@@ -435,7 +450,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "Emi Fukukado (Ms. Joke)",
     "image": "emi fukukado (ms. joke).webp",
     "age": "21-40",
@@ -448,7 +463,7 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Ending",
     "image": "ending.webp",
     "age": "21-40",
@@ -461,7 +476,7 @@
     "firstArc": "Endeavor Agency arc"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Enji Todoroki (Endeavor)",
     "image": "enji todoroki (endeavor).webp",
     "age": "41-60",
@@ -474,7 +489,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Eri",
     "image": "eri.webp",
     "age": "1-20",
@@ -487,7 +502,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Fumikage Tokoyami (Tsukuyomi)",
     "image": "fumikage tokoyami (tsukuyomi).webp",
     "age": "1-20",
@@ -500,7 +515,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Fuyumi Todoroki",
     "image": "fuyumi todoroki.webp",
     "age": "21-40",
@@ -513,7 +528,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Geten (Iceman)",
     "image": "geten (iceman).webp",
     "age": "21-40",
@@ -526,7 +541,7 @@
     "firstArc": "Meta Liberation Army arc"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Gigantomachia",
     "image": "gigantomachia.webp",
     "age": "100+",
@@ -539,7 +554,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Goto Imasuji (Muscular)",
     "image": "goto imasuji (muscular).webp",
     "age": "21-40",
@@ -552,7 +567,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Hanta Sero (Cellophane)",
     "image": "hanta sero (cellophane).webp",
     "age": "1-20",
@@ -565,7 +580,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Hari Kurono (Chronostasis)",
     "image": "hari kurono (chronostasis).webp",
     "age": "21-40",
@@ -578,7 +593,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "Hekiji Tengai",
     "image": "hekiji tengai.webp",
     "age": "21-40",
@@ -591,7 +606,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Higari Maijima (Power Loader)",
     "image": "higari maijima (power loader).webp",
     "age": "41-60",
@@ -604,7 +619,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Himiko Toga",
     "image": "himiko toga.webp",
     "age": "21-40",
@@ -617,7 +632,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Hiroshi Tameda",
     "image": "hiroshi tameda.webp",
     "age": "1-20",
@@ -630,7 +645,7 @@
     "firstArc": "Pro Hero arc"
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Hiryu Rin (Long Weizi)",
     "image": "hiryu rin (long weizi).webp",
     "age": "1-20",
@@ -643,7 +658,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Hitoshi Shinso (Nighthide)",
     "image": "hitoshi shinso (nighthide).webp",
     "age": "1-20",
@@ -656,7 +671,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "Hizashi Yamada (Present Mac)",
     "image": "hizashi yamada (present mic).webp",
     "age": "21-40",
@@ -669,7 +684,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "Hood",
     "image": "hood.webp",
     "age": "21-40",
@@ -682,7 +697,7 @@
     "firstArc": "Pro Hero arc"
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "Ibara Shiozaki (Vine)",
     "image": "ibara shiozaki (vine).webp",
     "age": "1-20",
@@ -695,7 +710,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "Inasa Yoarashi (Gale Force)",
     "image": "inasa yoarashi (gale force).webp",
     "age": "1-20",
@@ -708,7 +723,7 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "Inko Midoriya",
     "image": "inko midoriya.webp",
     "age": "41-60",
@@ -721,7 +736,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 42,
+    "id": 43,
     "name": "Itsuka Kendo (Battle Fist)",
     "image": "itsuka kendo (battle fist).webp",
     "age": "1-20",
@@ -734,7 +749,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 43,
+    "id": 44,
     "name": "Jin Bubaigawara (Twice)",
     "image": "jin bubaigawara (twice).webp",
     "age": "21-40",
@@ -747,7 +762,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Joi Irinaka (Mimic)",
     "image": "joi irinaka (mimic).webp",
     "age": "21-40",
@@ -760,7 +775,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "Jurota Shishida (Gevaudan)",
     "image": "jurota shishida (gevaudan).webp",
     "age": "1-20",
@@ -773,7 +788,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "Juzo Honenuki (Mudman)",
     "image": "juzo honenuki (mudman).webp",
     "age": "1-20",
@@ -786,7 +801,20 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 47,
+    "id": 48,
+    "name": "Juzo Moashi (Centipeder)",
+    "image": "juzo moashi (centipeder).webp",
+    "age": "21-40",
+    "gender": "Male",
+    "nationality": "Nigata",
+    "hairColor": "Bald",
+    "quirkType": "Mutant",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Shie Hassaikai arc"
+  },
+  {
+    "id": 49,
     "name": "Kagero Okuta (Giran)",
     "image": "kagero okuta (giran).webp",
     "age": "41-60",
@@ -799,7 +827,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 48,
+    "id": 50,
     "name": "Kai Chisaki (Overhaul)",
     "image": "kai chisaki (overhaul).webp",
     "age": "21-40",
@@ -812,7 +840,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 49,
+    "id": 51,
     "name": "Kaina Tsutsumi (Lady Nagant)",
     "image": "kaina tsutsumi (lady nagant).webp",
     "age": "21-40",
@@ -825,7 +853,20 @@
     "firstArc": "Paranormal Liberation War arc"
   },
   {
-    "id": 50,
+    "id": 52,
+    "name": "Kaoruko Awata (Bubble Girl)",
+    "image": "kaoruko awata (bubble girl).webp",
+    "age": "21-40",
+    "gender": "Female",
+    "nationality": "Ehime",
+    "hairColor": "Blue",
+    "quirkType": "Emitter",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Shie Hassaikai arc"
+  },
+  {
+    "id": 53,
     "name": "Katsuki Bakugo (Great Expolsion Murder God Dynamight)",
     "image": "katsuki bakugo (great explosion murder god dynamight).webp",
     "age": "1-20",
@@ -838,7 +879,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 51,
+    "id": 54,
     "name": "Keigo Takami (Hawks)",
     "image": "keigo takami (hawks).webp",
     "age": "21-40",
@@ -851,7 +892,7 @@
     "firstArc": "Pro Hero arc"
   },
   {
-    "id": 52,
+    "id": 55,
     "name": "Ken Ishiyama (Cementoss)",
     "image": "ken ishiyama (cementoss).webp",
     "age": "21-40",
@@ -864,7 +905,20 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 53,
+    "id": 56,
+    "name": "Ken Takagi (Rock Lock)",
+    "image": "ken takagi (rock lock).webp",
+    "age": "21-40",
+    "gender": "Male",
+    "nationality": "Tokushima",
+    "hairColor": "Black",
+    "quirkType": "Emitter",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Shie Hassaikai arc"
+  },
+  {
+    "id": 57,
     "name": "Kendo Rappa",
     "image": "kendo rappa.webp",
     "age": "21-40",
@@ -877,7 +931,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 54,
+    "id": 58,
     "name": "Kenji Hikiishi (Magne)",
     "image": "kenji hikiishi (magne).webp",
     "age": "21-40",
@@ -890,7 +944,33 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 55,
+    "id": 59,
+    "name": "Kesagiri Man",
+    "image": "kesagiri man.webp",
+    "age": "21-40",
+    "gender": "Male",
+    "nationality": "Japan",
+    "hairColor": "Black",
+    "quirkType": "Emitter",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Shie Hassaikai arc"
+  },
+  {
+    "id": 60,
+    "name": "Kido",
+    "image": "kido.webp",
+    "age": "21-40",
+    "gender": "Male",
+    "nationality": "Japan",
+    "hairColor": "Brown",
+    "quirkType": "Emitter",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Endeavor Agency arc"
+  },
+  {
+    "id": 61,
     "name": "Kinoko Komori (Shemage)",
     "image": "kinoko komori (shemage).webp",
     "age": "1-20",
@@ -903,7 +983,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 56,
+    "id": 62,
     "name": "Koji Koda (Anima)",
     "image": "koji koda (anima).webp",
     "age": "1-20",
@@ -916,7 +996,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 57,
+    "id": 63,
     "name": "Kojiro Bondo (Plamo)",
     "image": "kojiro bondo (plamo).webp",
     "age": "1-20",
@@ -929,7 +1009,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 58,
+    "id": 64,
     "name": "Koku Hanabata (Trumpet)",
     "image": "koku hanabata (trumpet).webp",
     "age": "21-40",
@@ -942,7 +1022,7 @@
     "firstArc": "Meta Liberation Army arc"
   },
   {
-    "id": 59,
+    "id": 65,
     "name": "Kosei Tsuburaba (Tsuburaba)",
     "image": "kosei tsuburaba (tsuburaba).webp",
     "age": "1-20",
@@ -955,7 +1035,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 60,
+    "id": 66,
     "name": "Kota Izumi",
     "image": "kota izumi.webp",
     "age": "1-20",
@@ -968,7 +1048,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 61,
+    "id": 67,
     "name": "Kugo Sakamata (Gang Orca)",
     "image": "kugo sakamata (gang orca).webp",
     "age": "21-40",
@@ -981,7 +1061,7 @@
     "firstArc": "Hideout Raid arc"
   },
   {
-    "id": 62,
+    "id": 68,
     "name": "Kurogiri (Oboro Shirakumo)",
     "image": "kurogiri.webp",
     "age": "21-40",
@@ -994,7 +1074,7 @@
     "firstArc": "Battle Trial arc"
   },
   {
-    "id": 63,
+    "id": 69,
     "name": "Kyoka Jiro (Earphone Jack)",
     "image": "kyoka jiro (earphone jack).webp",
     "age": "1-20",
@@ -1007,7 +1087,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 64,
+    "id": 70,
     "name": "Kyudai Garaki (Doctor)",
     "image": "kyudai garaki (doctor).webp",
     "age": "100+",
@@ -1020,7 +1100,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 65,
+    "id": 71,
     "name": "Manami Aiba (La Brava)",
     "image": "manami aiba (la brava).webp",
     "age": "1-20",
@@ -1033,7 +1113,7 @@
     "firstArc": "Remedial Course arc"
   },
   {
-    "id": 66,
+    "id": 72,
     "name": "Manga Fukidashi (Comicman)",
     "image": "manga fukidashi (comicman).webp",
     "age": "1-20",
@@ -1046,7 +1126,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 67,
+    "id": 73,
     "name": "Masaki Mizushima (Manual)",
     "image": "masaki mizushima (manual).webp",
     "age": "21-40",
@@ -1059,7 +1139,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 68,
+    "id": 74,
     "name": "Mashirao Ojiro (Tailman)",
     "image": "mashirao ojiro (tailman).webp",
     "age": "1-20",
@@ -1072,7 +1152,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 69,
+    "id": 75,
     "name": "Mei Hatsume",
     "image": "mei hatsume.webp",
     "age": "1-20",
@@ -1085,7 +1165,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 70,
+    "id": 76,
     "name": "Mezo Shoji (Tentacole)",
     "image": "mezo shoji (tentacole).webp",
     "age": "1-20",
@@ -1098,7 +1178,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 71,
+    "id": 77,
     "name": "Mina Ashido (Pinky)",
     "image": "mina ashido (pinky).webp",
     "age": "1-20",
@@ -1111,7 +1191,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 72,
+    "id": 78,
     "name": "Minoru Mineta (Grape Juice)",
     "image": "minoru mineta (grape juice).webp",
     "age": "1-20",
@@ -1124,7 +1204,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 73,
+    "id": 79,
     "name": "Mirai Sasaki (Sir Nighteye)",
     "image": "mirai sasaki (sir nighteye).webp",
     "age": "21-40",
@@ -1137,7 +1217,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 74,
+    "id": 80,
     "name": "Mirio Togata (Lemillion)",
     "image": "mirio togata (lemillion).webp",
     "age": "1-20",
@@ -1150,7 +1230,7 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 75,
+    "id": 81,
     "name": "Moe Kamiji (Blazing Hair)",
     "image": "moe kamiji (blazing hair).webp",
     "age": "21-40",
@@ -1163,7 +1243,7 @@
     "firstArc": "Endeavor Agency arc"
   },
   {
-    "id": 76,
+    "id": 82,
     "name": "Momo Yaoyorozy (Creati)",
     "image": "momo yaoyorozu (creati).webp",
     "age": "1-20",
@@ -1176,7 +1256,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 77,
+    "id": 83,
     "name": "Moonfish",
     "image": "moonfish.webp",
     "age": "21-40",
@@ -1189,7 +1269,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 78,
+    "id": 84,
     "name": "Mustard",
     "image": "mustard.webp",
     "age": "1-20",
@@ -1202,7 +1282,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 79,
+    "id": 85,
     "name": "Nagamasa Mora (Chewyee)",
     "image": "nagamasa mora (chewyee).webp",
     "age": "1-20",
@@ -1215,7 +1295,7 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 80,
+    "id": 86,
     "name": "Nana Shimura",
     "image": "nana shimura.webp",
     "age": "21-40",
@@ -1228,7 +1308,7 @@
     "firstArc": "Hideout Raid arc"
   },
   {
-    "id": 81,
+    "id": 87,
     "name": "Naomasa Tsukauchi",
     "image": "naomasa tsukauchi.webp",
     "age": "21-40",
@@ -1241,7 +1321,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 82,
+    "id": 88,
     "name": "Natsuo Todoroki",
     "image": "natsuo todoroki.webp",
     "age": "1-20",
@@ -1254,7 +1334,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 83,
+    "id": 89,
     "name": "Neito Monoma (Phantom Thief)",
     "image": "neito monoma (phantom thief).webp",
     "age": "1-20",
@@ -1267,7 +1347,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 84,
+    "id": 90,
     "name": "Nejire Hado (Nejire Chan)",
     "image": "nejire hado (nejire chan).webp",
     "age": "1-20",
@@ -1280,7 +1360,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 85,
+    "id": 91,
     "name": "Nemuri Kayama (Midnight)",
     "image": "nemuri kayama (midnight).webp",
     "age": "21-40",
@@ -1293,7 +1373,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 86,
+    "id": 92,
     "name": "Nezu (Mr. President)",
     "image": "nezu (mr. president).webp",
     "age": "61-80",
@@ -1306,7 +1386,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 87,
+    "id": 93,
     "name": "Nirengeki Shoda (Mines)",
     "image": "nirengeki shoda (mines).webp",
     "age": "1-20",
@@ -1319,7 +1399,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 88,
+    "id": 94,
     "name": "Ochaco Uraraka (Uravity)",
     "image": "ochaco uraraka (uravity).webp",
     "age": "1-20",
@@ -1332,7 +1412,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 89,
+    "id": 95,
     "name": "Pony Tsunotori (Rocketti)",
     "image": "pony tsunotori (rocketti).webp",
     "age": "1-20",
@@ -1345,7 +1425,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 90,
+    "id": 96,
     "name": "Rei Todoroki",
     "image": "rei todoroki.webp",
     "age": "41-60",
@@ -1358,7 +1438,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 91,
+    "id": 97,
     "name": "Reiko Yanagi (Emily)",
     "image": "reiko yanagi (emily).webp",
     "age": "1-20",
@@ -1371,7 +1451,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 92,
+    "id": 98,
     "name": "Rikido Sato (Sugarman)",
     "image": "rikido sato (sugarman).webp",
     "age": "1-20",
@@ -1384,7 +1464,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 93,
+    "id": 99,
     "name": "Rikiya Katsukame",
     "image": "rikiya katsukame.webp",
     "age": "21-40",
@@ -1397,7 +1477,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 94,
+    "id": 100,
     "name": "Rikiya Yotsubashi (Re-Destro)",
     "image": "rikiya yotsubashi (re-destro).webp",
     "age": "21-40",
@@ -1410,7 +1490,7 @@
     "firstArc": "Meta Liberation Army arc"
   },
   {
-    "id": 95,
+    "id": 101,
     "name": "Rumi Usagiyama (Mirko)",
     "image": "rumi usagiyama (mirko).webp",
     "age": "21-40",
@@ -1423,7 +1503,7 @@
     "firstArc": "Pro Hero arc"
   },
   {
-    "id": 96,
+    "id": 102,
     "name": "Ryo Inui (Hound Dog)",
     "image": "ryo inui (hound dog).webp",
     "age": "21-40",
@@ -1436,7 +1516,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 97,
+    "id": 103,
     "name": "Ryuko Tatsuma (Ryukyu)",
     "image": "ryuko tatsuma (ryukyu).webp",
     "age": "21-40",
@@ -1449,7 +1529,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 98,
+    "id": 104,
     "name": "Ryuko Tsuchikawa (Pixie-Bob)",
     "image": "ryuko tsuchikawa (pixie-bob).webp",
     "age": "21-40",
@@ -1462,7 +1542,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 99,
+    "id": 105,
     "name": "Sajin Higawara (Snatch)",
     "image": "sajin higawara (snatch).webp",
     "age": "41-60",
@@ -1475,7 +1555,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 100,
+    "id": 106,
     "name": "Sansa Tamagawa",
     "image": "sansa tamagawa.webp",
     "age": "21-40",
@@ -1488,7 +1568,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 101,
+    "id": 107,
     "name": "Seiji Shishikura (Shishikross)",
     "image": "seiji shishikura (shishikross).webp",
     "age": "1-20",
@@ -1501,7 +1581,7 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 102,
+    "id": 108,
     "name": "Sekijiro Kan (Vlad King)",
     "image": "sekijiro kan (vlad king).webp",
     "age": "21-40",
@@ -1514,7 +1594,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 103,
+    "id": 109,
     "name": "Sen Kaibara (Spiral)",
     "image": "sen kaibara (spiral).webp",
     "age": "1-20",
@@ -1527,7 +1607,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 104,
+    "id": 110,
     "name": "Setsuna Tokage (Lizardy)",
     "image": "setsuna tokage (lizardy).webp",
     "age": "1-20",
@@ -1540,7 +1620,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 105,
+    "id": 111,
     "name": "Shie Hassaikai's Boss",
     "image": "shie hassaikai's boss.webp",
     "age": "61-80",
@@ -1553,7 +1633,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 106,
+    "id": 112,
     "name": "Shigaraki (All For One)",
     "image": "shigaraki (all for one).webp",
     "age": "100+",
@@ -1566,7 +1646,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 107,
+    "id": 113,
     "name": "Shihai Kuroiro (Vantablack)",
     "image": "shihai kuroiro (vantablack).webp",
     "age": "1-20",
@@ -1579,7 +1659,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 108,
+    "id": 114,
     "name": "Shin Nemoto",
     "image": "shin nemoto.webp",
     "age": "21-40",
@@ -1592,7 +1672,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 109,
+    "id": 115,
     "name": "Shinji Nishiya (Woods)",
     "image": "shinji nishiya (woods).webp",
     "age": "21-40",
@@ -1605,7 +1685,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 110,
+    "id": 116,
     "name": "Shino Sosaki (Mandalay)",
     "image": "shino sosaki (mandalay).webp",
     "age": "21-40",
@@ -1618,7 +1698,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 111,
+    "id": 117,
     "name": "Shinya Kamihara (Edgeshot)",
     "image": "shinya kamihara (edgeshot).webp",
     "age": "21-40",
@@ -1631,7 +1711,7 @@
     "firstArc": "Hideout Raid arc"
   },
   {
-    "id": 112,
+    "id": 118,
     "name": "Shirudo (Crust)",
     "image": "shirudo (crust).webp",
     "age": "21-40",
@@ -1644,7 +1724,7 @@
     "firstArc": "Pro Hero arc"
   },
   {
-    "id": 113,
+    "id": 119,
     "name": "Shishido",
     "image": "shishido.webp",
     "age": "21-40",
@@ -1657,7 +1737,7 @@
     "firstArc": "Endeavor Agency arc"
   },
   {
-    "id": 114,
+    "id": 120,
     "name": "Shota Aizawa (Eraser Head)",
     "image": "shota aizawa (eraser head).webp",
     "age": "21-40",
@@ -1670,7 +1750,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 115,
+    "id": 121,
     "name": "Shoto Todoroki (Shoto)",
     "image": "shoto todoroki (shoto).webp",
     "age": "1-20",
@@ -1683,7 +1763,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 116,
+    "id": 122,
     "name": "Shuichi Iguchi (Spinner)",
     "image": "shuichi iguchi (spinner).webp",
     "age": "21-40",
@@ -1696,7 +1776,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 117,
+    "id": 123,
     "name": "Snipe",
     "image": "snipe.webp",
     "age": "21-40",
@@ -1709,7 +1789,7 @@
     "firstArc": "U.S.J. arc"
   },
   {
-    "id": 118,
+    "id": 124,
     "name": "Sorahiko Torino (Gran Torino)",
     "image": "sorahiko torino (gran torino).webp",
     "age": "61-80",
@@ -1722,7 +1802,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 119,
+    "id": 125,
     "name": "Soramitsu Tabe",
     "image": "soramitsu tabe.webp",
     "age": "21-40",
@@ -1735,7 +1815,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 120,
+    "id": 126,
     "name": "Susugu Mitarai (Wash)",
     "image": "susugu mitarai (wash).webp",
     "age": "21-40",
@@ -1748,7 +1828,7 @@
     "firstArc": "Pro Hero arc"
   },
   {
-    "id": 121,
+    "id": 127,
     "name": "Taishiro Toyomitsu (Fat Gum)",
     "image": "taishiro toyomitsu (fat gum).webp",
     "age": "21-40",
@@ -1761,7 +1841,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 122,
+    "id": 128,
     "name": "Tamaki Amajiki (Suneater)",
     "image": "tamaki amajiki (suneater).webp",
     "age": "1-20",
@@ -1774,7 +1854,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 123,
+    "id": 129,
     "name": "Tatami Nakagame (Turtle Neck)",
     "image": "tatami nakagame (turtle neck).webp",
     "age": "1-20",
@@ -1787,7 +1867,7 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 124,
+    "id": 130,
     "name": "Tatsuyuki Tokoname (Slidin' Go)",
     "image": "tatsuyuki tokoname (slidin' go).webp",
     "age": "21-40",
@@ -1800,7 +1880,7 @@
     "firstArc": "Meta Liberation Army arc"
   },
   {
-    "id": 125,
+    "id": 131,
     "name": "Tenko Shimura (Tomura Shigaraki)",
     "image": "tenko shimura (tomura shigaraki).webp",
     "age": "21-40",
@@ -1813,7 +1893,7 @@
     "firstArc": "Battle Trial arc"
   },
   {
-    "id": 126,
+    "id": 132,
     "name": "Tensei Ida (Ingenium)",
     "image": "tensei ida (ingenium).webp",
     "age": "21-40",
@@ -1826,7 +1906,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 127,
+    "id": 133,
     "name": "Tenya Ida (Ingenium)",
     "image": "tenya ida (ingenium).webp",
     "age": "1-20",
@@ -1839,7 +1919,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 128,
+    "id": 134,
     "name": "Tetsutetsu Tetsutetsu (Real Steel)",
     "image": "tetsutetsu tetsutetsu (real steel).webp",
     "age": "1-20",
@@ -1852,7 +1932,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 129,
+    "id": 135,
     "name": "Togaru Kamakiri (Jack Mantis)",
     "image": "togaru kamakiri (jack mantis).webp",
     "age": "1-20",
@@ -1865,7 +1945,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 130,
+    "id": 136,
     "name": "Tomoko Shiretoko (Ragdoll)",
     "image": "tomoko shiretoko (ragdoll).webp",
     "age": "21-40",
@@ -1878,7 +1958,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 131,
+    "id": 137,
     "name": "Tomoyasu Chikaoku (Skeptic)",
     "image": "tomoyasu chikaoku (skeptic).webp",
     "age": "21-40",
@@ -1891,7 +1971,7 @@
     "firstArc": "Meta Liberation Army arc"
   },
   {
-    "id": 132,
+    "id": 138,
     "name": "Toru Hagakure (Invisible Girl)",
     "image": "toru hagakure (invisible girl).webp",
     "age": "1-20",
@@ -1904,7 +1984,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 133,
+    "id": 139,
     "name": "Toya Setsuno",
     "image": "toya setsuno.webp",
     "age": "21-40",
@@ -1917,7 +1997,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 134,
+    "id": 140,
     "name": "Toya Todoroki (Dabi)",
     "image": "toya todoroki (dabi).webp",
     "age": "21-40",
@@ -1930,7 +2010,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 135,
+    "id": 141,
     "name": "Tsunagu Hakamada (Best Jeanist)",
     "image": "tsunagu hakamada (best jeanist).webp",
     "age": "21-40",
@@ -1943,7 +2023,7 @@
     "firstArc": "Vs. Hero Killer arc"
   },
   {
-    "id": 136,
+    "id": 142,
     "name": "Tsuyu Asui (Froppy)",
     "image": "tsuyu asui (froppy).webp",
     "age": "1-20",
@@ -1956,7 +2036,7 @@
     "firstArc": "Quirk Apprehension Test arc"
   },
   {
-    "id": 137,
+    "id": 143,
     "name": "Uwabami",
     "image": "uwabami.webp",
     "age": "21-40",
@@ -1969,7 +2049,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 138,
+    "id": 144,
     "name": "Yawara Chatora (Tiger)",
     "image": "yawara chatora (tiger).webp",
     "age": "21-40",
@@ -1982,7 +2062,7 @@
     "firstArc": "Forest Training Camp arc"
   },
   {
-    "id": 139,
+    "id": 145,
     "name": "Yu Hojo",
     "image": "yu hojo.webp",
     "age": "21-40",
@@ -1995,7 +2075,7 @@
     "firstArc": "Shie Hassaikai arc"
   },
   {
-    "id": 140,
+    "id": 146,
     "name": "Yo Shindo (Grand)",
     "image": "yo shindo (grand).webp",
     "age": "1-20",
@@ -2008,12 +2088,25 @@
     "firstArc": "Provisional Hero License Exam arc"
   },
   {
-    "id": 141,
+    "id": 147,
+    "name": "Yoroi Musha",
+    "image": "yoroi musha.webp",
+    "age": "41-60",
+    "gender": "Male",
+    "nationality": "Japan",
+    "hairColor": "White",
+    "quirkType": "Emitter",
+    "occupation": "Hero",
+    "affiliation": "Independant",
+    "firstArc": "Pro Hero arc"
+  },
+  {
+    "id": 148,
     "name": "Yosetsu Awase (Welder)",
     "image": "yosetsu awase (welder).webp",
     "age": "1-20",
     "gender": "Male",
-    "nationality": "Niigata",
+    "nationality": "Nigata",
     "hairColor": "Black",
     "quirkType": "Emitter",
     "occupation": "Hero",
@@ -2021,7 +2114,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 142,
+    "id": 149,
     "name": "Yu Takeyama (Mt. Lady)",
     "image": "yu takeyama (mt. lady).webp",
     "age": "21-40",
@@ -2034,7 +2127,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 143,
+    "id": 150,
     "name": "Yuga Aoyama (Can't Stop Twinkling)",
     "image": "yuga aoyama (can't stop twinkling).webp",
     "age": "1-20",
@@ -2047,7 +2140,7 @@
     "firstArc": "Entrance Exam arc"
   },
   {
-    "id": 144,
+    "id": 151,
     "name": "Yui Kodai (Rule)",
     "image": "yui kodai (rule).webp",
     "age": "1-20",
@@ -2060,7 +2153,7 @@
     "firstArc": "U.A. Sports Festival arc"
   },
   {
-    "id": 145,
+    "id": 152,
     "name": "David Shield",
     "image": "david shield.webp",
     "age": "41-60",
@@ -2073,7 +2166,7 @@
     "firstArc": "Two Heroes Movie arc"
   },
   {
-    "id": 146,
+    "id": 153,
     "name": "Melissa Shield",
     "image": "melissa shield.webp",
     "age": "1-20",
@@ -2086,7 +2179,7 @@
     "firstArc": "Two Heroes Movie arc"
   },
   {
-    "id": 147,
+    "id": 154,
     "name": "Wolfram",
     "image": "wolfram.webp",
     "age": "41-60",
@@ -2099,7 +2192,7 @@
     "firstArc": "Two Heroes Movie arc"
   },
   {
-    "id": 148,
+    "id": 155,
     "name": "Mahoro Shimano",
     "image": "mahoro shimano.webp",
     "age": "1-20",
@@ -2112,7 +2205,7 @@
     "firstArc": "Heroes Rising Movie arc"
   },
   {
-    "id": 149,
+    "id": 156,
     "name": "Katsuma Shimano",
     "image": "katsuma shimano.webp",
     "age": "1-20",
@@ -2125,7 +2218,7 @@
     "firstArc": "Heroes Rising Movie arc"
   },
   {
-    "id": 150,
+    "id": 157,
     "name": "Nine",
     "image": "nine.webp",
     "age": "41-60",
@@ -2138,7 +2231,7 @@
     "firstArc": "Heroes Rising Movie arc"
   },
   {
-    "id": 151,
+    "id": 158,
     "name": "Hoyo Makihara (Mummy)",
     "image": "hoyo makihara (mummy).webp",
     "age": "21-40",
@@ -2151,7 +2244,7 @@
     "firstArc": "Heroes Rising Movie arc"
   },
   {
-    "id": 152,
+    "id": 159,
     "name": "Kiruka Hasaki (Slice)",
     "image": "kiruka hasaki (slice).webp",
     "age": "21-40",
@@ -2164,7 +2257,7 @@
     "firstArc": "Heroes Rising Movie arc"
   },
   {
-    "id": 153,
+    "id": 160,
     "name": "Chojuro Kon (Chimera)",
     "image": "chojuro kon (chimera).webp",
     "age": "21-40",
@@ -2177,7 +2270,7 @@
     "firstArc": "Heroes Rising Movie arc"
   },
   {
-    "id": 154,
+    "id": 161,
     "name": "Rody Soul",
     "image": "rody soul.webp",
     "age": "1-20",
@@ -2190,7 +2283,7 @@
     "firstArc": "World Heroes' Mission Movie arc"
   },
   {
-    "id": 155,
+    "id": 162,
     "name": "Flect Turn",
     "image": "flect turn.webp",
     "age": "41-60",
@@ -2203,7 +2296,7 @@
     "firstArc": "World Heroes' Mission Movie arc"
   },
   {
-    "id": 156,
+    "id": 163,
     "name": "Beros",
     "image": "beros.webp",
     "age": "21-40",
@@ -2216,7 +2309,7 @@
     "firstArc": "World Heroes' Mission Movie arc"
   },
   {
-    "id": 157,
+    "id": 164,
     "name": "Sidero",
     "image": "sidero.webp",
     "age": "21-40",
@@ -2229,7 +2322,7 @@
     "firstArc": "World Heroes' Mission Movie arc"
   },
   {
-    "id": 158,
+    "id": 165,
     "name": "Leviathan",
     "image": "leviathan.webp",
     "age": "21-40",
@@ -2242,7 +2335,7 @@
     "firstArc": "World Heroes' Mission Movie arc"
   },
   {
-    "id": 159,
+    "id": 166,
     "name": "Serpenters (Ena & Dio)",
     "image": "serpenters.webp",
     "age": "1-20",
@@ -2255,7 +2348,7 @@
     "firstArc": "World Heroes' Mission Movie arc"
   },
   {
-    "id": 160,
+    "id": 167,
     "name": "Anna Scervino",
     "image": "anna scervino.webp",
     "age": "1-20",
@@ -2268,7 +2361,7 @@
     "firstArc": "You're Next Movie arc"
   },
   {
-    "id": 161,
+    "id": 168,
     "name": "Giulio Gandini",
     "image": "giulio gandini.webp",
     "age": "1-20",
@@ -2281,7 +2374,7 @@
     "firstArc": "You're Next Movie arc"
   },
   {
-    "id": 162,
+    "id": 169,
     "name": "Valdo Gollini (Dark Might)",
     "image": "valdo gollini (dark might).webp",
     "age": "41-60",
@@ -2294,7 +2387,7 @@
     "firstArc": "You're Next Movie arc"
   },
   {
-    "id": 163,
+    "id": 170,
     "name": "Koichi Haimawari (The Crawler) (Gentle-Man)",
     "image": "koichi haimawari (the crawler) (gentle-man).webp",
     "age": "1-20",
@@ -2307,7 +2400,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 164,
+    "id": 171,
     "name": "Kazuho Haneyama (Pop Step)",
     "image": "kazuho haneyama (pop step).webp",
     "age": "1-20",
@@ -2320,7 +2413,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 165,
+    "id": 172,
     "name": "Knuckle Duster (Iwao Oguro) (Takeshi Kuroiwa) (Chao Pin Siquan) (O'Clock)",
     "image": "knuckle duster (iwao oguro) (takeshi kuroiwa) (chao pin siquan) (o'clock).webp",
     "age": "41-60",
@@ -2333,7 +2426,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 166,
+    "id": 173,
     "name": "Soga Kugizaki",
     "image": "soga kugizaki.webp",
     "age": "21-40",
@@ -2346,7 +2439,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 167,
+    "id": 174,
     "name": "Rapt Tokage",
     "image": "rapt tokage.webp",
     "age": "21-40",
@@ -2359,7 +2452,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 168,
+    "id": 175,
     "name": "Moyuru Tochi",
     "image": "moyuru tochi.webp",
     "age": "21-40",
@@ -2372,7 +2465,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 169,
+    "id": 176,
     "name": "Ichimoku Samazu",
     "image": "ichimoku samazu.webp",
     "age": "1-20",
@@ -2385,7 +2478,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 170,
+    "id": 177,
     "name": "Jubee Namimaru",
     "image": "jubee namimaru.webp",
     "age": "1-20",
@@ -2398,7 +2491,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 171,
+    "id": 178,
     "name": "Teruo Unagisawa",
     "image": "teruo unagisawa.webp",
     "age": "1-20",
@@ -2411,7 +2504,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 172,
+    "id": 179,
     "name": "Christopher Skyline (Captain Celebrity)",
     "image": "christopher skyline (captain celebrity).webp",
     "age": "41-60",
@@ -2424,7 +2517,20 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 173,
+    "id": 180,
+    "name": "Pamela Skyline",
+    "image": "pamela skyline.webp",
+    "age": "21-40",
+    "gender": "Female",
+    "nationality": "United States of America",
+    "hairColor": "Blonde",
+    "quirkType": "Unknown",
+    "occupation": "Civilian",
+    "affiliation": "None",
+    "firstArc": "Vigilante arc"
+  },
+  {
+    "id": 181,
     "name": "Eizo Tanuma",
     "image": "eizo tanuma.webp",
     "age": "41-60",
@@ -2437,7 +2543,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 174,
+    "id": 182,
     "name": "Makoto Tsukauchi",
     "image": "makoto tsukauchi.png",
     "age": "21-40",
@@ -2450,7 +2556,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 175,
+    "id": 183,
     "name": "Kuin Hachisuka (Tamao Oguro)",
     "image": "kuin hachisuka (tamao oguro).webp",
     "age": "1-20",
@@ -2463,7 +2569,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 176,
+    "id": 184,
     "name": "Ichiro & Jiro Hotta",
     "image": "ichiro & jiro hotta.webp",
     "age": "21-40",
@@ -2476,7 +2582,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 177,
+    "id": 185,
     "name": "Kirihito Kamachi (Kama)",
     "image": "kirihito kamachi (kama).webp",
     "age": "21-40",
@@ -2489,7 +2595,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 178,
+    "id": 186,
     "name": "Ikajiro Takobe",
     "image": "ikajiro takobe.webp",
     "age": "21-40",
@@ -2502,7 +2608,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 179,
+    "id": 187,
     "name": "Shoko Haimawari",
     "image": "shoko haimawari.webp",
     "age": "41-60",
@@ -2515,7 +2621,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 180,
+    "id": 188,
     "name": "Enigma",
     "image": "enigma.webp",
     "age": "1-20",
@@ -2528,7 +2634,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 181,
+    "id": 189,
     "name": "Monika Kaniyashiki (Kaniko)",
     "image": "monika kaniyashiki (kaniko).jpg",
     "age": "21-40",
@@ -2541,7 +2647,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 182,
+    "id": 190,
     "name": "Sensoji (Mister Blaster)",
     "image": "sensoji (mister blaster).webp",
     "age": "21-40",
@@ -2554,7 +2660,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 183,
+    "id": 191,
     "name": "Tenma Nakaoji (His Purple Highness)",
     "image": "tenma nakaoji (his purple highness).webp",
     "age": "21-40",
@@ -2567,7 +2673,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 184,
+    "id": 192,
     "name": "Hokuto Hario (Compass Kid)",
     "image": "hokuto hario (compass kid).webp",
     "age": "21-40",
@@ -2580,7 +2686,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 185,
+    "id": 193,
     "name": "Batto Yobayakawa",
     "image": "batto yobayakawa.webp",
     "age": "21-40",
@@ -2593,7 +2699,7 @@
     "firstArc": "Vigilante arc"
   },
   {
-    "id": 186,
+    "id": 194,
     "name": "Number 6 (Rokuro Nomura) (Rock)",
     "image": "number 6 (rokuro nomura) (rock).webp",
     "age": "1-20",
