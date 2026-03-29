@@ -218,7 +218,7 @@
     "image": "akari nitta.webp",
     "age": "21-40",
     "gender": "Female",
-    "hairColor": "Brown",
+    "hairColor": "Blonde",
     "species": "Human",
     "grade": "Unknown",
     "weapon": "None",
@@ -229,7 +229,7 @@
   {
     "id": 6,
     "name": "Arata Nitta",
-    "image": "arata nitta.webp",
+    "image": "arata nitta.jpg",
     "age": "1-20",
     "gender": "Male",
     "hairColor": "Blonde",
@@ -509,7 +509,7 @@
   {
     "id": 26,
     "name": "Hiromi Higuruma",
-    "image": "hiromi higuruma.png",
+    "image": "hiromi higuruma.jpg",
     "age": "21-40",
     "gender": "Male",
     "hairColor": "Brown",
@@ -613,7 +613,7 @@
     "hairColor": "Bald",
     "species": "Human",
     "grade": "Unknown",
-    "weapon": "None",
+    "weapon": "Melee Weapon",
     "occupation": "Curse User",
     "affiliation": "Kenjaku's Group",
     "firstArc": "Kyoto Goodwill Event arc"
@@ -649,7 +649,7 @@
   {
     "id": 36,
     "name": "Kenjaku",
-    "image": "kenjaku.png",
+    "image": "kenjaku.webp",
     "age": "100+",
     "gender": "Male",
     "hairColor": "Black",
@@ -718,8 +718,8 @@
   },
   {
     "id": 41,
-    "name": "Kokichi Muta",
-    "image": "kokichi muta.webp",
+    "name": "Kokichi Muta (Mechamaru)",
+    "image": "kokichi muta (mechamaru).jpg",
     "age": "1-20",
     "gender": "Male",
     "hairColor": "Black",
@@ -817,7 +817,7 @@
   {
     "id": 48,
     "name": "Maki Zenin",
-    "image": "maki zenin.webp",
+    "image": "maki zenin.jpg",
     "age": "1-20",
     "gender": "Female",
     "hairColor": "Black",
@@ -1083,7 +1083,7 @@
   {
     "id": 67,
     "name": "Noritoshi Kamo (Old)",
-    "image": "noritoshi kamo (old).webp",
+    "image": "noritoshi kamo (old).jpeg",
     "age": "41-60",
     "gender": "Male",
     "hairColor": "Black",
@@ -1251,7 +1251,7 @@
   {
     "id": 79,
     "name": "Ryu Ishigori",
-    "image": "ryu ishigori.webp",
+    "image": "ryu ishigori.avif",
     "age": "100+",
     "gender": "Male",
     "hairColor": "Brown",
@@ -1321,7 +1321,7 @@
   {
     "id": 84,
     "name": "Shiu Kong",
-    "image": "shiu kong.webp",
+    "image": "shiu kong.jpg",
     "age": "41-60",
     "gender": "Male",
     "hairColor": "Black",
@@ -1559,7 +1559,7 @@
   {
     "id": 101,
     "name": "Yu Haibara",
-    "image": "yu haibara.webp",
+    "image": "yu haibara.jpg",
     "age": "1-20",
     "gender": "Male",
     "hairColor": "Brown",
