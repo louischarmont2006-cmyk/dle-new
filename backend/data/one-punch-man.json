@@ -2202,6 +2202,20 @@
   },
   {
     "id": 146,
+    "name": "Showerhead",
+    "image": "showerhead.webp",
+    "age": "Unknown",
+    "gender": "Male",
+    "species": "Monster",
+    "residence": "Z-City",
+    "classRank": "None",
+    "rank": "Demon",
+    "occupation": "Other/Unknown",
+    "affiliation": "Monster Association",
+    "firstArc": "Monster Association Arc"
+  },
+  {
+    "id": 147,
     "name": "Sludge Jellyfish",
     "image": "sludge jellyfish.webp",
     "age": "Unknown",
@@ -2215,7 +2229,35 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 147,
+    "id": 148,
+    "name": "Super-Mouse",
+    "image": "super-mouse.jpg",
+    "age": "Unknown",
+    "gender": "Male",
+    "species": "Monster",
+    "residence": "Z-City",
+    "classRank": "None",
+    "rank": "Demon",
+    "occupation": "Other/Unknown",
+    "affiliation": "Monster Association",
+    "firstArc": "Monster Association Arc"
+  },
+  {
+    "id": 149,
+    "name": "Unihorn",
+    "image": "unihorn.webp",
+    "age": "Unknown",
+    "gender": "Male",
+    "species": "Monster",
+    "residence": "Z-City",
+    "classRank": "None",
+    "rank": "Demon",
+    "occupation": "Other/Unknown",
+    "affiliation": "Monster Association",
+    "firstArc": "Monster Association Arc"
+  },
+  {
+    "id": 150,
     "name": "Vaccine Man",
     "image": "vaccine man.webp",
     "age": "Unknown",
@@ -2229,7 +2271,7 @@
     "firstArc": "Saitama Introduction Arc"
   },
   {
-    "id": 148,
+    "id": 151,
     "name": "Gale Wind",
     "image": "gale wind.webp",
     "age": "Unknown",
@@ -2243,7 +2285,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 149,
+    "id": 152,
     "name": "Hellfire Flame",
     "image": "hellfire flame.webp",
     "age": "Unknown",
@@ -2257,7 +2299,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 150,
+    "id": 153,
     "name": "Fuhrer Ugly",
     "image": "fuhrer ugly.webp",
     "age": "Unknown",
@@ -2271,7 +2313,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 151,
+    "id": 154,
     "name": "Gouketsu",
     "image": "gouketsu.jpg",
     "age": "Unknown",
@@ -2285,7 +2327,7 @@
     "firstArc": "Super Fight Arc"
   },
   {
-    "id": 152,
+    "id": 155,
     "name": "Gums",
     "image": "gums.webp",
     "age": "Unknown",
@@ -2299,7 +2341,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 153,
+    "id": 156,
     "name": "Homeless Emperor",
     "image": "homeless emperor.webp",
     "age": "Unknown",
@@ -2313,7 +2355,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 154,
+    "id": 157,
     "name": "Nyan",
     "image": "nyan.jpg",
     "age": "Unknown",
@@ -2327,7 +2369,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 155,
+    "id": 158,
     "name": "Overgrown Rover",
     "image": "overgrown rover.jpg",
     "age": "Unknown",
@@ -2341,7 +2383,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 156,
+    "id": 159,
     "name": "Phoenix Man",
     "image": "phoenix man.webp",
     "age": "Unknown",
@@ -2355,7 +2397,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 157,
+    "id": 160,
     "name": "Junior Centipede",
     "image": "junior centipede.webp",
     "age": "Unknown",
@@ -2369,7 +2411,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 158,
+    "id": 161,
     "name": "Senior Centipede",
     "image": "senior centipede.webp",
     "age": "Unknown",
@@ -2383,7 +2425,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 159,
+    "id": 162,
     "name": "Elder Centipede",
     "image": "elder centipede.jpg",
     "age": "Unknown",
@@ -2397,7 +2439,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 160,
+    "id": 163,
     "name": "Sage Centipede",
     "image": "sage centipede.webp",
     "age": "Unknown",
@@ -2411,7 +2453,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 161,
+    "id": 164,
     "name": "Evil Natural Water",
     "image": "evil natural water.webp",
     "age": "Unknown",
@@ -2425,7 +2467,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 162,
+    "id": 165,
     "name": "Evil Ocean Water",
     "image": "evil natural ocean.webp",
     "age": "Unknown",
@@ -2439,7 +2481,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 163,
+    "id": 166,
     "name": "Black Sperm",
     "image": "black sperm.jpg",
     "age": "Unknown",
@@ -2453,7 +2495,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 164,
+    "id": 167,
     "name": "Golden Sperm",
     "image": "golden sperm.webp",
     "age": "Unknown",
@@ -2467,7 +2509,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 165,
+    "id": 168,
     "name": "Platinum Sperm",
     "image": "platinum sperm.webp",
     "age": "Unknown",
@@ -2481,7 +2523,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 166,
+    "id": 169,
     "name": "Cruel Dragon",
     "image": "cruel dragon.webp",
     "age": "Unknown",
@@ -2495,7 +2537,7 @@
     "firstArc": "Cruel Dragon Arc"
   },
   {
-    "id": 167,
+    "id": 170,
     "name": "Scrutt",
     "image": "scrutt.webp",
     "age": "Unknown",
@@ -2509,7 +2551,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 168,
+    "id": 171,
     "name": "Psykos",
     "image": "psykos.jpg",
     "age": "23",
@@ -2523,7 +2565,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 169,
+    "id": 172,
     "name": "King Orochi",
     "image": "king orochi.webp",
     "age": "Unknown",
@@ -2537,7 +2579,7 @@
     "firstArc": "Monster Raid Arc"
   },
   {
-    "id": 170,
+    "id": 173,
     "name": "Psykorochi",
     "image": "psykorochi.webp",
     "age": "Unknown",
@@ -2551,7 +2593,7 @@
     "firstArc": "Monster Association Arc"
   },
   {
-    "id": 171,
+    "id": 174,
     "name": "Empty Void",
     "image": "empty void.jpg",
     "age": "Unknown",
@@ -2565,7 +2607,7 @@
     "firstArc": "Ninjas Arc"
   },
   {
-    "id": 172,
+    "id": 175,
     "name": "God",
     "image": "god.webp",
     "age": "Unknown",

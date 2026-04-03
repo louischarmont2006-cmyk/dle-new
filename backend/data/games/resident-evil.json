@@ -76,7 +76,7 @@
         ["Ruler of the Village", "Village Chief"],
         ["University Student", "University Professor"],
         ["Chief of Police", "Village Chief"],
-        ["Count/Countess", "Noblewoman"]
+        ["Count/Countess", "Count/Countess / Engineer", "Count/Countess / Doll-Maker", "Noblewoman"]
       ],
       "hints": [
         "Police Officer",
@@ -239,15 +239,18 @@
         "Virus T",
         "Virus G",
         "Virus T-Veronica",
-        "C-Virus"],
+        "C-Virus",
+        "Virus T/Uroboros"],
         ["Virus T", 
         "Virus T-Veronica",
         "T-Abyss",
         "T-Phobos",
         "T+G",
         "T-JCCC203",
-        "T-ALOS"],
+        "T-ALOS",
+        "Virus T/Uroboros"],
         ["Virus G", "T+G"],
+        ["Uroboros", "Virus T/Uroboros"],
         ["C-Virus", "C-Virus/Haos"],
         ["Las Plagas", "NE-Alpha Parasite"],
         ["Cadou", "Megamycete"]
@@ -344,7 +347,7 @@
     "occupation": "Captain / Mercenary",
     "affiliation": "Umbrella Corporation / H.C.F.",
     "firstGame": "Resident Evil (1996)",
-    "infection": "Uroboros",
+    "infection": "Virus T/Uroboros",
     "statut": "Dead"
   },
   {
@@ -2384,7 +2387,7 @@
     "occupation": "Captain",
     "affiliation": "Zeno/The Connections",
     "firstGame": "Resident Evil Requiem (2026)",
-    "infection": "Uroboros",
+    "infection": "Virus T",
     "statut": "Dead"
   }
   ]
