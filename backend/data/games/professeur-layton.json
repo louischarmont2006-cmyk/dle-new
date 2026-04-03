@@ -20,7 +20,7 @@
       "label": "Home Town",
       "type": "text-group",
       "groups": [
-        ["London", "London / Misthallery / Steam Bison", "Future London", "Stansbury / London"],
+        ["London", "London / Misthallery / Steam Bison", "London / Future London", "Stansbury / London"],
         ["Misthallery", "London / Misthallery / Steam Bison"],
         ["Folsense", "Dropstone"],
         ["Stansbury", "Stansbury / London"],
