@@ -190,7 +190,6 @@ export default function FriendProfile() {
         <div className="profile-card friend-user-info">
           <Avatar user={friend} size="xl" />
           <h2 className="friend-name">{friend.username}</h2>
-          <p className="friend-email">{friend.email}</p>
         </div>
 
         <div className="profile-card versus-stats">

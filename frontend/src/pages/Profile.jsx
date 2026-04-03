@@ -179,7 +179,7 @@ export default function Profile() {
             <span className="avatar-edit-icon">&#9998;</span>
           </button>
           <h2 className="username">{user.username}</h2>
-          <p className="email">{user.email}</p>
+          <p className="email">Well done !!!</p>
           <button onClick={handleLogout} className="logout-btn">
             Se déconnecter
           </button>
