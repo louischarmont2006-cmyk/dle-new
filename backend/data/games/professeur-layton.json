@@ -195,8 +195,8 @@
   },
   {
     "id": 4,
-    "name": "Phoenix Wright",
-    "image": "phoenix wright.webp",
+    "name": "Phoenix Wright (Nick)",
+    "image": "phoenix wright (nick).webp",
     "gender": "Male",
     "hairColor": "Black",
     "homeTown": "Los Angeles, California, USA",
@@ -360,13 +360,13 @@
   },
   {
     "id": 19,
-    "name": "Carmine Accidenti",
-    "image": "carmine accidenti.webp",
+    "name": "Carmine / Giovanni Accidenti",
+    "image": "carmine - giovanni accidenti.webp",
     "gender": "Male",
     "hairColor": "Blonde",
     "homeTown": "Unknown",
-    "occupation": "Other/Unknown",
-    "affiliation": "None",
+    "occupation": "Detective",
+    "affiliation": "Other/Unknown",
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
@@ -613,8 +613,8 @@
   },
   {
     "id": 42,
-    "name": "Johnny Smiles",
-    "image": "johnny smiles.webp",
+    "name": "Johnny Smiles / Thibault Gaus",
+    "image": "johnny smiles - thibault gaus.webp",
     "gender": "Male",
     "hairColor": "Blonde",
     "homeTown": "London",
@@ -811,8 +811,8 @@
   },
   {
     "id": 60,
-    "name": "Olivia Aldente",
-    "image": "olivia aldente.webp",
+    "name": "Olivia Aldente / Marina Plancton",
+    "image": "olivia aldente - marina plancton.webp",
     "gender": "Female",
     "hairColor": "Olive Green",
     "homeTown": "London",
