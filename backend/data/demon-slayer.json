@@ -44,7 +44,8 @@
         "Thunder Breathing",
         "Wind Breathing",
         "Flame Breathing",
-        "Stone Breathing"]
+        "Stone Breathing",
+        "Water Breathing / Sun Breathing"]
       ],
       "hints": [
         "None",
@@ -129,7 +130,7 @@
     "gender": "Male",
     "hairColor": "Brown",
     "race": "Human",
-    "combatStyle": "Water Breathing",
+    "combatStyle": "Water Breathing / Sun Breathing",
     "affiliation": "Demon Slayer Member",
     "firstArc": "Final Selection arc"
   },

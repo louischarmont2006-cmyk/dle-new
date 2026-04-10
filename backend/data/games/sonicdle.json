@@ -10,9 +10,11 @@
       "label": "Espèce",
       "type": "text-group",
       "groups": [
-        ["Hérisson", "Génie Hérisson", "Dieu Hérisson"],
+        ["Hérisson", "Génie Hérisson", "Dieu Hérisson", "Meme Hérisson"],
         ["Génie", "Génie Hérisson"],
-        ["Dieu", "Dieu Hérisson"]
+        ["Dieu", "Dieu Hérisson"],
+        ["Échidné", "Meme Échidné"],
+        ["Meme", "Meme Hérisson", "Meme Échidné"]
       ],
       "hints": ["🦡Blaireau🦡",
       "Hérisson",
@@ -26,6 +28,7 @@
       "Chat",
       "Lapin",
       "Écureuil",
+      "Tatou",
       "Chao",
       "Chauve-Souris",
       "Oiseau",
@@ -50,7 +53,9 @@
       "Démon",
       "Dieu",
       "Dieu Hérisson",
-      "Meme"]
+      "Meme",
+      "Meme Hérisson",
+      "Meme Échidné"]
     },
     {
       "key": "firstAppearance",
@@ -58,6 +63,7 @@
       "type": "ordered",
       "order": ["Sonic the Hedgehog (1991)",
       "Sonic The Hedgehog 2 (1992)",
+      "SegaSonic the Hedgehog (1993)",
       "Les Aventures de Sonic (1993)",
       "Sonic CD (1993)",
       "Sonic the Hedgehog 3 & Knuckles (1994)",
@@ -96,6 +102,7 @@
       ],
       "hints": ["Sonic the Hedgehog (1991)",
       "Sonic The Hedgehog 2 (1992)",
+      "SegaSonic the Hedgehog (1993)",
       "Les Aventures de Sonic (1993)",
       "Sonic CD (1993)",
       "Sonic the Hedgehog 3 & Knuckles (1994)",
@@ -874,6 +881,17 @@
   },
   {
     "id": 65,
+    "name": "Mighty",
+    "image": "mighty.webp",
+    "species": "Tatou",
+    "firstAppearance": "SegaSonic the Hedgehog (1993)",
+    "camp": "Gentil",
+    "age": "N/A",
+    "gender": "Masculin",
+    "combatStyle": "Force"
+  },
+  {
+    "id": 66,
     "name": "Neo Devil Doom",
     "image": "neo devil doom.png",
     "species": "Démon",
@@ -884,7 +902,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 66,
+    "id": 67,
     "name": "Neo Metal Sonic",
     "image": "neo metal sonic.jpg",
     "species": "Robot",
@@ -895,7 +913,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 67,
+    "id": 68,
     "name": "Omega",
     "image": "omega.webp",
     "species": "Robot",
@@ -906,7 +924,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 68,
+    "id": 69,
     "name": "Orbot",
     "image": "orbot.png",
     "species": "Robot",
@@ -917,7 +935,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 69,
+    "id": 70,
     "name": "Perfect Chaos",
     "image": "perfect chaos.jpg",
     "species": "Entité aquatique",
@@ -928,7 +946,7 @@
     "combatStyle": "Aquatique"
   },
   {
-    "id": 70,
+    "id": 71,
     "name": "Perfect Dark Gaia",
     "image": "perfect dark gaia.webp",
     "species": "Gaia",
@@ -939,7 +957,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 71,
+    "id": 72,
     "name": "Princess Elise",
     "image": "princess elise.webp",
     "species": "Humain",
@@ -950,7 +968,7 @@
     "combatStyle": "Inoffensif"
   },
   {
-    "id": 72,
+    "id": 73,
     "name": "Professor Gerald Robotnik",
     "image": "professor gerald robotnik.webp",
     "species": "Humain",
@@ -961,7 +979,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 73,
+    "id": 74,
     "name": "Professor Pickle",
     "image": "professor pickle.webp",
     "species": "Humain",
@@ -972,7 +990,18 @@
     "combatStyle": "Sagesse"
   },
   {
-    "id": 74,
+    "id": 75,
+    "name": "Ray",
+    "image": "ray.webp",
+    "species": "Écureuil",
+    "firstAppearance": "SegaSonic the Hedgehog (1993)",
+    "camp": "Gentil",
+    "age": "N/A",
+    "gender": "Masculin",
+    "combatStyle": "Vol"
+  },
+  {
+    "id": 76,
     "name": "Rouge",
     "image": "rouge.webp",
     "species": "Chauve-Souris",
@@ -983,7 +1012,7 @@
     "combatStyle": "Agilité"
   },
   {
-    "id": 75,
+    "id": 77,
     "name": "Sage",
     "image": "sage.jpg",
     "species": "Robot",
@@ -994,7 +1023,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 76,
+    "id": 78,
     "name": "Sally Acorn",
     "image": "sally acorn.png",
     "species": "Écureuil",
@@ -1005,7 +1034,18 @@
     "combatStyle": "Distance"
   },
   {
-    "id": 77,
+    "id": 79,
+    "name": "Sanic",
+    "image": "sanic.webp",
+    "species": "Meme Hérisson",
+    "firstAppearance": "-",
+    "camp": "Gentil",
+    "age": "N/A",
+    "gender": "Masculin",
+    "combatStyle": "Vitesse"
+  },
+  {
+    "id": 80,
     "name": "Scourge",
     "image": "scourge.webp",
     "species": "Hérisson",
@@ -1016,7 +1056,7 @@
     "combatStyle": "Distance"
   },
   {
-    "id": 78,
+    "id": 81,
     "name": "Shadow",
     "image": "shadow.webp",
     "species": "Hérisson",
@@ -1027,7 +1067,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 79,
+    "id": 82,
     "name": "Shahra",
     "image": "shahra.jpg",
     "species": "Génie",
@@ -1038,7 +1078,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 80,
+    "id": 83,
     "name": "Silver",
     "image": "silver.webp",
     "species": "Hérisson",
@@ -1049,7 +1089,7 @@
     "combatStyle": "Télékinésie"
   },
   {
-    "id": 81,
+    "id": 84,
     "name": "Solaris",
     "image": "solaris.webp",
     "species": "Dieu",
@@ -1060,7 +1100,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 82,
+    "id": 85,
     "name": "Sonia",
     "image": "sonia.webp",
     "species": "Hérisson",
@@ -1071,7 +1111,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 83,
+    "id": 86,
     "name": "Sonic.exe",
     "image": "sonicexe.png",
     "species": "Dieu Hérisson",
@@ -1082,7 +1122,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 84,
+    "id": 87,
     "name": "Sticks",
     "image": "sticks.webp",
     "species": "🦡Blaireau🦡",
@@ -1093,7 +1133,7 @@
     "combatStyle": "Distance"
   },
   {
-    "id": 85,
+    "id": 88,
     "name": "Storm",
     "image": "storm.webp",
     "species": "Oiseau",
@@ -1104,7 +1144,7 @@
     "combatStyle": "Force"
   },
   {
-    "id": 86,
+    "id": 89,
     "name": "Super Sonic",
     "image": "super sonic.webp",
     "species": "Hérisson",
@@ -1115,7 +1155,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 87,
+    "id": 90,
     "name": "Super Sonic 2",
     "image": "super sonic 2.webp",
     "species": "Hérisson",
@@ -1126,7 +1166,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 88,
+    "id": 91,
     "name": "Supreme",
     "image": "supreme.jpg",
     "species": "Titan",
@@ -1137,7 +1177,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 89,
+    "id": 92,
     "name": "Surge",
     "image": "surge.webp",
     "species": "Tenrec",
@@ -1148,7 +1188,7 @@
     "combatStyle": "Vitesse"
   },
   {
-    "id": 90,
+    "id": 93,
     "name": "Tails",
     "image": "tails.webp",
     "species": "Renard",
@@ -1159,7 +1199,7 @@
     "combatStyle": "Vol"
   },
   {
-    "id": 91,
+    "id": 94,
     "name": "Tails Doll",
     "image": "tails doll.webp",
     "species": "Robot",
@@ -1170,7 +1210,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 92,
+    "id": 95,
     "name": "Tangle",
     "image": "tangle.webp",
     "species": "Lémur",
@@ -1181,7 +1221,7 @@
     "combatStyle": "Agilité"
   },
   {
-    "id": 93,
+    "id": 96,
     "name": "The End",
     "image": "the end.webp",
     "species": "Dieu",
@@ -1192,7 +1232,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 94,
+    "id": 97,
     "name": "Tikal",
     "image": "tikal.webp",
     "species": "Échidné",
@@ -1203,7 +1243,7 @@
     "combatStyle": "Sagesse"
   },
   {
-    "id": 95,
+    "id": 98,
     "name": "Time Eater",
     "image": "time eater.jpg",
     "species": "Dieu",
@@ -1214,7 +1254,7 @@
     "combatStyle": "Surnaturel"
   },
   {
-    "id": 96,
+    "id": 99,
     "name": "Trip",
     "image": "trip.webp",
     "species": "Cordyle géant",
@@ -1225,7 +1265,18 @@
     "combatStyle": "Distance"
   },
   {
-    "id": 97,
+    "id": 100,
+    "name": "Uganda Knuckles",
+    "image": "uganda knuckles.png",
+    "species": "Meme Échidné",
+    "firstAppearance": "-",
+    "camp": "Gentil",
+    "age": "N/A",
+    "gender": "Masculin",
+    "combatStyle": "Force"
+  },
+  {
+    "id": 101,
     "name": "Vector",
     "image": "vector.webp",
     "species": "Crocodile",
@@ -1236,7 +1287,7 @@
     "combatStyle": "Force"
   },
   {
-    "id": 98,
+    "id": 102,
     "name": "Wave",
     "image": "wave.jpg",
     "species": "Oiseau",
@@ -1247,7 +1298,7 @@
     "combatStyle": "Technologie"
   },
   {
-    "id": 99,
+    "id": 103,
     "name": "Werehog Sonic",
     "image": "werehog sonic.webp",
     "species": "Hérisson",
@@ -1258,7 +1309,7 @@
     "combatStyle": "Force"
   },
   {
-    "id": 100,
+    "id": 104,
     "name": "Whisper",
     "image": "whisper.webp",
     "species": "Loup",
@@ -1269,7 +1320,7 @@
     "combatStyle": "Distance"
   },
   {
-    "id": 101,
+    "id": 105,
     "name": "Wyvern",
     "image": "wyvern.webp",
     "species": "Titan",
@@ -1280,7 +1331,7 @@
     "combatStyle": "Vol"
   },
   {
-    "id": 102,
+    "id": 106,
     "name": "Zavok",
     "image": "zavok.webp",
     "species": "Zeti",
@@ -1291,7 +1342,7 @@
     "combatStyle": "Pyrokinésie"
   },
   {
-    "id": 103,
+    "id": 107,
     "name": "Zazz",
     "image": "zazz.webp",
     "species": "Zeti",
@@ -1302,7 +1353,7 @@
     "combatStyle": "Force"
   },
   {
-    "id": 104,
+    "id": 108,
     "name": "Zeena",
     "image": "zeena.webp",
     "species": "Zeti",
@@ -1313,7 +1364,7 @@
     "combatStyle": "Agilité"
   },
   {
-    "id": 105,
+    "id": 109,
     "name": "Zomom",
     "image": "zomom.webp",
     "species": "Zeti",
@@ -1324,7 +1375,7 @@
     "combatStyle": "Force"
   },
   {
-    "id": 106,
+    "id": 110,
     "name": "Zor",
     "image": "zor.webp",
     "species": "Zeti",

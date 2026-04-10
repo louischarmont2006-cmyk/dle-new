@@ -49,7 +49,7 @@
       "groups": [
         ["Professor of archaeology at Gressenheller University", "Doctor of Archaeology", "Archaeologist", "Mayor of Misthallery / Doctor of Archaeology"],
         ["Assistant", "Lab Assistant"],
-        ["Police Inspector", "Police Constable", "Police Chief"],
+        ["Police Inspector", "Police Constable", "Police Chief", "Monte d'Or Chief of Police"],
         ["Doctor of Archaeology", "Alchemist / Doctor"],
         ["Former Baron of St. Mystere", "Baroness of St. Mystere"],
         ["Mayor of Misthallery / Doctor of Archaeology", "Protector of Misthallery / Pet"],
@@ -88,6 +88,7 @@
         "Opera Singer",
         "Music Composer",
         "Owner of the Reunion Inn",
+        "Monte d'Or Chief of Police",
         "Azran Emmisary",
         "Head of TARGET",
         "TARGET Second-in-Command",
@@ -243,7 +244,7 @@
     "image": "amelie chelmey.jpg",
     "gender": "Female",
     "hairColor": "Dark Gray",
-    "homeTown": "Unknown",
+    "homeTown": "London",
     "occupation": "Other/Unknown",
     "affiliation": "None",
     "firstGame": "Azran Legacy (2013)"
@@ -261,8 +262,8 @@
   },
   {
     "id": 10,
-    "name": "Angela Ledore",
-    "image": "angela ledore.webp",
+    "name": "Angela Ledore / Marissa Dumont",
+    "image": "angela ledore - marissa dumont.webp",
     "gender": "Female",
     "hairColor": "Pale Blonde",
     "homeTown": "Stansbury",
@@ -371,6 +372,17 @@
   },
   {
     "id": 20,
+    "name": "Chief Inspector Sheffield",
+    "image": "chief inspector sheffield.webp",
+    "gender": "Male",
+    "hairColor": "White",
+    "homeTown": "Stansbury",
+    "occupation": "Monte d'Or Chief of Police",
+    "affiliation": "Other/Unknown",
+    "firstGame": "Miracle Mask (2011)"
+  },
+  {
+    "id": 21,
     "name": "Claire Folley (Celeste)",
     "image": "claire folley (celeste).webp",
     "gender": "Female",
@@ -381,7 +393,7 @@
     "firstGame": "Unwound Future (2008)"
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "Clamp Grosky",
     "image": "clamp grosky.png",
     "gender": "Male",
@@ -392,7 +404,7 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Clark Triton",
     "image": "clark triton.jpg",
     "gender": "Male",
@@ -403,7 +415,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Claudia Reinhold",
     "image": "claudia reinhold.webp",
     "gender": "Female",
@@ -414,7 +426,7 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Clive Dove (Future Luke Triton)",
     "image": "clive dove (future luke triton).jpg",
     "gender": "Male",
@@ -425,7 +437,7 @@
     "firstGame": "Unwound Future (2008)"
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "Constantine / Brasier",
     "image": "constantine - brasier.webp",
     "gender": "Male",
@@ -436,7 +448,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Crow",
     "image": "crow.jpg",
     "gender": "Male",
@@ -447,7 +459,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Darklaw / Aurora (Eva Belduke)",
     "image": "darklaw - aurora (eva belduke).webp",
     "gender": "Female",
@@ -458,7 +470,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Dimitri Allen (Future Hershel Layton)",
     "image": "dimitri allen (future hershel layton).jpg",
     "gender": "Male",
@@ -469,7 +481,7 @@
     "firstGame": "Unwound Future (2008)"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Doland Noble",
     "image": "doland noble.jpg",
     "gender": "Male",
@@ -480,7 +492,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Don Paolo",
     "image": "don paolo.webp",
     "gender": "Male",
@@ -491,9 +503,9 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 31,
-    "name": "Emeer / Auguste Punchenbaug",
-    "image": "emeer - auguste punchenbaug.webp",
+    "id": 32,
+    "name": "Emeer / Oscar Auguste Punchenbaug I",
+    "image": "emeer - oscar auguste punchenbaug i.webp",
     "gender": "Male",
     "hairColor": "Gray",
     "homeTown": "Labyrinthia",
@@ -502,7 +514,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "Emmy Altava",
     "image": "emmy altava.webp",
     "gender": "Female",
@@ -513,7 +525,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "Ernest Greeves",
     "image": "ernest greeves.webp",
     "gender": "Male",
@@ -524,7 +536,7 @@
     "firstGame": "Millionaires' Conspiracy (2017)"
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Espella Cantabella / Aria Novella",
     "image": "espella cantabella - aria novella.webp",
     "gender": "Female",
@@ -535,7 +547,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Eve",
     "image": "eve.webp",
     "gender": "Female",
@@ -546,7 +558,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Flora Reinhold",
     "image": "flora reinhold.jpg",
     "gender": "Female",
@@ -557,7 +569,7 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "Flynch / Flipet",
     "image": "flynch - flipet.webp",
     "gender": "Male",
@@ -568,9 +580,20 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 38,
-    "name": "Henry Ledore",
-    "image": "henry ledore.webp",
+    "id": 39,
+    "name": "Granny Riddleton / Mamie Mystère",
+    "image": "granny riddleton - mamie mystère.webp",
+    "gender": "Female",
+    "hairColor": "Brown",
+    "homeTown": "Unknown",
+    "occupation": "None",
+    "affiliation": "None",
+    "firstGame": "Curious Village (2007)"
+  },
+  {
+    "id": 40,
+    "name": "Henry Ledore / Dumont",
+    "image": "henry ledore - dumont.webp",
     "gender": "Male",
     "hairColor": "Blonde/Brown",
     "homeTown": "Stansbury",
@@ -579,7 +602,7 @@
     "firstGame": "Miracle Mask (2011)"
   },
   {
-    "id": 39,
+    "id": 41,
     "name": "Inspector Chelmey",
     "image": "inspector chelmey.webp",
     "gender": "Male",
@@ -590,7 +613,7 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 40,
+    "id": 42,
     "name": "Janice Quatlane",
     "image": "janice quatlane.webp",
     "gender": "Female",
@@ -601,7 +624,7 @@
     "firstGame": "Eternal Diva (2009)"
   },
   {
-    "id": 41,
+    "id": 43,
     "name": "Jean Greyerl / Camille Cervantès",
     "image": "jean greyerl - camille cervantès.jpg",
     "gender": "Female",
@@ -612,7 +635,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 42,
+    "id": 44,
     "name": "Johnny Smiles / Thibault Gaus",
     "image": "johnny smiles - thibault gaus.webp",
     "gender": "Male",
@@ -623,7 +646,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 43,
+    "id": 45,
     "name": "Judge (Labyrinthia)",
     "image": "judge (labyrinthia).jpg",
     "gender": "Male",
@@ -634,7 +657,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 44,
+    "id": 46,
     "name": "Judge (London)",
     "image": "judge (london).webp",
     "gender": "Male",
@@ -645,7 +668,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 45,
+    "id": 47,
     "name": "Katia Anderson",
     "image": "katia anderson.webp",
     "gender": "Female",
@@ -656,7 +679,7 @@
     "firstGame": "Diabolical Box (2007)"
   },
   {
-    "id": 46,
+    "id": 48,
     "name": "Katrielle Layton",
     "image": "katrielle layton.png",
     "gender": "Female",
@@ -667,9 +690,9 @@
     "firstGame": "Millionaires' Conspiracy (2017)"
   },
   {
-    "id": 47,
-    "name": "Kira / Rose",
-    "image": "kira - rose.webp",
+    "id": 49,
+    "name": "Kira / Rose Morthem",
+    "image": "kira - rose morthem.webp",
     "gender": "Female",
     "hairColor": "Brown",
     "homeTown": "Labyrinthia",
@@ -678,7 +701,18 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 48,
+    "id": 50,
+    "name": "Lady Ascott",
+    "image": "lady ascott.webp",
+    "gender": "Female",
+    "hairColor": "Gray",
+    "homeTown": "Stansbury",
+    "occupation": "None",
+    "affiliation": "Randall Ascott",
+    "firstGame": "Miracle Mask (2011)"
+  },
+  {
+    "id": 51,
     "name": "Lady Dahlia Reinhold",
     "image": "lady dahlia reinhold.webp",
     "gender": "Female",
@@ -689,7 +723,7 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 49,
+    "id": 52,
     "name": "Léon Bronev",
     "image": "léon bronev.png",
     "gender": "Male",
@@ -700,7 +734,7 @@
     "firstGame": "Miracle Mask (2011)"
   },
   {
-    "id": 50,
+    "id": 53,
     "name": "Léonard Bloom",
     "image": "léonard bloom.webp",
     "gender": "Male",
@@ -711,9 +745,9 @@
     "firstGame": "Miracle Mask (2011)"
   },
   {
-    "id": 51,
-    "name": "Lettie Mailer",
-    "image": "lettie mailer.webp",
+    "id": 54,
+    "name": "Lettie Mailer / Colette Paustal",
+    "image": "lettie mailer - colette paustal.webp",
     "gender": "Female",
     "hairColor": "Blonde",
     "homeTown": "Labyrinthia",
@@ -722,7 +756,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 52,
+    "id": 55,
     "name": "Levin Jakes",
     "image": "levin jakes.webp",
     "gender": "Male",
@@ -733,7 +767,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 53,
+    "id": 56,
     "name": "Loosha",
     "image": "loosha.jpg",
     "gender": "Female",
@@ -744,7 +778,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 54,
+    "id": 57,
     "name": "Lucille Layton",
     "image": "lucille layton.jpg",
     "gender": "Female",
@@ -755,7 +789,7 @@
     "firstGame": "Miracle Mask (2011)"
   },
   {
-    "id": 55,
+    "id": 58,
     "name": "Lucy Baker",
     "image": "lucy baker.png",
     "gender": "Female",
@@ -766,7 +800,7 @@
     "firstGame": "Millionaires' Conspiracy (2017)"
   },
   {
-    "id": 56,
+    "id": 59,
     "name": "Melina Whistler",
     "image": "melina whistler.webp",
     "gender": "Female",
@@ -777,7 +811,7 @@
     "firstGame": "Eternal Diva (2009)"
   },
   {
-    "id": 57,
+    "id": 60,
     "name": "Miles Edgeworth",
     "image": "miles edgeworth.webp",
     "gender": "Male",
@@ -788,7 +822,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 58,
+    "id": 61,
     "name": "Newton / Henning Belduke",
     "image": "newton - henning belduke.jpg",
     "gender": "Male",
@@ -799,7 +833,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 59,
+    "id": 62,
     "name": "Nina",
     "image": "nina.webp",
     "gender": "Female",
@@ -810,7 +844,7 @@
     "firstGame": "Eternal Diva (2009)"
   },
   {
-    "id": 60,
+    "id": 63,
     "name": "Olivia Aldente / Marina Plancton",
     "image": "olivia aldente - marina plancton.webp",
     "gender": "Female",
@@ -821,7 +855,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 61,
+    "id": 64,
     "name": "Oswald Whistler",
     "image": "oswald whistler.webp",
     "gender": "Male",
@@ -832,7 +866,7 @@
     "firstGame": "Eternal Diva (2009)"
   },
   {
-    "id": 62,
+    "id": 65,
     "name": "Patty Eclaire / Mme. Madeleine",
     "image": "patty eclaire - mme. madeleine.jpg",
     "gender": "Female",
@@ -843,7 +877,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 63,
+    "id": 66,
     "name": "Rachel Bronev",
     "image": "rachel bronev.webp",
     "gender": "Female",
@@ -854,7 +888,7 @@
     "firstGame": "Azran Legacy (2013)"
   },
   {
-    "id": 64,
+    "id": 67,
     "name": "Ramon",
     "image": "ramon.jpg",
     "gender": "Male",
@@ -865,7 +899,7 @@
     "firstGame": "Curious Village (2007)"
   },
   {
-    "id": 65,
+    "id": 68,
     "name": "Randall Ascott",
     "image": "randall ascott.jpg",
     "gender": "Male",
@@ -876,7 +910,7 @@
     "firstGame": "Miracle Mask (2011)"
   },
   {
-    "id": 66,
+    "id": 69,
     "name": "Raymond",
     "image": "raymond.jpg",
     "gender": "Male",
@@ -887,7 +921,18 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 67,
+    "id": 70,
+    "name": "Ridelle Mystere / Amy Stère",
+    "image": "ridelle mystere - amy stère.webp",
+    "gender": "Female",
+    "hairColor": "Pink",
+    "homeTown": "Labyrinthia",
+    "occupation": "Other/Unknown",
+    "affiliation": "Other/Unknown",
+    "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
+  },
+  {
+    "id": 71,
     "name": "Roland Layton",
     "image": "roland layton.jpg",
     "gender": "Male",
@@ -898,7 +943,7 @@
     "firstGame": "Miracle Mask (2011)"
   },
   {
-    "id": 68,
+    "id": 72,
     "name": "Sherl O. C. Kholmes",
     "image": "sherl o. c. kholmes.webp",
     "gender": "Male",
@@ -909,7 +954,7 @@
     "firstGame": "Millionaires' Conspiracy (2017)"
   },
   {
-    "id": 69,
+    "id": 73,
     "name": "Sophia",
     "image": "sophia.jpg",
     "gender": "Female",
@@ -920,7 +965,7 @@
     "firstGame": "Diabolical Box (2007)"
   },
   {
-    "id": 70,
+    "id": 74,
     "name": "Specter",
     "image": "specter.webp",
     "gender": "None",
@@ -931,7 +976,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 71,
+    "id": 75,
     "name": "Swift / Faucon",
     "image": "swift - faucon.jpg",
     "gender": "Male",
@@ -942,7 +987,7 @@
     "firstGame": "Azran Legacy (2013)"
   },
   {
-    "id": 72,
+    "id": 76,
     "name": "The Black Ravens",
     "image": "the black ravens.jpg",
     "gender": "Male/Female",
@@ -953,7 +998,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 73,
+    "id": 77,
     "name": "The Storyteller / Le Narrateur (Arthur Cantabella / Roman Novella)",
     "image": "the storyteller - le narrateur (arthur cantabella - roman novella).webp",
     "gender": "Male",
@@ -964,7 +1009,7 @@
     "firstGame": "VS. Phoenix Wright: Ace Attorney (2014)"
   },
   {
-    "id": 74,
+    "id": 78,
     "name": "Tony Barde",
     "image": "tony barde.webp",
     "gender": "Male",
@@ -975,7 +1020,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 75,
+    "id": 79,
     "name": "Toppy",
     "image": "toppy.webp",
     "gender": "Male",
@@ -986,7 +1031,7 @@
     "firstGame": "Last Specter (2009)"
   },
   {
-    "id": 76,
+    "id": 80,
     "name": "Zacharias Barnham / William Garnet",
     "image": "zacharias barnham - william garnet.jpg",
     "gender": "Male",

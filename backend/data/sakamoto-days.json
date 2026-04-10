@@ -45,7 +45,9 @@
       "label": "Affiliation",
       "type": "text-group",
       "groups": [
-        ["JCC", "JAA"]
+        ["JCC", "JAA"],
+        ["Order", "Order / X's Organization"],
+        ["X's Organization", "Order / X's Organization"]
       ],
       "hints": [
         "None",
@@ -515,7 +517,7 @@
     "height": "190",
     "hairColor": "Black",
     "occupation": "Leadership/Management",
-    "affiliation": "Order",
+    "affiliation": "Order / X's Organization",
     "firstArc": "JCC Transfer Exams arc"
   },
   {

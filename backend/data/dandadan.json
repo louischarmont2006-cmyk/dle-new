@@ -94,7 +94,10 @@
     {
       "key": "occupation",
       "label": "Occupation",
-      "type": "text",
+      "type": "text-group",
+      "groups": [
+        ["Paranormal Collector", "Cursed Object Collector"]
+      ],
       "hints": [
         "Student",
         "Spirit Medium",
@@ -664,7 +667,7 @@
     "eyeColor": "Green",
     "hairColor": "None",
     "planet": "Earth",
-    "combatStyle": "Alien Technology",
+    "combatStyle": "Hand-to-hand",
     "residence": "Danmara",
     "occupation": "None",
     "affiliation": "None",

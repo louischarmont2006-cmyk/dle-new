@@ -939,6 +939,18 @@
     "mageRank": "Unknown",
     "affiliation": "Shadow Warriors",
     "firstArc": "Foundation Festival arc"
+  },
+  {
+    "id": 69,
+    "name": "Zart",
+    "image": "zart.webp",
+    "gender": "Male",
+    "species": "Demon",
+    "age": "200",
+    "class": "Mage",
+    "mageRank": "Unknown",
+    "affiliation": "None",
+    "firstArc": "Goddess's Monument arc"
   }
   ]
 }

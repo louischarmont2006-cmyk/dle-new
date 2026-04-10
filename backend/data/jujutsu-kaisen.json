@@ -345,7 +345,7 @@
     "age": "100+",
     "gender": "Male",
     "hairColor": "White",
-    "species": "Human",
+    "species": "Hybrid",
     "grade": "Unknown",
     "weapon": "None",
     "occupation": "Jujutsu Sorcerer",
@@ -1517,7 +1517,7 @@
   {
     "id": 98,
     "name": "Yuta Okkotsu",
-    "image": "yuta okkotsu.png",
+    "image": "yuta okkotsu.webp",
     "age": "1-20",
     "gender": "Male",
     "hairColor": "Black",
