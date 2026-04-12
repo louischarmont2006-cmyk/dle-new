@@ -390,8 +390,8 @@
   },
   {
     "id": 23,
-    "name": "Gorilla",
-    "image": "gorilla.webp",
+    "name": "Gorilla (Kreis)",
+    "image": "gorilla (kreis).webp",
     "gender": "Male",
     "species": "Human",
     "age": "20",
@@ -414,6 +414,18 @@
   },
   {
     "id": 25,
+    "name": "Grau",
+    "image": "grau.webp",
+    "gender": "Male",
+    "species": "Human",
+    "age": "Unknown",
+    "class": "Mage",
+    "mageRank": "Unknown",
+    "affiliation": "Magic Special Forces",
+    "firstArc": "Foundation Festival arc"
+  },
+  {
+    "id": 26,
     "name": "Grausam",
     "image": "grausam.webp",
     "gender": "Male",
@@ -425,7 +437,7 @@
     "firstArc": "Goddess's Monument arc"
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "Iris",
     "image": "iris.webp",
     "gender": "Female",
@@ -437,7 +449,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "Kanne",
     "image": "kanne.webp",
     "gender": "Female",
@@ -449,7 +461,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "Kanone",
     "image": "kanone.webp",
     "gender": "Female",
@@ -461,7 +473,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Kiesel",
     "image": "kiesel.webp",
     "gender": "Male",
@@ -473,7 +485,7 @@
     "firstArc": "Goddess's Monument arc"
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Kraft",
     "image": "kraft.webp",
     "gender": "Male",
@@ -485,7 +497,19 @@
     "firstArc": "Travels to Äußerst arc"
   },
   {
-    "id": 31,
+    "id": 32,
+    "name": "Lager",
+    "image": "lager.webp",
+    "gender": "Male",
+    "species": "Human",
+    "age": "Unknown",
+    "class": "Mage",
+    "mageRank": "Unknown",
+    "affiliation": "Magic Special Forces",
+    "firstArc": "Foundation Festival arc"
+  },
+  {
+    "id": 33,
     "name": "Land",
     "image": "land.webp",
     "gender": "Male",
@@ -497,7 +521,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 32,
+    "id": 34,
     "name": "Lange",
     "image": "lange.webp",
     "gender": "Female",
@@ -509,7 +533,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 33,
+    "id": 35,
     "name": "Laufen",
     "image": "laufen.webp",
     "gender": "Female",
@@ -521,7 +545,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 34,
+    "id": 36,
     "name": "Lawine",
     "image": "lawine.webp",
     "gender": "Female",
@@ -533,7 +557,19 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 35,
+    "id": 37,
+    "name": "Lehrer",
+    "image": "lehrer.webp",
+    "gender": "Male",
+    "species": "Human",
+    "age": "Unknown",
+    "class": "Warrior",
+    "mageRank": "Unknown",
+    "affiliation": "None",
+    "firstArc": "Foundation Festival arc"
+  },
+  {
+    "id": 38,
     "name": "Lekture",
     "image": "lekture.webp",
     "gender": "Female",
@@ -545,7 +581,7 @@
     "firstArc": "The Golden Land arc"
   },
   {
-    "id": 36,
+    "id": 39,
     "name": "Lernen",
     "image": "lernen.webp",
     "gender": "Male",
@@ -557,7 +593,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 37,
+    "id": 40,
     "name": "Lineal",
     "image": "lineal.webp",
     "gender": "Female",
@@ -569,7 +605,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 38,
+    "id": 41,
     "name": "Linie",
     "image": "linie.webp",
     "gender": "Female",
@@ -581,7 +617,7 @@
     "firstArc": "Aura the Guillotine arc"
   },
     {
-    "id": 39,
+    "id": 42,
     "name": "Lore",
     "image": "lore.webp",
     "gender": "Female",
@@ -593,9 +629,9 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 40,
-    "name": "Lowe",
-    "image": "lowe.webp",
+    "id": 43,
+    "name": "Lowe (Held)",
+    "image": "lowe (held).webp",
     "gender": "Male",
     "species": "Human",
     "age": "41",
@@ -605,7 +641,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 41,
+    "id": 44,
     "name": "Lugner",
     "image": "lugner.webp",
     "gender": "Male",
@@ -617,7 +653,7 @@
     "firstArc": "Aura the Guillotine arc"
   },
   {
-    "id": 42,
+    "id": 45,
     "name": "Macht",
     "image": "macht.webp",
     "gender": "Male",
@@ -629,7 +665,7 @@
     "firstArc": "The Golden Land arc"
   },
   {
-    "id": 43,
+    "id": 46,
     "name": "Methode",
     "image": "methode.png",
     "gender": "Female",
@@ -641,7 +677,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 44,
+    "id": 47,
     "name": "Minus",
     "image": "minus.webp",
     "gender": "Female",
@@ -653,7 +689,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 45,
+    "id": 48,
     "name": "Neu",
     "image": "neu.webp",
     "gender": "Male",
@@ -665,7 +701,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 46,
+    "id": 49,
     "name": "Qual",
     "image": "qual.webp",
     "gender": "Male",
@@ -677,7 +713,7 @@
     "firstArc": "Beyond Journey's End arc"
   },
   {
-    "id": 47,
+    "id": 50,
     "name": "Radaal",
     "image": "radaal.jpeg",
     "gender": "Male",
@@ -689,7 +725,7 @@
     "firstArc": "Imperial Territory Travels arc"
   },
   {
-    "id": 48,
+    "id": 51,
     "name": "Revolte",
     "image": "revolte.webp",
     "gender": "Male",
@@ -701,7 +737,7 @@
     "firstArc": "Divine Revolte arc"
   },
   {
-    "id": 49,
+    "id": 52,
     "name": "Richter",
     "image": "richter.webp",
     "gender": "Male",
@@ -713,7 +749,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 50,
+    "id": 53,
     "name": "Rivale",
     "image": "rivale.webp",
     "gender": "Male",
@@ -725,7 +761,7 @@
     "firstArc": "Goddess's Monument arc"
   },
   {
-    "id": 51,
+    "id": 54,
     "name": "Routine",
     "image": "routine.webp",
     "gender": "Female",
@@ -737,7 +773,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 52,
+    "id": 55,
     "name": "Scharf",
     "image": "scharf.webp",
     "gender": "Male",
@@ -749,7 +785,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 53,
+    "id": 56,
     "name": "Schlacht",
     "image": "schlacht.webp",
     "gender": "Male",
@@ -761,7 +797,7 @@
     "firstArc": "Continued Northern Travels arc"
   },
   {
-    "id": 54,
+    "id": 57,
     "name": "Schritt",
     "image": "schritt.webp",
     "gender": "Female",
@@ -773,7 +809,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 55,
+    "id": 58,
     "name": "Sein",
     "image": "sein.webp",
     "gender": "Male",
@@ -785,7 +821,7 @@
     "firstArc": "Travels to Äußerst arc"
   },
   {
-    "id": 56,
+    "id": 59,
     "name": "Sein's Older Brother",
     "image": "sein's older brother.jpg",
     "gender": "Male",
@@ -797,7 +833,7 @@
     "firstArc": "Travels to Äußerst arc"
   },
   {
-    "id": 57,
+    "id": 60,
     "name": "Senne",
     "image": "senne.jpg",
     "gender": "Female",
@@ -809,7 +845,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 58,
+    "id": 61,
     "name": "Serie",
     "image": "serie.webp",
     "gender": "Female",
@@ -821,7 +857,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 59,
+    "id": 62,
     "name": "Solitar",
     "image": "solitar.webp",
     "gender": "Female",
@@ -833,7 +869,7 @@
     "firstArc": "The Golden Land arc"
   },
   {
-    "id": 60,
+    "id": 63,
     "name": "The Hero of the South",
     "image": "the hero of the south.webp",
     "gender": "Male",
@@ -845,7 +881,7 @@
     "firstArc": "Continued Northern Travels arc"
   },
   {
-    "id": 61,
+    "id": 64,
     "name": "Ton",
     "image": "ton.webp",
     "gender": "Male",
@@ -857,7 +893,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 62,
+    "id": 65,
     "name": "Tot",
     "image": "tot.webp",
     "gender": "Female",
@@ -869,7 +905,7 @@
     "firstArc": "Goddess's Monument arc"
   },
   {
-    "id": 63,
+    "id": 66,
     "name": "Ubel",
     "image": "ubel.webp",
     "gender": "Female",
@@ -881,7 +917,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 64,
+    "id": 67,
     "name": "Voll",
     "image": "voll.webp",
     "gender": "Male",
@@ -893,7 +929,7 @@
     "firstArc": "Travels to Äußerst arc"
   },
   {
-    "id": 65,
+    "id": 68,
     "name": "Weg",
     "image": "weg.webp",
     "gender": "Male",
@@ -905,7 +941,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 66,
+    "id": 69,
     "name": "Wehrlos",
     "image": "wehrlos.webp",
     "gender": "Male",
@@ -917,7 +953,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 67,
+    "id": 70,
     "name": "Wirbel",
     "image": "wirbel.webp",
     "gender": "Male",
@@ -929,7 +965,7 @@
     "firstArc": "First-Class Mage Exam arc"
   },
   {
-    "id": 68,
+    "id": 71,
     "name": "Wolf",
     "image": "wolf.webp",
     "gender": "Male",
@@ -941,7 +977,7 @@
     "firstArc": "Foundation Festival arc"
   },
   {
-    "id": 69,
+    "id": 72,
     "name": "Zart",
     "image": "zart.webp",
     "gender": "Male",

@@ -835,6 +835,22 @@
   },
   {
     "id": 43,
+    "name": "Raiya Kazama",
+    "image": "raiya kazama.webp",
+    "gender": "Male",
+    "age": "18",
+    "race": "Human",
+    "eyeColor": "Unknown",
+    "hairColor": "Unknown",
+    "planet": "Earth",
+    "combatStyle": "None",
+    "residence": "Kamigoe City",
+    "occupation": "Unknown",
+    "affiliation": "None",
+    "firstArc": "Danmara arc"
+  },
+  {
+    "id": 44,
     "name": "Reiko Kashima",
     "image": "reiko kashima.webp",
     "gender": "Female",
@@ -850,7 +866,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Rin Sawaki",
     "image": "rin sawaki.webp",
     "gender": "Female",
@@ -866,7 +882,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "Rokuro Serpo",
     "image": "rokuro serpo.webp",
     "gender": "Male",
@@ -882,7 +898,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 46,
+    "id": 47,
     "name": "Seiko Ayase",
     "image": "seiko ayase.webp",
     "gender": "Female",
@@ -898,7 +914,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 47,
+    "id": 48,
     "name": "Serpo",
     "image": "serpo.webp",
     "gender": "Male",
@@ -914,7 +930,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 48,
+    "id": 49,
     "name": "Takeshi Murakami",
     "image": "takeshi murakami.webp",
     "gender": "Male",
@@ -923,14 +939,14 @@
     "eyeColor": "Black",
     "hairColor": "Brown",
     "planet": "Earth",
-    "combatStyle": "Hand-to-hand",
+    "combatStyle": "Summoning",
     "residence": "Kamigoe City",
     "occupation": "Teacher",
     "affiliation": "Kami High",
     "firstArc": "Onbusuman arc"
   },
   {
-    "id": 49,
+    "id": 50,
     "name": "Taro",
     "image": "taro.jpg",
     "gender": "Male",
@@ -946,7 +962,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 50,
+    "id": 51,
     "name": "Tome",
     "image": "tome.webp",
     "gender": "Female",
@@ -962,7 +978,7 @@
     "firstArc": "Space Globalists arc"
   },
   {
-    "id": 51,
+    "id": 52,
     "name": "Tsuchinoko",
     "image": "tsuchinoko.webp",
     "gender": "Male",
@@ -978,7 +994,7 @@
     "firstArc": "Cursed House arc"
   },
   {
-    "id": 52,
+    "id": 53,
     "name": "Turbo Granny",
     "image": "turbo granny.webp",
     "gender": "Female",
@@ -994,7 +1010,7 @@
     "firstArc": "Turbo Granny arc"
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "Unji Zuma",
     "image": "unji zuma.webp",
     "gender": "Male",
@@ -1010,7 +1026,7 @@
     "firstArc": "Danmara arc"
   },
   {
-    "id": 54,
+    "id": 55,
     "name": "Vamola (Bamora)",
     "image": "vamola (bamora).webp",
     "gender": "Female",
@@ -1026,7 +1042,7 @@
     "firstArc": "Kaiju arc"
   },
   {
-    "id": 55,
+    "id": 56,
     "name": "Vamola's Adoptive Mother (Banga)",
     "image": "vamola's adoptive mother (banga).webp",
     "gender": "Female",
