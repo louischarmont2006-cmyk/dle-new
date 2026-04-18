@@ -15,33 +15,37 @@ export default function RematchModal({
   opponentName,
   myScore,
   opponentScore,
-  category = 'anime', // ⭐ NOUVEAU - catégorie du jeu
-  gameMode = 'turnbased' // ★ NOUVEAU - mode de jeu
+  category = 'anime', // 'anime' | 'game' | 'movie'
+  gameMode = 'turnbased'
 }) {
   const opponentGone = opponentDisconnected || opponentLeft;
 
-  // ⭐ NOUVEAU - Construire le bon chemin d'image selon la catégorie
-  const imagePath = category === 'game'
-    ? `${API_URL}/api/images/games/${gameId}/characters/${target?.image}`
-    : `${API_URL}/api/images/${gameId}/characters/${target?.image}`;
+  // Construire le bon chemin d'image selon la catégorie
+  let imagePath;
+  if (category === 'game') {
+    imagePath = `${API_URL}/api/images/games/${gameId}/characters/${target?.image}`;
+  } else if (category === 'movie') {
+    imagePath = `${API_URL}/api/images/movies/${gameId}/characters/${target?.image}`;
+  } else {
+    // anime
+    imagePath = `${API_URL}/api/images/${gameId}/characters/${target?.image}`;
+  }
 
-  // ★ NOUVEAU - Déterminer le résultat en mode simultané (match nul si pas de winner)
   const isDrawMatch = gameMode === 'simultaneous' && !isWinner && myScore === opponentScore;
 
   return (
     <div className="rematch-modal-overlay">
       <div className="rematch-modal">
         <div className={`rematch-result ${isDrawMatch ? 'draw' : (isWinner ? 'win' : 'lose')}`}>
-          {isDrawMatch 
-            ? 'Match nul !' 
-            : (isWinner 
-                ? (myAttempts === 1 ? 'ONE Shot !!! Victoire !' : 'Victoire !') 
+          {isDrawMatch
+            ? 'Match nul !'
+            : (isWinner
+                ? (myAttempts === 1 ? 'ONE Shot !!! Victoire !' : 'Victoire !')
                 : 'Défaite...'
               )
           }
         </div>
 
-        {/* ★ NOUVEAU - Message selon le mode */}
         {gameMode === 'simultaneous' && (
           <div className="game-mode-info">
             ⚡ Mode simultané - {isDrawMatch ? 'Temps écoulé !' : 'Premier à trouver gagne !'}

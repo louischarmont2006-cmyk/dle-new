@@ -4,12 +4,26 @@ import "./GameNavbar.css";
 
 export default function GameNavbar({ gameId }) {
   const location = useLocation();
-  
-  // ⭐ Détecter le type (anime ou game)
+
+  // Détecter le type (anime, game ou movie)
   const isGame = location.pathname.startsWith('/game/');
-  const basePath = isGame ? `/game/${gameId}` : `/anime/${gameId}`;
-  const homePath = isGame ? '/video-games' : '/';
-  const homeText = isGame ? 'Accueil' : 'Accueil';
+  const isMovie = location.pathname.startsWith('/movie/');
+
+  let basePath, homePath, homeText;
+
+  if (isGame) {
+    basePath = `/game/${gameId}`;
+    homePath = '/video-games';
+    homeText = 'Accueil';
+  } else if (isMovie) {
+    basePath = `/movie/${gameId}`;
+    homePath = '/movies';
+    homeText = 'Films & Séries';
+  } else {
+    basePath = `/anime/${gameId}`;
+    homePath = '/';
+    homeText = 'Accueil';
+  }
 
   return (
     <nav className="game-navbar">

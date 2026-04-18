@@ -1,0 +1,148 @@
+/* src/pages/Movies.css */
+
+.movies-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.movies-content {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.75) 100%);
+  padding: 0 2rem 2rem;
+}
+
+/* Header */
+.movies-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.site-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Nav buttons */
+.movies-nav-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.movies-nav-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.movies-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Active = vert pour Movies & Series */
+.movies-nav-btn.active {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: white;
+}
+
+.movies-nav-btn.login-btn {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* User section */
+.movies-user-section {
+  display: flex;
+  align-items: center;
+}
+
+.movies-user-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Grid */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-movies {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  padding: 4rem 0;
+}
+
+.loading-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .movies-content {
+    padding: 0 1rem 1rem;
+  }
+
+  .movies-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .movies-nav-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .movies-user-section {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+}

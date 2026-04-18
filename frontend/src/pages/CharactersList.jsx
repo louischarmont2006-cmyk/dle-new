@@ -13,11 +13,24 @@ export default function CharactersList() {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // ⭐ Détecter le type (anime ou game)
+  // Détecter le type (anime, game ou movie)
   const isGame = location.pathname.startsWith('/game/');
-  const apiPath = isGame ? 'games' : 'anime';
-  const imagePath = isGame ? 'games' : '';
-  const backPath = isGame ? '/video-games' : '/';
+  const isMovie = location.pathname.startsWith('/movie/');
+
+  let apiPath, imagePath, backPath;
+  if (isGame) {
+    apiPath = 'games';
+    imagePath = 'games';
+    backPath = '/video-games';
+  } else if (isMovie) {
+    apiPath = 'movies';
+    imagePath = 'movies';
+    backPath = '/movies';
+  } else {
+    apiPath = 'anime';
+    imagePath = '';
+    backPath = '/';
+  }
 
   useEffect(() => {
     fetch(`${API_URL}/api/${apiPath}/${id}`)
@@ -58,8 +71,10 @@ export default function CharactersList() {
     );
   }
 
-  // ⭐ Chemin d'image dynamique
-  const imageBasePath = imagePath ? `${API_URL}/api/images/${imagePath}/${id}` : `${API_URL}/api/images/${id}`;
+  // Chemin d'image dynamique
+  const imageBasePath = imagePath
+    ? `${API_URL}/api/images/${imagePath}/${id}`
+    : `${API_URL}/api/images/${id}`;
 
   return (
     <div

@@ -60,6 +60,9 @@ export default function Home() {
             <Link to="/video-games" className="nav-btn">
               Video Games
             </Link>
+            <Link to="/movies" className="nav-btn movies-btn">
+              Movies & Series
+            </Link>
           </nav>
 
           <div className="user-section">

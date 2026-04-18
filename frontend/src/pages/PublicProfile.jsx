@@ -12,6 +12,7 @@ export default function PublicProfile() {
   const [profileUser, setProfileUser] = useState(null);
   const [animes, setAnimes] = useState([]);
   const [games, setGames] = useState([]);
+  const [movies, setMovies] = useState([]);
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -20,6 +21,8 @@ export default function PublicProfile() {
       .then(r => r.json()).then(setAnimes).catch(console.error);
     fetch(`${API_URL}/api/games`)
       .then(r => r.json()).then(setGames).catch(console.error);
+    fetch(`${API_URL}/api/movies`)
+      .then(r => r.json()).then(setMovies).catch(console.error);
   }, []);
 
   useEffect(() => {
@@ -66,7 +69,8 @@ export default function PublicProfile() {
 
   const allGames = [
     ...animes.map(a => ({ ...a, type: 'manga' })),
-    ...games.map(g => ({ ...g, type: 'game' }))
+    ...games.map(g => ({ ...g, type: 'game' })),
+    ...movies.map(m => ({ ...m, type: 'movie' })),
   ];
 
   return (
@@ -174,7 +178,10 @@ export default function PublicProfile() {
               return (
                 <div key={game.id} className="game-stat-row">
                   <div className="game-info">
-                    <span className="game-name">{game.name}</span>
+                    <span className="game-name">
+                      {game.type === 'game' ? '🎮 ' : game.type === 'movie' ? '🎬 ' : '📚 '}
+                      {game.name}
+                    </span>
                     <span className="game-total">{s.played} parties - {s.wins} victoires</span>
                   </div>
                   <div className="game-modes">

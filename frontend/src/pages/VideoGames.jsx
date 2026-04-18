@@ -60,6 +60,9 @@ export default function VideoGames() {
             <Link to="/video-games" className="videogames-nav-btn active">
               Video Games
             </Link>
+            <Link to="/movies" className="videogames-nav-btn movies-btn">
+              Movies & Series
+            </Link>
           </nav>
 
           <div className="videogames-user-section">

@@ -9,8 +9,10 @@ const ESSENTIAL_ASSETS = [
   '/index.html',
   '/background-manga.webp',
   '/background-jeux.jpg',
+  '/background-films.jpg',
   '/images/logo.jpg',
   '/images/logo.png',
+  '/images/logo-film.avif',
 ];
 
 self.addEventListener('install', (event) => {

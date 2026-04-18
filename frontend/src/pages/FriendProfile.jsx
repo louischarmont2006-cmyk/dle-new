@@ -13,6 +13,7 @@ export default function FriendProfile() {
   const [loadingData, setLoadingData] = useState(true);
   const [animes, setAnimes] = useState([]);
   const [games, setGames] = useState([]);
+  const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [debugInfo, setDebugInfo] = useState({});
 
@@ -23,7 +24,6 @@ export default function FriendProfile() {
   }, [user, loading, navigate]);
 
   useEffect(() => {
-    // Charger les animes et jeux
     fetch(`${API_URL}/api/animes`)
       .then(res => res.json())
       .then(data => setAnimes(data))
@@ -33,16 +33,18 @@ export default function FriendProfile() {
       .then(res => res.json())
       .then(data => setGames(data))
       .catch(err => console.error('Error loading games:', err));
+
+    fetch(`${API_URL}/api/movies`)
+      .then(res => res.json())
+      .then(data => setMovies(data))
+      .catch(err => console.error('Error loading movies:', err));
   }, []);
 
   useEffect(() => {
-    if (!token || !friendId) {
-      console.log('❌ Missing token or friendId:', { token: !!token, friendId });
-      return;
-    }
+    if (!token || !friendId) return;
 
     const url = `${API_URL}/api/friends/${friendId}`;
-    
+
     setDebugInfo({
       friendId,
       apiUrl: API_URL,
@@ -52,27 +54,16 @@ export default function FriendProfile() {
       timestamp: new Date().toISOString()
     });
 
-    console.log('🔍 === FRIEND PROFILE DEBUG ===');
-    console.log('🔍 Friend ID:', friendId);
-    console.log('🔍 API_URL:', API_URL);
-    console.log('🔍 Full URL:', url);
-    console.log('🔍 Has Token:', !!token);
-    console.log('🔍 Token (first 20 chars):', token?.substring(0, 20) + '...');
-
     setLoadingData(true);
     setError(null);
-    
+
     fetch(url, {
-      headers: { 
+      headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       }
     })
       .then(r => {
-        console.log('🔍 Response Status:', r.status);
-        console.log('🔍 Response OK:', r.ok);
-        console.log('🔍 Response Headers:', Object.fromEntries(r.headers.entries()));
-        
         setDebugInfo(prev => ({
           ...prev,
           responseStatus: r.status,
@@ -81,26 +72,18 @@ export default function FriendProfile() {
 
         if (!r.ok) {
           return r.text().then(text => {
-            console.error('❌ Response Error Text:', text);
             throw new Error(`HTTP ${r.status}: ${text || 'No error message'}`);
           });
         }
         return r.json();
       })
       .then(data => {
-        console.log('✅ Friend data loaded successfully:', data);
         setFriendData(data);
         setLoadingData(false);
       })
       .catch((err) => {
-        console.error('❌ FETCH ERROR:', err);
-        console.error('❌ Error stack:', err.stack);
         setError(err.message);
-        setDebugInfo(prev => ({
-          ...prev,
-          error: err.message,
-          errorStack: err.stack
-        }));
+        setDebugInfo(prev => ({ ...prev, error: err.message }));
         setLoadingData(false);
       });
   }, [token, friendId]);
@@ -108,14 +91,7 @@ export default function FriendProfile() {
   if (loading || loadingData) {
     return (
       <div className="friend-profile-container">
-        <div className="loading">
-          Chargement...
-          {debugInfo.fullUrl && (
-            <div style={{fontSize: '0.8rem', marginTop: '1rem', opacity: 0.6}}>
-              Requesting: {debugInfo.fullUrl}
-            </div>
-          )}
-        </div>
+        <div className="loading">Chargement...</div>
       </div>
     );
   }
@@ -126,10 +102,9 @@ export default function FriendProfile() {
         <div className="loading">
           <h2 style={{color: '#ef4444', marginBottom: '1rem'}}>❌ Erreur</h2>
           <p style={{marginBottom: '1rem'}}>{error}</p>
-          
           <div style={{
-            background: 'rgba(0,0,0,0.5)', 
-            padding: '1rem', 
+            background: 'rgba(0,0,0,0.5)',
+            padding: '1rem',
             borderRadius: '0.5rem',
             marginTop: '1rem',
             textAlign: 'left',
@@ -138,26 +113,19 @@ export default function FriendProfile() {
           }}>
             <div><strong>Debug Info:</strong></div>
             <div>Friend ID: {debugInfo.friendId}</div>
-            <div>API URL: {debugInfo.apiUrl}</div>
             <div>Full URL: {debugInfo.fullUrl}</div>
             <div>Has Token: {debugInfo.hasToken ? '✅' : '❌'}</div>
-            <div>Token Length: {debugInfo.tokenLength}</div>
             <div>Response Status: {debugInfo.responseStatus || 'N/A'}</div>
-            <div>Response OK: {debugInfo.responseOk ? '✅' : '❌'}</div>
             <div>Error: {debugInfo.error}</div>
           </div>
-
-          <Link 
-            to="/friends" 
-            style={{
-              color: '#3b82f6', 
-              marginTop: '1.5rem', 
-              display: 'inline-block',
-              padding: '0.5rem 1rem',
-              background: 'rgba(59, 130, 246, 0.1)',
-              borderRadius: '0.5rem'
-            }}
-          >
+          <Link to="/friends" style={{
+            color: '#3b82f6',
+            marginTop: '1.5rem',
+            display: 'inline-block',
+            padding: '0.5rem 1rem',
+            background: 'rgba(59, 130, 246, 0.1)',
+            borderRadius: '0.5rem'
+          }}>
             ← Retour à la liste
           </Link>
         </div>
@@ -170,13 +138,14 @@ export default function FriendProfile() {
   }
 
   const { friend, global, byGame } = friendData;
-  const winRate = global.total_games > 0 
-    ? Math.round((global.user_wins / global.total_games) * 100) 
+  const winRate = global.total_games > 0
+    ? Math.round((global.user_wins / global.total_games) * 100)
     : 0;
 
   const allGames = [
     ...animes.map(a => ({ ...a, type: 'manga' })),
-    ...games.map(g => ({ ...g, type: 'game' }))
+    ...games.map(g => ({ ...g, type: 'game' })),
+    ...movies.map(m => ({ ...m, type: 'movie' })),
   ];
 
   return (
@@ -194,7 +163,7 @@ export default function FriendProfile() {
 
         <div className="profile-card versus-stats">
           <h3>Statistiques face-à-face</h3>
-          
+
           <div className="versus-grid">
             <div className="versus-stat highlight">
               <span className="stat-value">{global.total_games || 0}</span>
@@ -246,7 +215,7 @@ export default function FriendProfile() {
                   <div key={stat.anime_id} className="game-stat-row">
                     <div className="game-info">
                       <span className="game-name">
-                        {game.type === 'game' ? '🎮 ' : '📚 '}
+                        {game.type === 'game' ? '🎮 ' : game.type === 'movie' ? '🎬 ' : '📚 '}
                         {game.name}
                       </span>
                       <span className="game-total">{stat.games_played} parties ensemble</span>

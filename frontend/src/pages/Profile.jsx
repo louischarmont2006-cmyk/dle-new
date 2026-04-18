@@ -10,6 +10,7 @@ export default function Profile() {
   const { user, token, logout, loading, refreshUser } = useAuth();
   const [animes, setAnimes] = useState([]);
   const [games, setGames] = useState([]);
+  const [movies, setMovies] = useState([]);
   const [stats, setStats] = useState(null);
   const [loadingStats, setLoadingStats] = useState(true);
   const [showAvatarPicker, setShowAvatarPicker] = useState(false);
@@ -32,6 +33,11 @@ export default function Profile() {
     fetch(`${API_URL}/api/games`)
       .then(res => res.json())
       .then(data => setGames(data))
+      .catch(console.error);
+
+    fetch(`${API_URL}/api/movies`)
+      .then(res => res.json())
+      .then(data => setMovies(data))
       .catch(console.error);
   }, []);
 
@@ -83,10 +89,25 @@ export default function Profile() {
         }))
     );
 
-    Promise.all([...mangaPromises, ...gamePromises]).then(results => {
+    const moviePromises = movies.map(movie =>
+      fetch(`${API_URL}/api/movies/${movie.id}`)
+        .then(r => r.json())
+        .then(data => ({
+          type: 'movie',
+          animeId: movie.id,
+          animeName: movie.name,
+          characters: (data.characters || []).slice(0, 439).map(c => ({
+            id: c.id,
+            name: c.name,
+            image: `${API_URL}/api/images/movies/${movie.id}/characters/${c.image}`
+          }))
+        }))
+    );
+
+    Promise.all([...mangaPromises, ...gamePromises, ...moviePromises]).then(results => {
       setAvatarOptions(results);
     });
-  }, [showAvatarPicker, animes, games, avatarOptions.length]);
+  }, [showAvatarPicker, animes, games, movies, avatarOptions.length]);
 
   function handleLogout() {
     logout();
@@ -152,7 +173,8 @@ export default function Profile() {
 
   const allGames = [
     ...animes.map(a => ({ ...a, type: 'manga' })),
-    ...games.map(g => ({ ...g, type: 'game' }))
+    ...games.map(g => ({ ...g, type: 'game' })),
+    ...movies.map(m => ({ ...m, type: 'movie' })),
   ];
 
   return (
@@ -160,7 +182,6 @@ export default function Profile() {
       <header className="profile-header">
         <Link to="/" className="back-link">&larr; Retour</Link>
         <h1>Mon Profil</h1>
-        {/* ⭐ NOUVEAUX BOUTONS */}
         <div className="profile-header-actions">
           <Link to="/leaderboard" className="friends-link">Voir classement</Link>
           <Link to="/friends" className="friends-link">Voir liste d'amis</Link>
@@ -279,7 +300,10 @@ export default function Profile() {
               return (
                 <div key={game.id} className="game-stat-row">
                   <div className="game-info">
-                    <span className="game-name">{game.name}</span>
+                    <span className="game-name">
+                      {game.type === 'game' ? '🎮 ' : game.type === 'movie' ? '🎬 ' : '📚 '}
+                      {game.name}
+                    </span>
                     <span className="game-total">{s.played} parties - {s.wins} victoires</span>
                   </div>
                   <div className="game-modes">
@@ -356,7 +380,7 @@ export default function Profile() {
                 return (
                   <div key={item.animeId} className="avatar-section">
                     <h3>
-                      {item.type === 'game' ? '🎮 ' : '📚 '}
+                      {item.type === 'game' ? '🎮 ' : item.type === 'movie' ? '🎬 ' : '📚 '}
                       {item.animeName}
                     </h3>
                     <div className="avatar-grid">

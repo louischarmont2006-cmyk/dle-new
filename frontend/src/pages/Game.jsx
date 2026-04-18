@@ -6,13 +6,27 @@ import GameNavbar from "../components/GameNavbar";
 import useAuth from "../hooks/useAuth";
 import "./Game.css";
 
-// ⭐ Détecter le type (anime ou game)
+// ⭐ Détecter le type (anime, game ou movie)
 function useGameType() {
   const location = useLocation();
   const isGame = location.pathname.startsWith('/game/');
-  const apiPath = isGame ? 'games' : 'anime';
-  const imagePath = isGame ? 'games' : '';
-  return { isGame, apiPath, imagePath };
+  const isMovie = location.pathname.startsWith('/movie/');
+ 
+  let apiPath, imagePath;
+ 
+  if (isGame) {
+    apiPath = 'games';
+    imagePath = 'games';
+  } else if (isMovie) {
+    apiPath = 'movies';
+    imagePath = 'movies';
+  } else {
+    // anime
+    apiPath = 'anime';
+    imagePath = '';
+  }
+ 
+  return { isGame, isMovie, apiPath, imagePath };
 }
 
 // Hook pour persister l'état
