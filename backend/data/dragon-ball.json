@@ -57,7 +57,8 @@
       "type": "text-group",
       "groups": [
         ["Krillin's House", "Bardock's House", "Satan House", "Gohan's House", "Kame House", "Toriyama's house, Penguin Village"],
-        ["Universe 6", "Universe 7", "Universe 10", "Universe 11"]
+        ["Universe 6", "Universe 7", "Universe 10", "Universe 11", "Universe 3"],
+        ["Princess Snake's Palace", "Zeno's Palace"]
       ],
       "hints": [
         "Anywhere",
@@ -128,7 +129,8 @@
         "Frieza Force",
         "Babidi Team",
         "Tsuful Squad",
-        "Pride Troopers"
+        "Pride Troopers",
+        "Moro"
       ]
     },
     {
@@ -1735,7 +1737,7 @@
     "height": "190",
     "origin": "Demon Realm",
     "residence": "Anywhere",
-    "allegiance": "None",
+    "allegiance": "Moro",
     "firstArc": "Moro saga"
   },
   {
@@ -1819,7 +1821,7 @@
     "height": "180",
     "origin": "Other",
     "residence": "Anywhere",
-    "allegiance": "Other",
+    "allegiance": "Moro",
     "firstArc": "Moro saga"
   },
   {
@@ -2035,7 +2037,7 @@
     "height": "230",
     "origin": "Other",
     "residence": "Anywhere",
-    "allegiance": "None",
+    "allegiance": "Moro",
     "firstArc": "Moro saga"
   },
   {
